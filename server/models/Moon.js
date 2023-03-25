@@ -9,6 +9,7 @@ Moon.init(
 			type: DataTypes.BIGINT,
 			allowNull: false,
 			primaryKey: true,
+			autoIncrement: true,
 		},
 		name: {
 			type: DataTypes.STRING,
@@ -19,7 +20,7 @@ Moon.init(
 			allowNull: false,
 		},
 		size: {
-			type: DataTypes.BIGINT,
+			type: DataTypes.FLOAT(10, 1),
 			allowNull: false,
 		},
 		planet_id: {

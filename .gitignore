@@ -106,4 +106,5 @@ dist
 #VS Code
 .vscode
 
+#dotenv
 .env
