@@ -1,8 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import moons from "./moons.json";
 function App() {
-	console.log(moons.bodies.length);
 	return (
 		<div className="App">
 			<header className="App-header">
