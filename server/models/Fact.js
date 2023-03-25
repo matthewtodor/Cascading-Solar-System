@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Moon extends Model {}
+class Fact extends Model {}
 
-Moon.init(
+Fact.init(
 	{
 		id: {
 			type: DataTypes.BIGINT,
@@ -11,16 +11,8 @@ Moon.init(
 			primaryKey: true,
 			autoIncrement: true,
 		},
-		name: {
-			type: DataTypes.STRING,
-			allowNull: false,
-		},
-		name_history: {
+		fact: {
 			type: DataTypes.TEXT("medium"),
-			allowNull: false,
-		},
-		size: {
-			type: DataTypes.BIGINT,
 			allowNull: false,
 		},
 		planet_id: {
@@ -36,8 +28,8 @@ Moon.init(
 		timestamps: false,
 		freezeTableName: true,
 		underscored: true,
-		modelName: "moon",
+		modelName: "fact",
 	}
 );
 
-module.exports = Moon;
+module.exports = Fact;
