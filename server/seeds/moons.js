@@ -137,10 +137,71 @@ const moons = [
 		planet_id: 5,
 	},
 	{
-		name: "Erinome",
+		name: "Ersa",
 		name_history:
-			"Originally called S/2000 J4, Erinome was named for a chaste young woman in Roman mythology whom Venus causes to fall in love with Jupiter. She loses her virginity to Adonis, however, after Venus throws a fog on her. This displeases the goddess Diana, who turns Erinome into a peacock. Adonis, realizing he has assaulted a love of Jupiter, flees into the woods, but is driven out by Mercury. Just as Adonis is about to defeat Mercury in a violent fight, Jupiter throws a lightning bolt and kills him.​",
-		size: 1.0,
+			"In mythology, Ersa is the sister of Pandia and, as such, also the daughter of Zeus and the Moon goddess Selene. Ersa is the goddess of dew.​",
+		size: 0.932057,
+		planet_id: 5,
+	},
+	{
+		name: "Euanthe",
+		name_history:
+			"Originally called S/2001 J7, Euanthe was given one of the names in Greek mythology for the mother of the Graces by Zeus, the Greek equivalent of the Roman god Jupiter.​",
+		size: 0.932057,
+		planet_id: 5,
+	},
+	{
+		name: "Eukelade",
+		name_history:
+			'Originally called S/2003 J1, Eukelade was named for one of the Muses, who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter. Her name means "well sounding."​',
+		size: 1.2,
+		planet_id: 5,
+	},
+	{
+		name: "Eupheme",
+		name_history: "In mythology, Eupheme is the spirit of praise and good omen, the granddaughter of Zeus, and the sister of Philophrosyne.",
+		size: 0.621371,
+		planet_id: 5,
+	},
+	{
+		name: "Euporie",
+		name_history:
+			"Originally called S/2001 J10, Euporie was named for one of the Horae (seasons), who were daughters of the Roman god Jupiter, and a Titaness named Themis. Euporie means plenty.",
+		size: 0.6,
+		planet_id: 5,
+	},
+	{
+		name: "Europa",
+		name_history: "Europa is named for a woman who, in Greek mythology, was abducted by the god Zeus – Jupiter in Roman mythology.",
+		size: 970.0,
+		planet_id: 5,
+	},
+	{
+		name: "Eurydome",
+		name_history:
+			"Originally called S/2001 J4, Eurydome was named for a character in Greek mythology who, according to some sources, was the mother of the Graces by Zeus, the Greek equivalent of the Roman god Jupiter.",
+		size: 0.9,
+		planet_id: 5,
+	},
+	{
+		name: "Ganymede",
+		name_history:
+			"In mythology, Ganymede was a beautiful young boy who was carried to Olympus by Zeus (the Greek equivalent of the Roman god Jupiter) disguised as an eagle. Ganymede became the cupbearer of the Olympian gods.",
+		size: 1635.0,
+		planet_id: 5,
+	},
+	{
+		name: "Harpalyke",
+		name_history:
+			"Originally called S/2000 J5, Harpalyke was named for a woman in Greek mythology who was transformed into a night bird called Chalcis. According to one version of the story, this transformation happened after she had intercourse with Zeus, the Greek equivalent of the Roman god Jupiter. In another version, she had incestuous relations with her father. In revenge, she killed her younger brother or her son (depending on the account), carved him up, cooked the meat and served it to her father, who ultimately kills himself.",
+		size: 1.3,
+		planet_id: 5,
+	},
+	{
+		name: "Hegemone",
+		name_history:
+			'Originally called S/2003 J8, Hegemone was named for one of the Graces (according to the Athenians), who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter. The name means "female leader."',
+		size: 0.93,
 		planet_id: 5,
 	},
 ];
