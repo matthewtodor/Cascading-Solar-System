@@ -24,7 +24,7 @@ Moon.init(
 			allowNull: false,
 		},
 		planet_id: {
-			type: DataTypes.INTEGER,
+			type: DataTypes.BIGINT,
 			references: {
 				model: "planet",
 				key: "id",

@@ -3,7 +3,7 @@ const sequelize = require("../config/connection");
 
 class Fact extends Model {}
 
-Moon.init(
+Fact.init(
 	{
 		id: {
 			type: DataTypes.BIGINT,
