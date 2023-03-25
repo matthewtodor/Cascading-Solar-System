@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Planet extends Model {}
+class Fact extends Model {}
 
-Planet.init(
+Moon.init(
 	{
 		id: {
 			type: DataTypes.BIGINT,
@@ -11,21 +11,16 @@ Planet.init(
 			primaryKey: true,
 			autoIncrement: true,
 		},
-		name: {
-			type: DataTypes.STRING,
+		fact: {
+			type: DataTypes.TEXT("medium"),
 			allowNull: false,
 		},
-		size: {
-			type: DataTypes.INTEGER,
-			allowNull: false,
-		},
-		sun_distance: {
-			type: DataTypes.INTEGER,
-			allowNull: false,
-		},
-		core: {
-			type: DataTypes.ENUM("solid", "gas"),
-			allowNull: false,
+		planet_id: {
+			type: DataTypes.BIGINT,
+			references: {
+				model: "planet",
+				key: "id",
+			},
 		},
 	},
 	{
@@ -33,8 +28,8 @@ Planet.init(
 		timestamps: false,
 		freezeTableName: true,
 		underscored: true,
-		modelName: "planet",
+		modelName: "fact",
 	}
 );
 
-module.exports = Planet;
+module.exports = Fact;

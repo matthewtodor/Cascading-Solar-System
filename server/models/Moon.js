@@ -6,13 +6,21 @@ class Moon extends Model {}
 Moon.init(
 	{
 		id: {
-			type: DataTypes.INTEGER,
+			type: DataTypes.BIGINT,
 			allowNull: false,
 			primaryKey: true,
 			autoIncrement: true,
 		},
 		name: {
 			type: DataTypes.STRING,
+			allowNull: false,
+		},
+		name_history: {
+			type: DataTypes.TEXT("medium"),
+			allowNull: false,
+		},
+		size: {
+			type: DataTypes.BIGINT,
 			allowNull: false,
 		},
 		planet_id: {
