@@ -8459,4 +8459,3 @@ const moons = {
 		},
 	],
 };
-console.log(moons.bodies.length);

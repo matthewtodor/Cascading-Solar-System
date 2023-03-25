@@ -9,18 +9,17 @@ Planet.init(
 			type: DataTypes.BIGINT,
 			allowNull: false,
 			primaryKey: true,
-			autoIncrement: true,
 		},
 		name: {
 			type: DataTypes.STRING,
 			allowNull: false,
 		},
 		size: {
-			type: DataTypes.INTEGER,
+			type: DataTypes.FLOAT(10, 1),
 			allowNull: false,
 		},
 		sun_distance: {
-			type: DataTypes.INTEGER,
+			type: DataTypes.BIGINT,
 			allowNull: false,
 		},
 		core: {

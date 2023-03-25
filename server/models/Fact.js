@@ -9,7 +9,6 @@ Fact.init(
 			type: DataTypes.BIGINT,
 			allowNull: false,
 			primaryKey: true,
-			autoIncrement: true,
 		},
 		fact: {
 			type: DataTypes.TEXT("medium"),
