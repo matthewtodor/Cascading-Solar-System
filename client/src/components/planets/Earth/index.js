@@ -5,11 +5,9 @@ function Earth() {
 	return (
 		<div id='earth' className='planet'>
 			<div className='surface'>
-				{/* <div id='africa' className='continent'></div>
-				<div id='asia' className='continent'></div> */}
-				<div className='continent'></div>
-
-				{/* <Clouds /> */}
+				<div id='west' className='continent'></div>
+				<div id='east' className='continent'></div>
+				{/* <div id='asia' className='continent'></div> */}
 			</div>
 
 			<div className='hazey-border earth-border'>
