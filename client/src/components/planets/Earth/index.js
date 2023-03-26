@@ -7,7 +7,6 @@ function Earth() {
 			<div className='surface'>
 				<div id='west' className='continent'></div>
 				<div id='east' className='continent'></div>
-				{/* <div id='asia' className='continent'></div> */}
 			</div>
 
 			<div className='hazey-border earth-border'>
