@@ -1,0 +1,140 @@
+/* general planet rules */
+.hazey-border,
+.hazey-border-inset {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	border: 0.5px solid rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+}
+
+.shadow {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(circle at 15% 20%, hsla(0, 0%, 0%, 0), hsl(0, 0%, 0%));
+}
+
+.surface {
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	width: 99%;
+	height: 99%;
+}
+
+/* earth */
+#earth {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	background: radial-gradient(circle at 15% 20%, hsl(200, 100%, 50%), hsl(240, 100%, 10%));
+	box-shadow: 20px 20px 200px 0 black;
+	width: 500px;
+	height: 500px;
+}
+
+.earth-border {
+	box-shadow: -12px -12px 24px -8px hsla(210, 100%, 75%, 0.75);
+}
+
+.earth-border-inset {
+	box-shadow: inset 4px 4px 24px hsla(210, 100%, 75%, 0.95);
+}
+
+/* continents */
+/* #africa {
+	background: linear-gradient(hsl(60, 100%, 25%), hsl(120, 100%, 15%));
+	width: 200px;
+	height: 260px;
+	clip-path: path('M 60 0 L 60 8 L 80 13 L 85 5 L 100 10 L 120 20 L 130 30 L 135 50 L 140 60 L 145 85 L 150 100 L 165 90 C 165 135, 140 140, 140 140 L 140 160 L 135 200 L 135 200 L 130 210 L 125 220 L 120 230 L 115 235 L 110 238 L 105 235 L 100 235 L 90 236 L 80 230 L 75 220 L 70 200 L 70 180 L 65 160 L 55 120 L45 110 L 40 110 L 30 112 L 20 110 L 10 100 L 5 85 L 0 75 L 0 50 L 5 30 L 10 20 L 15 15 L 25 5 L 40 0 z');
+} */
+
+#africa {
+	background: linear-gradient(hsl(60, 100%, 25%), hsl(120, 100%, 15%));
+	width: 200px;
+	height: 200px;
+	clip-path: path('M 50 20 C 70 0, 130 80, 150 50 S 180 50, 180 60 S 160 80, 160 80 S 180 180, 150 180 S 110 160, 110 160 S 100 130, 100 130 S 80 100, 80 100 S 50 80, 50 100 S 30 80, 30 80 S 20 70, 20 50 S 20 20, 50 20 z');
+}
+
+#asia {
+	background: linear-gradient(hsl(60, 100%, 25%), hsl(120, 100%, 15%));
+	width: 200px;
+	height: 200px;
+	clip-path: path('M 20 20 C 50 0, 50 50, 100 50 S 150 100, 150 100 S 150 150, 150 150 S 150 200, 120 200 S 80 180, 80 180 S 60 170, 60 170 S 40 150, 40 150 S 20 100, 20 100 S 00 20, 20 20');
+}
+
+/* moon */
+.moon {
+	position: absolute;
+	background: radial-gradient(circle at 15% 20%, hsl(0, 0%, 95%), hsl(0, 0%, 10%));
+	box-shadow: 40px 40px 50px 0 rgba(0, 0, 0, 0.5);
+	border-radius: 100%;
+	width: 125px;
+	height: 125px;
+	animation: resize-in-orbit 40s 10s ease-in-out infinite both;
+}
+
+.moon-border {
+	box-shadow: -3px -3px 6px -2px hsla(210, 100%, 75%, 0.95);
+}
+
+.moon-border-inset {
+	box-shadow: inset 1px 1px 6px hsla(210, 100%, 75%, 0.95);
+}
+
+.orbit {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: orbit 40s ease-in-out infinite both;
+}
+
+/* animations */
+@keyframes orbit {
+	from {
+		transform: matrix(1, 0, 0, 1, 500, -150);
+		z-index: 1;
+	}
+
+	50% {
+		transform: matrix(1, 0, 0, 1, -500, 150);
+		z-index: 1;
+	}
+
+	51% {
+		transform: matrix(1, 0, 0, 1, -500, 150);
+		z-index: -1;
+	}
+
+	to {
+		transform: matrix(1, 0, 0, 1, 500, -150);
+		z-index: -1;
+	}
+}
+
+@keyframes resize-in-orbit {
+	0% {
+		transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+	}
+
+	50% {
+		transform: matrix(0.8, 0, 0, 0.8, 0, 0);
+	}
+
+	100% {
+		transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+	}
+}
