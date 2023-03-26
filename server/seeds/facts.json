@@ -1,0 +1,14 @@
+[
+	{
+		"fact": "From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as 11 times brighter.",
+		"planet_id": 1
+	},
+	{
+		"fact": "Mercury is the smallest planet in our solar system. It’s a little bigger than Earth’s Moon. It is the closest planet to the Sun, but it’s actually not the hottest. Venus is hotter.",
+		"planet_id": 1
+	},
+	{
+		"fact": "Along with Venus, Earth, and Mars, Mercury is one of the rocky planets. It has a solid surface that is covered with craters like our Moon. It has a thin atmosphere, and it doesn’t have any moons.",
+		"planet_id": 1
+	}
+]

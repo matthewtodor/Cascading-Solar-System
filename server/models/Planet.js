@@ -16,11 +16,11 @@ Planet.init(
 			allowNull: false,
 		},
 		size: {
-			type: DataTypes.INTEGER,
+			type: DataTypes.FLOAT(10, 1),
 			allowNull: false,
 		},
 		sun_distance: {
-			type: DataTypes.INTEGER,
+			type: DataTypes.BIGINT,
 			allowNull: false,
 		},
 		core: {

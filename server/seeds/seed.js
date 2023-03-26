@@ -1,13 +1,15 @@
 const sequelize = require("../config/connection");
-const { Planet, Moon } = require("../models");
+const { Planet, Moon, Fact } = require("../models");
+const planetData = require("./planets");
+const moonData = require("./moons");
+const factData = require("./facts");
 
-// json files in folder use metric system
-//temp is in Kelvin
 const seedDatabase = async () => {
 	await sequelize.sync({ force: true });
 
-	const planets = await Planet.bulkCreate();
-
+	const planets = await Planet.bulkCreate(planetData);
+	const moons = await Moon.bulkCreate(moonData);
+	const fact = await Fact.bulkCreate(factData);
 	process.exit(0);
 };
 
