@@ -1,5 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
+import * as THREE from 'https://unpkg.com/three/build/three.module.js';
+
 function App() {
 	return (
 		<div className="App">
