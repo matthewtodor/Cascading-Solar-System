@@ -8,4 +8,4 @@ Moon.belongsTo(Planet, {
 Fact.belongsTo(Planet, {
 	foreignKey: "planet_id",
 });
-module.exports = { Planet, Moon };
+module.exports = { Planet, Moon, Fact };
