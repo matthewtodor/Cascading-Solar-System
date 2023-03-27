@@ -1,4 +1,4 @@
-import Clouds from '../Clouds';
+// import Clouds from '../Clouds';
 import './style.css';
 
 function Earth() {
