@@ -3,79 +3,48 @@ import { useState, useEffect } from 'react';
 import './style.css';
 
 function Clouds() {
-	const [cloudsA, setCloudsA] = useState([]);
-	const [cloudsB, setCloudsB] = useState([]);
-	const [cloudsC, setCloudsC] = useState([]);
+	const [cloudData, setCloudData] = useState([]);
 
-	// generate clouds every 5 seconds
+	// generate random cloud transformations
+	const generateCloudData = () => {
+		// instantiate array
+		const arr = [];
+
+		// push transform matrix into array
+		// random scale between 0 and 2
+		// random skew between 0 and 0.5
+		// random translate up to 10%
+		for (let i = 0; i < 5; i++) {
+			const scaleX = (Math.random() + 1).toFixed(1);
+			const skewX = (Math.random() / 4).toFixed(1);
+			const skewY = (Math.random() / 4).toFixed(1);
+			const scaleY = (Math.random() + 1).toFixed(1);
+			const translateX = Math.floor(Math.random() * 100).toFixed(0);
+			const translateY = Math.floor(Math.random() * 100).toFixed(0);
+
+			arr.push({
+				transform: `matrix(${scaleX}, ${skewX}, ${skewY}, ${scaleY}, ${translateX}, ${translateY})`
+			});
+		}
+
+		// set array as state
+		setCloudData(arr);
+	};
+
+	// generate clouds on page load
 	useEffect(() => {
-		let set = 'a';
-
-		const interval = setInterval(() => {
-			// generate random positions
-			const getCloudPositions = () => {
-				// instantiate array
-				const arr = [];
-
-				// push 20 random coordinates into array
-				for (let i = 0; i < 20; i++) {
-					arr.push({
-						left: Math.floor(Math.random() * 500),
-						top: Math.floor(Math.random() * 500),
-						transform: `rotate(${Math.random() > 0.5 ? Math.floor(Math.random() * 30) : Math.floor(Math.random() * -30)}deg)`
-					});
-				}
-
-				return arr;
-			};
-
-			// update position state with array
-			if (set === 'a') {
-				setCloudsA(getCloudPositions);
-				set = 'b';
-			} else if (set === 'b') {
-				setCloudsB(getCloudPositions);
-				set = 'c';
-			} else if (set === 'c') {
-				setCloudsC(getCloudPositions);
-				set = 'a';
-			}
-		}, 5000);
-
-		return () => clearInterval(interval);
+		generateCloudData();
 	}, []);
 
 	return (
 		<div className='clouds'>
-			<div className='cloud-set'>
-				{cloudsA.map((cloud) => {
-					return (
-						<h1 className='cloud' style={cloud}>
-							~~
-						</h1>
-					);
-				})}
-			</div>
-
-			<div className='cloud-set'>
-				{cloudsB.map((cloud) => {
-					return (
-						<h1 className='cloud' style={cloud}>
-							~~
-						</h1>
-					);
-				})}
-			</div>
-
-			<div className='cloud-set'>
-				{cloudsC.map((cloud) => {
-					return (
-						<h1 className='cloud' style={cloud}>
-							~~
-						</h1>
-					);
-				})}
-			</div>
+			{cloudData.map((data, i) => {
+				return (
+					<h1 key={i} className='cloud' style={data}>
+						~~
+					</h1>
+				);
+			})}
 		</div>
 	);
 }

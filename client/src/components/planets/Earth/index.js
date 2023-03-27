@@ -1,4 +1,4 @@
-// import Clouds from '../Clouds';
+import Clouds from '../Clouds';
 import './style.css';
 
 function Earth() {
@@ -7,6 +7,12 @@ function Earth() {
 			<div className='surface'>
 				<div id='west' className='continent'></div>
 				<div id='east' className='continent'></div>
+
+				<Clouds />
+				<Clouds />
+				<Clouds />
+				<Clouds />
+				<Clouds />
 			</div>
 
 			<div className='hazey-border earth-border'>
