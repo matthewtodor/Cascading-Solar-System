@@ -33,11 +33,11 @@ function Earth() {
 						<div id='moon-surface-color-2' className='surface-color-gray'></div>
 					</div>
 
-					<div className='hazey-border moon-border'>
-						<div className='hazey-border-inset moon-border-inset'>
-							<div className='shadow'></div>
-						</div>
+					{/* <div className='hazey-border moon-border'> */}
+					<div className='hazey-border-inset moon-border-inset'>
+						<div className='shadow'></div>
 					</div>
+					{/* </div> */}
 				</div>
 			</div>
 		</div>
