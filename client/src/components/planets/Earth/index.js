@@ -1,18 +1,23 @@
-import Clouds from '../Clouds';
+// import Clouds from '../Clouds';
 import './style.css';
 
 function Earth() {
 	return (
 		<div id='earth' className='planet'>
 			<div className='surface'>
-				<div id='west' className='continent'></div>
-				<div id='east' className='continent'></div>
+				<div id='earth-surface-color-1' className='surface-color-green'></div>
+				<div id='earth-surface-color-2' className='surface-color-green'></div>
+				<div id='earth-surface-color-3' className='surface-color-white'></div>
+				<div id='earth-surface-color-4' className='surface-color-white'></div>
 
+				{/* <div id='west' className='continent'></div>
+				<div id='east' className='continent'></div> */}
+
+				{/* <Clouds />
 				<Clouds />
 				<Clouds />
 				<Clouds />
-				<Clouds />
-				<Clouds />
+				<Clouds /> */}
 			</div>
 
 			<div className='hazey-border earth-border'>
@@ -23,6 +28,11 @@ function Earth() {
 
 			<div className='orbit'>
 				<div className='moon'>
+					<div className='surface'>
+						<div id='moon-surface-color-1' className='surface-color-gray'></div>
+						<div id='moon-surface-color-2' className='surface-color-gray'></div>
+					</div>
+
 					<div className='hazey-border moon-border'>
 						<div className='hazey-border-inset moon-border-inset'>
 							<div className='shadow'></div>
