@@ -116,21 +116,21 @@
 } */
 
 #earth-surface-color-1 {
-	animation: spin-surface 10s linear infinite both;
+	animation: spin-surface 20s linear infinite both;
 }
 
 #earth-surface-color-2 {
-	animation: spin-surface 12s linear infinite both;
+	animation: spin-surface 22s linear infinite both;
 	transform: translateY(5%);
 }
 
 #earth-surface-color-3 {
-	animation: spin-surface 9s linear infinite both;
+	animation: spin-surface 18s linear infinite both;
 	transform: translateY(10%);
 }
 
 #earth-surface-color-4 {
-	animation: spin-surface 11s linear infinite both;
+	animation: spin-surface 24s linear infinite both;
 	transform: translateY(15%);
 }
 
@@ -168,7 +168,7 @@
 	border-radius: 100%;
 	width: 125px;
 	height: 125px;
-	animation: resize-in-orbit 40s 10s ease-in-out infinite both;
+	animation: resize-in-orbit 60s 20s ease-in-out infinite both;
 }
 
 .moon-border {
@@ -193,7 +193,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	animation: orbit 40s ease-in-out infinite both;
+	animation: orbit 60s ease-in-out infinite both;
 }
 
 /* animations */
