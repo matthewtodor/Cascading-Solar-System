@@ -7,3 +7,28 @@
     justify-content: space-between;
     color: white;
 }
+.dropdown {
+    margin-right: 3rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #000000, transparent) transparent;
+    font-family: inherit;
+    text-decoration: none;
+    transition: background-color 1s;
+    place-content: center;
+}
+.dropdown:hover, .dropdown:focus {
+  background-color: #e91e63;
+  color: #fff;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav-link {
+    display: block;
+}
