@@ -5,7 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 100%;
-	background: radial-gradient(circle at 15% 20%, hsl(45, 100%, 75%), hsl(45, 100%, 10%));
+	background: radial-gradient(circle at 15% 20%, hsl(45, 100%, 85%), hsl(45, 100%, 10%));
 	width: 500px;
 	height: 500px;
 	transform: rotate(-20deg);
@@ -26,14 +26,4 @@
 
 #venus-surface-color-2 {
 	animation: spin-surface 22s linear infinite both;
-}
-
-#venus-surface-color-3 {
-	animation: spin-surface 18s linear infinite both;
-	transform: translateX(10%);
-}
-
-#venus-surface-color-4 {
-	animation: spin-surface 24s linear infinite both;
-	transform: translateY(15%);
 }

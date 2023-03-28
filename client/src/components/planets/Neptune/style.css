@@ -33,11 +33,6 @@
 	transform: translateX(10%);
 }
 
-#neptune-surface-color-4 {
-	animation: spin-surface 24s linear infinite both;
-	transform: translateY(15%);
-}
-
 /* moons */
 #neptune-moon-1 {
 	position: absolute;

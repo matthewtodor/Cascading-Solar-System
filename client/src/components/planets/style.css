@@ -76,7 +76,7 @@
 	border-radius: 100%;
 	width: 100%;
 	height: 100%;
-	backdrop-filter: blur(10px);
+	/* backdrop-filter: blur(10px); */
 }
 
 .shadow {
@@ -88,6 +88,7 @@
 	width: 101%;
 	height: 101%;
 	background: radial-gradient(circle at 15% 20%, hsla(0, 0%, 0%, 0), 40%, hsl(0, 0%, 0%) 80%);
+	/* backdrop-filter: blur(10px); */
 }
 
 /* surfaces */
@@ -100,6 +101,13 @@
 	border-radius: 100%;
 	width: 99%;
 	height: 99%;
+	opacity: 0.5;
+}
+
+.surface-blur {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
 }
 
 .surface-color-gray {
@@ -107,7 +115,7 @@
 	display: flex;
 	width: 150%;
 	height: 150%;
-	background-image: radial-gradient(hsla(0, 0%, 0%, 0.5) 1%, transparent 40%), radial-gradient(hsla(0, 0%, 0%, 0.75) 1%, transparent 20%);
+	background-image: radial-gradient(hsla(0, 0%, 0%, 0.25) 1%, transparent 40%), radial-gradient(hsla(0, 0%, 0%, 0.25) 1%, transparent 20%);
 	background-size: 60% 40%;
 }
 
@@ -125,7 +133,7 @@
 	display: flex;
 	width: 150%;
 	height: 150%;
-	background-image: radial-gradient(rgba(255, 255, 255, 0.75) 1%, transparent 60%), radial-gradient(rgba(255, 255, 255, 0.75) 1%, transparent 30%);
+	background-image: radial-gradient(rgba(255, 255, 255, 0.5) 1%, transparent 60%), radial-gradient(rgba(255, 255, 255, 0.5) 1%, transparent 30%);
 	background-size: 60% 40%;
 }
 
@@ -165,12 +173,21 @@
 	background-size: 60% 40%;
 }
 
+.surface-color-sand {
+	position: absolute;
+	display: flex;
+	width: 150%;
+	height: 150%;
+	background-image: radial-gradient(chocolate 1%, transparent 60%), radial-gradient(chocolate 1%, transparent 30%);
+	background-size: 60% 40%;
+}
+
 .surface-color-pink {
 	position: absolute;
 	display: flex;
 	width: 150%;
 	height: 150%;
-	background-image: radial-gradient(orange 1%, transparent 60%), radial-gradient(orange 1%, transparent 30%);
+	background-image: radial-gradient(pink 1%, transparent 60%), radial-gradient(salmon 1%, transparent 30%);
 	background-size: 60% 40%;
 }
 
