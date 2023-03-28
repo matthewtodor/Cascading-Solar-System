@@ -3,20 +3,28 @@ import './style.css';
 function Saturn() {
 	return (
 		<div id='saturn' className='planet'>
+			<div id='saturn-surface' className='surface'>
+				<div id='saturn-surface-color-1'></div>
+			</div>
+
 			<div className='hazey-border saturn-border'>
 				<div className='hazey-border-inset saturn-border-inset'>
 					<div className='shadow'></div>
 				</div>
 			</div>
 
-			<div id='saturn-rings-back'>
-				<div id='saturn-rings-back-top' />
-				<div id='saturn-rings-back-bottom' />
+			<div id='saturn-rings-back-rotator'>
+				<div id='saturn-rings-back'>
+					<div id='saturn-rings-back-top' />
+					<div id='saturn-rings-back-bottom' />
+				</div>
 			</div>
 
-			<div id='saturn-rings-front'>
-				<div id='saturn-rings-front-top' />
-				<div id='saturn-rings-front-bottom' />
+			<div id='saturn-rings-front-rotator'>
+				<div id='saturn-rings-front'>
+					<div id='saturn-rings-front-top' />
+					<div id='saturn-rings-front-bottom' />
+				</div>
 			</div>
 
 			<div id='saturn-moon-1-orbit'>

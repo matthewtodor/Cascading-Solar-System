@@ -5,8 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 100%;
-	background: linear-gradient(-25deg, saddlebrown, tan, wheat, tan, wheat, peru, moccasin, linen, moccasin, peru, wheat, linen, wheat, tan, saddlebrown 90%);
-	/* box-shadow: 20px 20px 200px 0 black; */
+	/* background: linear-gradient(-25deg, saddlebrown, tan, wheat, tan, wheat, burlywood, moccasin, linen, moccasin, sienna, wheat, linen, wheat, tan, saddlebrown 90%); */
 	width: 500px;
 	height: 500px;
 }
@@ -20,26 +19,29 @@
 }
 
 /* surface */
+#saturn-surface {
+	animation: rotate-saturn-surface 60s ease-in-out infinite both;
+}
+
 #saturn-surface-color-1 {
-	animation: spin-surface-down-right 20s linear infinite both;
-}
-
-#saturn-surface-color-2 {
-	animation: spin-surface 22s linear infinite both;
-	transform: translateY(5%);
-}
-
-#saturn-surface-color-3 {
-	animation: spin-surface-up-right 18s linear infinite both;
-	transform: translateY(10%);
-}
-
-#saturn-surface-color-4 {
-	animation: spin-surface 24s linear infinite both;
-	transform: translateY(15%);
+	position: absolute;
+	display: flex;
+	width: 110%;
+	height: 110%;
+	background-image: linear-gradient(to top, saddlebrown, tan, wheat, tan, wheat, burlywood, moccasin, linen, moccasin, sienna, wheat, linen, wheat, tan, saddlebrown);
+	animation: move-saturn-surface 60s ease-in-out infinite both;
 }
 
 /* rings */
+#saturn-rings-back-rotator,
+#saturn-rings-front-rotator {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: rotate-saturn-rings 60s ease-in-out infinite both;
+}
+
 #saturn-rings-back,
 #saturn-rings-front {
 	position: absolute;
@@ -47,10 +49,12 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	transform: matrix(1.4, -0.6, -0.9, 0.5, 0, 25);
+	transform: rotate(-25deg);
+	animation: resize-saturn-rings 60s 15s ease-in-out infinite both;
 	opacity: 0.6;
 }
 
+#saturn-rings-back-rotator,
 #saturn-rings-back {
 	z-index: -1;
 }
@@ -64,13 +68,13 @@
 #saturn-rings-front-bottom,
 #saturn-rings-back-top,
 #saturn-rings-back-bottom {
-	width: 800px;
-	height: 400px;
+	width: 1500px;
+	height: 75px;
 }
 
 #saturn-rings-back-top {
 	background: radial-gradient(ellipse at bottom, var(--saturn-ring-color));
-	border-radius: 500px 500px 0 0;
+	border-radius: 100% 100% 0 0;
 }
 
 #saturn-rings-front-bottom {
@@ -208,6 +212,70 @@
 }
 
 /* animations */
+@keyframes rotate-saturn-surface {
+	from {
+		transform: rotate(-15deg);
+	}
+
+	50% {
+		transform: rotate(15deg);
+	}
+
+	to {
+		transform: rotate(-15deg);
+	}
+}
+
+@keyframes move-saturn-surface {
+	from {
+		background-position: 0px 0px;
+	}
+
+	25% {
+		background-position: 0px 20px;
+	}
+
+	50% {
+		background-position: 0px 0px;
+	}
+
+	75% {
+		background-position: 0px -20px;
+	}
+
+	to {
+		background-position: 0px 0px;
+	}
+}
+
+@keyframes rotate-saturn-rings {
+	from {
+		transform: rotate(-15deg);
+	}
+
+	50% {
+		transform: rotate(15deg);
+	}
+
+	to {
+		transform: rotate(-15deg);
+	}
+}
+
+@keyframes resize-saturn-rings {
+	from {
+		transform: scaleY(1);
+	}
+
+	50% {
+		transform: scaleY(-1);
+	}
+
+	to {
+		transform: scaleY(1);
+	}
+}
+
 @keyframes saturn-moon-1-orbit {
 	from {
 		transform: matrix(1, 0, 0, 1, 900, -350);
