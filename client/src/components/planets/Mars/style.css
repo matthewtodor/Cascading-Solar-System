@@ -1,0 +1,166 @@
+/* mars */
+#mars {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	background: radial-gradient(circle at 15% 20%, hsl(25, 90%, 40%), hsl(25, 100%, 10%));
+	box-shadow: 20px 20px 200px 0 black;
+	width: 500px;
+	height: 500px;
+}
+
+.mars-border {
+	box-shadow: -12px -12px 24px -8px hsla(25, 100%, 75%, 0.75);
+}
+
+.mars-border-inset {
+	box-shadow: inset 4px 4px 24px hsla(25, 100%, 75%, 0.95);
+}
+
+/* surface */
+#mars-surface-color-1 {
+	animation: spin-surface 20s linear infinite both;
+}
+
+#mars-surface-color-2 {
+	animation: spin-surface 22s linear infinite both;
+	transform: translateY(5%);
+}
+
+#mars-surface-color-3 {
+	animation: spin-surface 18s linear infinite both;
+	transform: translateY(10%);
+}
+
+#mars-surface-color-4 {
+	animation: spin-surface 24s linear infinite both;
+	transform: translateY(15%);
+}
+
+/* moons */
+#mars-moon-1 {
+	position: absolute;
+	background: radial-gradient(circle at 15% 20%, hsl(0, 0%, 100%), hsl(0, 0%, 10%));
+	border-radius: 100%;
+	width: 100px;
+	height: 100px;
+	animation: mars-moon-1-resize 80s 20s ease-in-out infinite both;
+}
+
+/* moon surface */
+#mars-moon-1-orbit {
+	animation: mars-moon-1-orbit 80s ease-in-out infinite both;
+}
+
+#mars-moon-1-surface-color-1 {
+	animation: spin-surface 5s linear infinite both;
+}
+
+#mars-moon-1-surface-color-2 {
+	animation: spin-surface 6s linear infinite both;
+	transform: translateY(5%);
+}
+
+/* moon 2 */
+#mars-moon-2 {
+	position: absolute;
+	background: radial-gradient(circle at 15% 20%, hsl(25, 100%, 90%), hsl(25, 0%, 10%));
+	border-radius: 100%;
+	width: 100px;
+	height: 100px;
+	animation: mars-moon-2-resize 20s 5s ease-in-out infinite both;
+}
+
+/* moon surface */
+#mars-moon-2-orbit {
+	animation: mars-moon-2-orbit 20s ease-in-out infinite both;
+}
+
+#mars-moon-2-surface-color-1 {
+	animation: spin-surface 5s linear infinite both;
+}
+
+#mars-moon-2-surface-color-2 {
+	animation: spin-surface 6s linear infinite both;
+	transform: translateY(5%);
+}
+
+.mars-moon-border-inset {
+	box-shadow: inset 1px 1px 6px hsla(25, 100%, 90%, 0.95);
+}
+
+/* animations */
+@keyframes mars-moon-1-orbit {
+	from {
+		transform: matrix(1, 0, 0, 1, 700, -300);
+		z-index: 2;
+	}
+
+	50% {
+		transform: matrix(1, 0, 0, 1, -700, 300);
+		z-index: 2;
+	}
+
+	51% {
+		transform: matrix(1, 0, 0, 1, -700, 300);
+		z-index: -2;
+	}
+
+	to {
+		transform: matrix(1, 0, 0, 1, 700, -300);
+		z-index: -2;
+	}
+}
+
+@keyframes mars-moon-2-orbit {
+	from {
+		transform: matrix(1, 0, 0, 1, 500, -150);
+		z-index: 1;
+	}
+
+	50% {
+		transform: matrix(1, 0, 0, 1, -500, 150);
+		z-index: 1;
+	}
+
+	51% {
+		transform: matrix(1, 0, 0, 1, -500, 150);
+		z-index: -1;
+	}
+
+	to {
+		transform: matrix(1, 0, 0, 1, 500, -150);
+		z-index: -1;
+	}
+}
+
+/* resize in orbit for perspective */
+@keyframes mars-moon-1-resize {
+	0% {
+		transform: matrix(0.2, 0, 0, 0.2, 0, 0);
+	}
+
+	50% {
+		transform: matrix(0.02, 0, 0, 0.02, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.2, 0, 0, 0.2, 0, 0);
+	}
+}
+
+@keyframes mars-moon-2-resize {
+	0% {
+		transform: matrix(0.1, 0, 0, 0.1, 0, 0);
+	}
+
+	50% {
+		transform: matrix(0.04, 0, 0, 0.04, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.1, 0, 0, 0.1, 0, 0);
+	}
+}
