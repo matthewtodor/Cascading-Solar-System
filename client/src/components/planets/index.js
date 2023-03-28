@@ -9,7 +9,6 @@ import Jupiter from './Jupiter';
 import Saturn from './Saturn';
 import Uranus from './Uranus';
 import Neptune from './Neptune';
-import Pluto from './Pluto';
 
 import './style.css';
 
@@ -27,7 +26,6 @@ function Planets() {
 			{currentPlanet === 'Saturn' && <Saturn />}
 			{currentPlanet === 'Uranus' && <Uranus />}
 			{currentPlanet === 'Neptune' && <Neptune />}
-			{currentPlanet === 'Pluto' && <Pluto />}
 
 			<div className='temp-planet-select' onClick={(e) => setCurrentPlanet(e.target.innerText)}>
 				<h3>Sun</h3>

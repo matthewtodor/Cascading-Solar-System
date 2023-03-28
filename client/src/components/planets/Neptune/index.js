@@ -1,29 +1,55 @@
 import './style.css';
 
-function Earth() {
+function Neptune() {
 	return (
-		<div id='earth' className='planet'>
+		<div id='neptune' className='planet'>
 			<div className='surface'>
-				<div id='earth-surface-color-1' className='surface-color-green'></div>
-				<div id='earth-surface-color-2' className='surface-color-green'></div>
-				<div id='earth-surface-color-3' className='surface-color-white'></div>
-				<div id='earth-surface-color-4' className='surface-color-white'></div>
+				<div id='neptune-surface-color-1' className='surface-color-sky'></div>
+				<div id='neptune-surface-color-2' className='surface-color-blue'></div>
+				<div id='neptune-surface-color-3' className='surface-color-navy'></div>
+				<div id='neptune-surface-color-4' className='surface-color-blue'></div>
 			</div>
 
-			<div className='hazey-border earth-border'>
-				<div className='hazey-border-inset earth-border-inset'>
+			<div className='hazey-border neptune-border'>
+				<div className='hazey-border-inset neptune-border-inset'>
 					<div className='shadow'></div>
 				</div>
 			</div>
 
-			<div id='earth-moon-orbit'>
-				<div className='moon'>
+			<div id='neptune-moon-1-orbit'>
+				<div id='neptune-moon-1'>
 					<div className='surface'>
-						<div id='earth-moon-surface-color-1' className='surface-color-gray'></div>
-						<div id='earth-moon-surface-color-2' className='surface-color-gray'></div>
+						<div id='neptune-moon-1-surface-color-1' className='surface-color-gray'></div>
+						<div id='neptune-moon-1-surface-color-2' className='surface-color-gray'></div>
 					</div>
 
-					<div className='hazey-border-inset earth-moon-border-inset'>
+					<div className='hazey-border-inset neptune-moon-border-inset'>
+						<div className='shadow'></div>
+					</div>
+				</div>
+			</div>
+
+			<div id='neptune-moon-2-orbit'>
+				<div id='neptune-moon-2'>
+					<div className='surface'>
+						<div id='neptune-moon-2-surface-color-1' className='surface-color-gray'></div>
+						<div id='neptune-moon-2-surface-color-2' className='surface-color-gray'></div>
+					</div>
+
+					<div className='hazey-border-inset neptune-moon-border-inset'>
+						<div className='shadow'></div>
+					</div>
+				</div>
+			</div>
+
+			<div id='neptune-moon-3-orbit'>
+				<div id='neptune-moon-3'>
+					<div className='surface'>
+						<div id='neptune-moon-3-surface-color-1' className='surface-color-gray'></div>
+						<div id='neptune-moon-3-surface-color-2' className='surface-color-gray'></div>
+					</div>
+
+					<div className='hazey-border-inset neptune-moon-border-inset'>
 						<div className='shadow'></div>
 					</div>
 				</div>
@@ -32,4 +58,4 @@ function Earth() {
 	);
 }
 
-export default Earth;
+export default Neptune;

@@ -1,29 +1,81 @@
 import './style.css';
 
-function Earth() {
+function Uranus() {
 	return (
-		<div id='earth' className='planet'>
+		<div id='uranus' className='planet'>
 			<div className='surface'>
-				<div id='earth-surface-color-1' className='surface-color-green'></div>
-				<div id='earth-surface-color-2' className='surface-color-green'></div>
-				<div id='earth-surface-color-3' className='surface-color-white'></div>
-				<div id='earth-surface-color-4' className='surface-color-white'></div>
+				<div id='uranus-surface-color-1' className='surface-color-white'></div>
+				<div id='uranus-surface-color-2' className='surface-color-sky'></div>
+				<div id='uranus-surface-color-3' className='surface-color-white'></div>
+				<div id='uranus-surface-color-4' className='surface-color-sky'></div>
 			</div>
 
-			<div className='hazey-border earth-border'>
-				<div className='hazey-border-inset earth-border-inset'>
+			<div className='hazey-border uranus-border'>
+				<div className='hazey-border-inset uranus-border-inset'>
 					<div className='shadow'></div>
 				</div>
 			</div>
 
-			<div id='earth-moon-orbit'>
-				<div className='moon'>
+			<div id='uranus-moon-1-orbit'>
+				<div id='uranus-moon-1'>
 					<div className='surface'>
-						<div id='earth-moon-surface-color-1' className='surface-color-gray'></div>
-						<div id='earth-moon-surface-color-2' className='surface-color-gray'></div>
+						<div id='uranus-moon-1-surface-color-1' className='surface-color-gray'></div>
+						<div id='uranus-moon-1-surface-color-2' className='surface-color-gray'></div>
 					</div>
 
-					<div className='hazey-border-inset earth-moon-border-inset'>
+					<div className='hazey-border-inset uranus-moon-border-inset'>
+						<div className='shadow'></div>
+					</div>
+				</div>
+			</div>
+
+			<div id='uranus-moon-2-orbit'>
+				<div id='uranus-moon-2'>
+					<div className='surface'>
+						<div id='uranus-moon-2-surface-color-1' className='surface-color-gray'></div>
+						<div id='uranus-moon-2-surface-color-2' className='surface-color-gray'></div>
+					</div>
+
+					<div className='hazey-border-inset uranus-moon-border-inset'>
+						<div className='shadow'></div>
+					</div>
+				</div>
+			</div>
+
+			<div id='uranus-moon-3-orbit'>
+				<div id='uranus-moon-3'>
+					<div className='surface'>
+						<div id='uranus-moon-3-surface-color-1' className='surface-color-gray'></div>
+						<div id='uranus-moon-3-surface-color-2' className='surface-color-gray'></div>
+					</div>
+
+					<div className='hazey-border-inset uranus-moon-border-inset'>
+						<div className='shadow'></div>
+					</div>
+				</div>
+			</div>
+
+			<div id='uranus-moon-4-orbit'>
+				<div id='uranus-moon-4'>
+					<div className='surface'>
+						<div id='uranus-moon-4-surface-color-1' className='surface-color-gray'></div>
+						<div id='uranus-moon-4-surface-color-2' className='surface-color-gray'></div>
+					</div>
+
+					<div className='hazey-border-inset uranus-moon-border-inset'>
+						<div className='shadow'></div>
+					</div>
+				</div>
+			</div>
+
+			<div id='uranus-moon-5-orbit'>
+				<div id='uranus-moon-5'>
+					<div className='surface'>
+						<div id='uranus-moon-5-surface-color-1' className='surface-color-gray'></div>
+						<div id='uranus-moon-5-surface-color-2' className='surface-color-gray'></div>
+					</div>
+
+					<div className='hazey-border-inset uranus-moon-border-inset'>
 						<div className='shadow'></div>
 					</div>
 				</div>
@@ -32,4 +84,4 @@ function Earth() {
 	);
 }
 
-export default Earth;
+export default Uranus;

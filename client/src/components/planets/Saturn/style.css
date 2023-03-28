@@ -51,7 +51,7 @@
 	align-items: center;
 	transform: rotate(-25deg);
 	animation: resize-saturn-rings 60s 15s ease-in-out infinite both;
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 #saturn-rings-back-rotator,
@@ -68,17 +68,20 @@
 #saturn-rings-front-bottom,
 #saturn-rings-back-top,
 #saturn-rings-back-bottom {
+	background-position: 85% 0%, 0 0;
+	background-size: 35% 100%, 100% 100%;
+	background-repeat: no-repeat;
 	width: 1500px;
 	height: 75px;
 }
 
 #saturn-rings-back-top {
-	background: radial-gradient(ellipse at bottom, var(--saturn-ring-color));
+	background-image: radial-gradient(ellipse at 50% 100%, rgba(0, 0, 0, 0.75), transparent 50%), radial-gradient(ellipse at bottom, var(--saturn-ring-color));
 	border-radius: 100% 100% 0 0;
 }
 
 #saturn-rings-front-bottom {
-	background: radial-gradient(ellipse at top, var(--saturn-ring-color));
+	background-image: radial-gradient(ellipse at 50% 0%, rgba(0, 0, 0, 0.75), transparent 50%), radial-gradient(ellipse at top, var(--saturn-ring-color));
 	border-radius: 0 0 500px 500px;
 }
 
@@ -251,14 +254,22 @@
 @keyframes rotate-saturn-rings {
 	from {
 		transform: rotate(-15deg);
+		opacity: 1;
+	}
+
+	49% {
+		transform: rotate(15deg);
+		opacity: 1;
 	}
 
 	50% {
 		transform: rotate(15deg);
+		opacity: 0.8;
 	}
 
 	to {
 		transform: rotate(-15deg);
+		opacity: 0.8;
 	}
 }
 
@@ -278,110 +289,110 @@
 
 @keyframes saturn-moon-1-orbit {
 	from {
-		transform: matrix(1, 0, 0, 1, 900, -350);
+		transform: matrix(1, 0, 0, 1, 1000, -350);
 		z-index: 5;
 	}
 
 	50% {
-		transform: matrix(1, 0, 0, 1, -900, 350);
+		transform: matrix(1, 0, 0, 1, -1000, 350);
 		z-index: 5;
 	}
 
 	51% {
-		transform: matrix(1, 0, 0, 1, -900, 350);
+		transform: matrix(1, 0, 0, 1, -1000, 350);
 		z-index: -5;
 	}
 
 	to {
-		transform: matrix(1, 0, 0, 1, 900, -350);
+		transform: matrix(1, 0, 0, 1, 1000, -350);
 		z-index: -5;
 	}
 }
 
 @keyframes saturn-moon-2-orbit {
 	from {
-		transform: matrix(1, 0, 0, 1, 800, -300);
+		transform: matrix(1, 0, 0, 1, 950, -300);
 		z-index: 4;
 	}
 
 	50% {
-		transform: matrix(1, 0, 0, 1, -800, 300);
+		transform: matrix(1, 0, 0, 1, -950, 300);
 		z-index: 4;
 	}
 
 	51% {
-		transform: matrix(1, 0, 0, 1, -800, 300);
+		transform: matrix(1, 0, 0, 1, -950, 300);
 		z-index: -4;
 	}
 
 	to {
-		transform: matrix(1, 0, 0, 1, 800, -300);
+		transform: matrix(1, 0, 0, 1, 950, -300);
 		z-index: -4;
 	}
 }
 
 @keyframes saturn-moon-3-orbit {
 	from {
-		transform: matrix(1, 0, 0, 1, 700, -250);
+		transform: matrix(1, 0, 0, 1, 900, -250);
 		z-index: 3;
 	}
 
 	50% {
-		transform: matrix(1, 0, 0, 1, -700, 250);
+		transform: matrix(1, 0, 0, 1, -900, 250);
 		z-index: 3;
 	}
 
 	51% {
-		transform: matrix(1, 0, 0, 1, -700, 250);
+		transform: matrix(1, 0, 0, 1, -900, 250);
 		z-index: -3;
 	}
 
 	to {
-		transform: matrix(1, 0, 0, 1, 700, -250);
+		transform: matrix(1, 0, 0, 1, 900, -250);
 		z-index: -3;
 	}
 }
 
 @keyframes saturn-moon-4-orbit {
 	from {
-		transform: matrix(1, 0, 0, 1, 600, -200);
+		transform: matrix(1, 0, 0, 1, 850, -200);
 		z-index: 2;
 	}
 
 	50% {
-		transform: matrix(1, 0, 0, 1, -600, 200);
+		transform: matrix(1, 0, 0, 1, -850, 200);
 		z-index: 2;
 	}
 
 	51% {
-		transform: matrix(1, 0, 0, 1, -600, 200);
+		transform: matrix(1, 0, 0, 1, -850, 200);
 		z-index: -2;
 	}
 
 	to {
-		transform: matrix(1, 0, 0, 1, 600, -200);
+		transform: matrix(1, 0, 0, 1, 850, -200);
 		z-index: -2;
 	}
 }
 
 @keyframes saturn-moon-5-orbit {
 	from {
-		transform: matrix(1, 0, 0, 1, 500, -150);
+		transform: matrix(1, 0, 0, 1, 800, -150);
 		z-index: 1;
 	}
 
 	50% {
-		transform: matrix(1, 0, 0, 1, -500, 150);
+		transform: matrix(1, 0, 0, 1, -800, 150);
 		z-index: 1;
 	}
 
 	51% {
-		transform: matrix(1, 0, 0, 1, -500, 150);
+		transform: matrix(1, 0, 0, 1, -800, 150);
 		z-index: -1;
 	}
 
 	to {
-		transform: matrix(1, 0, 0, 1, 500, -150);
+		transform: matrix(1, 0, 0, 1, 800, -150);
 		z-index: -1;
 	}
 }
