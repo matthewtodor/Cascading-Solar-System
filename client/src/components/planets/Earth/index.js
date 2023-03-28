@@ -17,7 +17,7 @@ function Earth() {
 			</div>
 
 			<div id='earth-moon-orbit'>
-				<div className='moon'>
+				<div id='earth-moon'>
 					<div className='surface'>
 						<div id='earth-moon-surface-color-1' className='surface-color-gray'></div>
 						<div id='earth-moon-surface-color-2' className='surface-color-gray'></div>

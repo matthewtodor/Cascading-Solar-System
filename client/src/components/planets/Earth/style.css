@@ -40,14 +40,14 @@
 }
 
 /* moon */
-.moon {
+#earth-moon {
 	position: absolute;
 	background: radial-gradient(circle at 15% 20%, hsl(0, 0%, 95%), hsl(0, 0%, 10%));
 	box-shadow: 40px 40px 50px 0 rgba(0, 0, 0, 0.5);
 	border-radius: 100%;
 	width: 125px;
 	height: 125px;
-	animation: resize-in-orbit 60s 15s ease-in-out infinite both;
+	animation: resize-in-orbit-small 60s 15s ease-in-out infinite both;
 }
 
 .earth-moon-border-inset {
@@ -91,21 +91,7 @@
 	}
 }
 
-@keyframes resize-in-orbit {
-	0% {
-		transform: matrix(1.2, 0, 0, 1.2, 0, 0);
-	}
-
-	50% {
-		transform: matrix(0.8, 0, 0, 0.8, 0, 0);
-	}
-
-	100% {
-		transform: matrix(1.2, 0, 0, 1.2, 0, 0);
-	}
-}
-
-@keyframes spin-continents {
+/* @keyframes spin-continents {
 	from {
 		left: -90%;
 	}
@@ -125,23 +111,12 @@
 	}
 }
 
-@keyframes spin-surface {
-	0% {
-		background-position: 0% 0%, 75% 35%;
-	}
-
-	to {
-		background-position: 150% 0%, 225% 35%;
-	}
-}
-
-/* continents (archive) */
-/* :root {
+:root {
 	--continent-color: linear-gradient(white, 20%, hsl(120, 100%, 10%), 80%, hsl(50, 100%, 50%));
 	--continent-opacity: 1;
-} */
+}
 
-/* #west {
+#west {
 	position: absolute;
 	left: -20%;
 	background: var(--continent-color);
