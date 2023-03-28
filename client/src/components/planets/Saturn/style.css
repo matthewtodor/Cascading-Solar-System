@@ -21,6 +21,7 @@
 /* surface */
 #saturn-surface {
 	animation: rotate-saturn-surface 60s ease-in-out infinite both;
+	opacity: 1;
 }
 
 #saturn-surface-color-1 {
@@ -51,7 +52,7 @@
 	align-items: center;
 	transform: rotate(-25deg);
 	animation: resize-saturn-rings 60s 15s ease-in-out infinite both;
-	opacity: 0.8;
+	opacity: 0.75;
 }
 
 #saturn-rings-back-rotator,
@@ -275,15 +276,15 @@
 
 @keyframes resize-saturn-rings {
 	from {
-		transform: scaleY(1);
+		transform: scaleY(1.2);
 	}
 
 	50% {
-		transform: scaleY(-1);
+		transform: scaleY(-1.2);
 	}
 
 	to {
-		transform: scaleY(1);
+		transform: scaleY(1.2);
 	}
 }
 

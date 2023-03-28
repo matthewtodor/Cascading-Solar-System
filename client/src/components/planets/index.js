@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import Sun from './Sun';
 import Mercury from './Mercury';
@@ -37,7 +37,6 @@ function Planets() {
 				<h3>Saturn</h3>
 				<h3>Uranus</h3>
 				<h3>Neptune</h3>
-				<h3>Pluto</h3>
 			</div>
 		</div>
 	);
