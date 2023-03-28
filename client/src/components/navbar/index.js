@@ -6,12 +6,10 @@ function Navbar() {
 		<div className='nav'>
             <h1>Cascading Solar System</h1>
             <div className='dropdown'>
-                <span className=''>Planets</span>
-                <div className='dropdown-content'>
-                    <Link to={`earth`} className="nav-link">Earth</Link>
-                    <Link to={`mars`} className="nav-link">Mars</Link>
-                    <Link to={`saturn`} className="nav-link">Saturn</Link>
-                </div>
+                <span className='dropdown-head'>Planets</span>
+                <Link to={`planets/earth`} className="nav-link earth-link">Earth</Link>
+                <Link to={`mars`} className="nav-link mars-link">Mars</Link>
+                <Link to={`saturn`} className="nav-link saturn-link">Saturn</Link>
             </div>
 		</div>
 	);

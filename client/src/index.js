@@ -13,17 +13,17 @@ import ErrorPage from "./error-page";
 import Details from './routes/details';
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "planet/1",
-        element: <Details />,
-      },
-    ],
-  },
+    {
+        path: "/",
+        element: <Root />,
+        errorElement: <ErrorPage />,
+        children: [
+            {
+                path: "planets/:name",
+                element: <Details />,
+            },
+        ],
+    },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
