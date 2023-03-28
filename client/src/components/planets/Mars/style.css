@@ -5,7 +5,7 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 100%;
-	background: radial-gradient(circle at 15% 20%, hsl(25, 90%, 40%), hsl(25, 100%, 10%));
+	background: radial-gradient(circle at 15% 20%, hsl(25, 100%, 60%), hsl(25, 100%, 10%));
 	box-shadow: 20px 20px 200px 0 black;
 	width: 500px;
 	height: 500px;
@@ -26,16 +26,6 @@
 
 #mars-surface-color-2 {
 	animation: spin-surface 22s linear infinite both;
-	transform: translateY(5%);
-}
-
-#mars-surface-color-3 {
-	animation: spin-surface 18s linear infinite both;
-	transform: translateY(10%);
-}
-
-#mars-surface-color-4 {
-	animation: spin-surface 24s linear infinite both;
 	transform: translateY(15%);
 }
 
