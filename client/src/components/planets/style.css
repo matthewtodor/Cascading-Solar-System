@@ -52,3 +52,212 @@
 		transform: rotate(360deg);
 	}
 }
+
+/* navigation */
+.temp-planet-select {
+	position: absolute;
+	display: flex;
+	gap: 30px;
+	bottom: 60px;
+	color: white;
+}
+
+.temp-planet-select:hover {
+	cursor: pointer;
+}
+
+/* general planet rules */
+.hazey-border,
+.hazey-border-inset {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(10px);
+}
+
+.shadow {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	width: 101%;
+	height: 101%;
+	background: radial-gradient(circle at 15% 20%, hsla(0, 0%, 0%, 0), 40%, hsl(0, 0%, 0%) 80%);
+}
+
+/* surfaces */
+.surface {
+	position: absolute;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	width: 99%;
+	height: 99%;
+}
+
+.surface-color-gray {
+	position: absolute;
+	display: flex;
+	width: 150%;
+	height: 150%;
+	background-image: radial-gradient(hsla(0, 0%, 0%, 0.5) 1%, transparent 40%), radial-gradient(hsla(0, 0%, 0%, 0.75) 1%, transparent 20%);
+	background-size: 60% 40%;
+}
+
+.surface-color-green {
+	position: absolute;
+	display: flex;
+	width: 150%;
+	height: 150%;
+	background-image: radial-gradient(darkgreen 1%, transparent 60%), radial-gradient(darkgreen 1%, transparent 30%);
+	background-size: 60% 40%;
+}
+
+.surface-color-white {
+	position: absolute;
+	display: flex;
+	width: 150%;
+	height: 150%;
+	background-image: radial-gradient(rgba(255, 255, 255, 0.75) 1%, transparent 60%), radial-gradient(rgba(255, 255, 255, 0.75) 1%, transparent 30%);
+	background-size: 60% 40%;
+}
+
+.surface-color-red {
+	position: absolute;
+	display: flex;
+	width: 150%;
+	height: 150%;
+	background-image: radial-gradient(red 1%, transparent 60%), radial-gradient(red 1%, transparent 30%);
+	background-size: 60% 40%;
+}
+
+.surface-color-gold {
+	position: absolute;
+	display: flex;
+	width: 150%;
+	height: 150%;
+	background-image: radial-gradient(goldenrod 1%, transparent 60%), radial-gradient(gold 1%, transparent 30%);
+	background-size: 60% 40%;
+}
+
+.surface-color-yellow {
+	position: absolute;
+	display: flex;
+	width: 150%;
+	height: 150%;
+	background-image: radial-gradient(yellow 1%, transparent 60%), radial-gradient(yellow 1%, transparent 30%);
+	background-size: 60% 40%;
+}
+
+.surface-color-orange {
+	position: absolute;
+	display: flex;
+	width: 150%;
+	height: 150%;
+	background-image: radial-gradient(orange 1%, transparent 60%), radial-gradient(orange 1%, transparent 30%);
+	background-size: 60% 40%;
+}
+
+.surface-color-pink {
+	position: absolute;
+	display: flex;
+	width: 150%;
+	height: 150%;
+	background-image: radial-gradient(orange 1%, transparent 60%), radial-gradient(orange 1%, transparent 30%);
+	background-size: 60% 40%;
+}
+
+.surface-color-blue {
+	position: absolute;
+	display: flex;
+	width: 150%;
+	height: 150%;
+	background-image: radial-gradient(dodgerblue 1%, transparent 60%), radial-gradient(dodgerblue 1%, transparent 30%);
+	background-size: 60% 40%;
+}
+
+.surface-color-sky {
+	position: absolute;
+	display: flex;
+	width: 150%;
+	height: 150%;
+	background-image: radial-gradient(skyblue 1%, transparent 60%), radial-gradient(skyblue 1%, transparent 30%);
+	background-size: 60% 40%;
+}
+
+.surface-color-navy {
+	position: absolute;
+	display: flex;
+	width: 150%;
+	height: 150%;
+	background-image: radial-gradient(darkblue 1%, transparent 60%), radial-gradient(darkblue 1%, transparent 30%);
+	background-size: 60% 40%;
+}
+
+/* surface animations */
+@keyframes spin-surface {
+	0% {
+		background-position: 0% 0%, 75% 35%;
+	}
+
+	to {
+		background-position: 150% 0%, 225% 35%;
+	}
+}
+
+@keyframes spin-surface-reverse {
+	0% {
+		background-position: 150% 0%, 225% 35%;
+	}
+
+	to {
+		background-position: 0% 0%, 75% 35%;
+	}
+}
+
+@keyframes spin-surface-down {
+	0% {
+		background-position: 0% 0%, 75% 35%;
+	}
+
+	to {
+		background-position: 0% 133%, 75% 168%;
+	}
+}
+
+@keyframes spin-surface-up {
+	0% {
+		background-position: 0% 133%, 75% 168%;
+	}
+
+	to {
+		background-position: 0% 0%, 75% 35%;
+	}
+}
+
+@keyframes spin-surface-down-right {
+	0% {
+		background-position: 0% 0%, 75% 35%;
+	}
+
+	to {
+		background-position: 150% 133%, 225% 168%;
+	}
+}
+
+@keyframes spin-surface-up-right {
+	0% {
+		background-position: 0% 133%, 75% 168%;
+	}
+
+	to {
+		background-position: 150% 0%, 225% 35%;
+	}
+}

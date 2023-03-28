@@ -1,0 +1,38 @@
+/* sun */
+#sun {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	background: radial-gradient(circle at 15% 20%, hsl(25, 100%, 50%), hsl(25, 100%, 10%));
+	width: 500px;
+	height: 500px;
+}
+
+.sun-border {
+	box-shadow: 0px 0px 200px 12px hsla(45, 100%, 75%, 0.75);
+}
+
+.sun-border-inset {
+	box-shadow: inset 4px 4px 24px hsla(45, 100%, 75%, 0.95);
+}
+
+/* surface */
+#sun-surface-color-1 {
+	animation: spin-surface 20s linear infinite both;
+}
+
+#sun-surface-color-2 {
+	animation: spin-surface-angle 22s linear infinite both;
+}
+
+#sun-surface-color-3 {
+	animation: spin-surface-down 18s linear infinite both;
+	transform: translateX(10%);
+}
+
+#sun-surface-color-4 {
+	animation: spin-surface-reverse 24s linear infinite both;
+	transform: translateY(15%);
+}
