@@ -14,11 +14,12 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "planets/:name",
-				id: "planet",
 				loader: async ({ params }) => {
 					const res = await fetch(`/planets/${params.name}`);
 					if (res.status === 404) {
 						throw new Response("Not Found", { status: 404 });
+					} else if (res.status === 500) {
+						throw new Response("Server Error", { status: 500 });
 					}
 					console.log(res.body);
 					return res.body;
