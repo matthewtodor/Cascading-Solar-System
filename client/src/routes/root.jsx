@@ -1,5 +1,5 @@
 import './root.css';
-import Planets from '../components/planets';
+import Planet from '../components/Planet';
 import Navbar from '../components/navbar';
 
 import { Outlet } from "react-router-dom";
@@ -8,7 +8,7 @@ export default function Root() {
     return (
         <>
             <div className='App'>
-                <Planets />
+                <Planet name='Sun' scale='100'/>
                 <div className='overlay'>
                     <Navbar />
                     <Outlet /> 

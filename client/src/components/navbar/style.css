@@ -39,12 +39,27 @@
 .dropdown:hover .nav-link {
     opacity: 1;
 }
-.dropdown:hover .earth-link {
+.dropdown:hover .venus-link {
     top: 55px;
 }
-.dropdown:hover .mars-link {
+.dropdown:hover .mercury-link {
     top: 90px;
 }
-.dropdown:hover .saturn-link {
+.dropdown:hover .earth-link {
     top: 125px;
+}
+.dropdown:hover .mars-link {
+    top: 150px;
+}
+.dropdown:hover .jupitor-link {
+    top: 185px;
+}
+.dropdown:hover .saturn-link {
+    top: 220px;
+}
+.dropdown:hover .uranus-link {
+    top: 255px;
+}
+.dropdown:hover .neptune-link {
+    top: 290px;
 }
