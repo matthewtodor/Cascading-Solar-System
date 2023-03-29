@@ -172,5 +172,575 @@
 		"name_history": "Originally called S/2003 J8, Hegemone was named for one of the Graces (according to the Athenians), who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter. The name means 'female leader.'",
 		"size": 0.93,
 		"planet_id": 5
+	},
+	{
+		"name": "Helike",
+		"name_history": "Originally called S/2003 J6, Helike was named for one of the Muses, who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter. Helike is also the name of a nymph in Greek mythology who helped to nurse Zeus and was transferred to the stars as a reward. There, she became the constellation, the Great Bear.",
+		"size": 1.2,
+		"planet_id": 5
+	},
+	{
+		"name": "Hermippe",
+		"name_history": "Originally called S/2001 J3, Hermippe was named for one of the many lovers of Zeus, the Greek equivalent of the Roman god Jupiter. She bore him a son named Orchomenos.",
+		"size": 1.2,
+		"planet_id": 5
+	},
+	{
+		"name": "Herse",
+		"name_history": "Originally called S/2003 J17, Herse was named for a daughter of Selene (goddess of the moon) and Zeus, the Greek equivalent of the Roman god Jupiter.",
+		"size": 0.62,
+		"planet_id": 5
+	},
+	{
+		"name": "Himalia",
+		"name_history": "Himalia was named for a nymph of the island of Rhodes in Greek mythology who was one of the lovers of Zeus (the Greek equivalent of the Roman god Jupiter). She bore him three sons: Spartaeus, Cronios and Cytus.",
+		"size": 52.8166,
+		"planet_id": 5
+	},
+	{
+		"name": "Io",
+		"name_history": "In mythology, Io is a mortal woman transformed into a cow during a marital dispute between the Greek god Zeus—Jupiter in Roman mythology—and his wife, Juno.",
+		"size": 1131.88976,
+		"planet_id": 5
+	},
+	{
+		"name": "Iocaste",
+		"name_history": "Originally called S/2000 J3, Iocaste was named for the mother of Agamedes by the Roman god, Jupiter.",
+		"size": 1.6,
+		"planet_id": 5
+	},
+	{
+		"name": "Jupiter LII",
+		"name_history": "This moon is still awaiting an official name. Since its discovery is now confirmed, it is temporarily being called Jupiter LII, which means it is the 52nd confirmed moon discovered at Jupiter.",
+		"size": 0.621371,
+		"planet_id": 5
+	},
+	{
+		"name": "Jupiter LI",
+		"name_history": "This moon is still awaiting an official name. Since its discovery is now confirmed, it is temporarily being called Jupiter LI, which means it is the 51st confirmed moon discovered at Jupiter.",
+		"size": 0.621371,
+		"planet_id": 5
+	},
+	{
+		"name": "Kale",
+		"name_history": "Originally called S/2001 J8, Kale was named for one of the Graces, who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter.",
+		"size": 0.6,
+		"planet_id": 5
+	},
+	{
+		"name": "Kallichore",
+		"name_history": "Originally called S/2003 J11, Kallichore was named for one of the Muses, who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter. Her name means 'beautiful in dance.'",
+		"size": 0.6,
+		"planet_id": 5
+	},
+	{
+		"name": "Kalyke",
+		"name_history": "Originally called S/2000 J2, Kalyke was named for the mother of Endymion by Zeus (the Greek equivalent of the Roman god Jupiter) according to some accounts in Greek mythology. Some sources say that Zeus offered Endymion anything he wished and he chose eternal sleep in which he would retain his youthful beauty forever. By other accounts, Zeus condemned him to everlasting sleep as punishment for an attempted sexual relationship with Zeus' wife, Hera. Yet another version of the myth has it that he was put to sleep by Selene, goddess of the moon, who loved him, visited him every night and bore him 50 daughters.",
+		"size": 1.6,
+		"planet_id": 5
+	},
+	{
+		"name": "Kore",
+		"name_history": "Originally called S/2003 J14, Kore was named for a character in Greek mythology who was the daughter of Zeus (the Greek equivalent of the Roman god Jupiter) and Demeter, the goddess of agriculture. She was abducted by Hades, king of the underworld, who made her his queen. Zeus ordered her release, but she could not escape the underworld completely because she had eaten a single pomegranate seed there. So she spent two-thirds of each year with her mother and the remaining third in the underworld. During her absence,Kore's mother Demeter would lose interest in the fruitfulness of the Earth, which explains why the Greek fields look barren in winter. The mythological Kore is also known as Persephone.",
+		"size": 0.6,
+		"planet_id": 5
+	},
+	{
+		"name": "Leda",
+		"name_history": "Leda was named for a woman in Greek mythology. According to one legend, she was seduced by Zeus (the Greek equivalent of the Roman god, Jupiter), who had taken the form of a swan. This pairing was depicted by a number of artists, including Leonardo da Vinci and Michelangelo. In this story, she bore Zeus two children: Pollux and Helen. The moon's discoverer, Charles T. Kowal, opposed the naming of the satellite, siding with a number of astronomers of the time who preferred the old numbering system. He suggested 'Leda' if names were nevertheless to be assigned.",
+		"size": 6.2,
+		"planet_id": 5
+	},
+	{
+		"name": "Lysithea",
+		"name_history": "Lysithea was named for one of the lovers of the Roman god Jupiter, or the Greek equivalent, Zeus. In one account, Zeus promised to do whatever Lysithea asked after he impregnated her, and Hera (Zeus' wife and sister) tricked her into asking for Zeus to come to her in the same way he came to Hera when he wooed her. So Zeus rode into Lysithea's bridal chamber in a chariot with lightning and thunder and launched a thunderbolt, setting the room on fire. Lysithea died of fright, but Zeus snatched her six-month fetus from the fire and sewed it into his own thigh so he could carry the child to term. At the appropriate time, Zeus undid the stitches and out popped Dionysus.",
+		"size": 11.1,
+		"planet_id": 5
+	},
+	{
+		"name": "Megaclite",
+		"name_history": "Originally called S/2000 J8, Megaclite was named for one of the adulterous conquests of the Roman god Jupiter.",
+		"size": 1.6,
+		"planet_id": 5
+	},
+	{
+		"name": "Metis",
+		"name_history": "Originally designated S/1979 J 1, Metis is named for the first wife of Zeus who was swallowed by Zeus while pregnant with their first child. Zeus ate his wife because he feared the power of Metis' offspring. Their baby, Athena, leapt from Zeus' forehead fully grown as a result of this meal.",
+		"size": 13.3,
+		"planet_id": 5
+	},
+	{
+		"name": "Mneme",
+		"name_history": "Originally called S/2003 J21, Mneme was named for one of the Muses, who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter. Mneme means memory.",
+		"size": 0.6,
+		"planet_id": 5
+	},
+	{
+		"name": "Orthosie",
+		"name_history": "Originally called S/2001 J9, Orthosie was named for one of the Horae, who were daughters of Jupiter and Themis, a Titaness, in Roman mythology. Orthosie means luck.",
+		"size": 0.6,
+		"planet_id": 5
+	},
+	{
+		"name": "Pandia",
+		"name_history": "Pandia is the daughter of Zeus and the Moon goddess Selene. Pandia is the goddess of the full moon and the sister of Ersa. The size of Pandia is unknown",
+		"size": null,
+		"planet_id": 5
+	},
+	{
+		"name": "Pasiphae",
+		"name_history": "Pasiphae was named for the wife of Minos, who was king of Crete. According to one account, she was the mother of Ammon (king of the Egyptian gods) by Zeus, the Greek equivalent of the Roman god Jupiter. But she is probably best known for the legend in which Poseidon makes her fall in love with a bull (which was either sent by Zeus or was Zeus in disguise). She crawls inside a cowhide-covered wooden cow, has intercourse with the bull and subsequently gives birth to the Minotaur, a human-flesh-eating monster with the body of a man and the head of a bull, who winds up imprisoned in a labyrinth.",
+		"size": 18.6,
+		"planet_id": 5
+	},
+	{
+		"name": "Pasithee",
+		"name_history": "Originally called S/2001 J6, Pasithee was named for one of the Graces, who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter. Her name (also spelled 'Pasithea') means 'kind to everybody.' According to Homer's 'Iliad', Pasithee was given in marriage to Hypnos (god of sleep) by Zeus' wife, Hera. Hypnos received Pasithee's hand in marriage as a reward for putting Zeus to sleep so that Hera could help the Greeks in their war against the Trojans.",
+		"size": 0.621371,
+		"planet_id": 5
+	},
+	{
+		"name": "Philophrosyne",
+		"name_history": "In mythology, Philophrosyne is the spirit of welcome and kindness and is the granddaughter of Zeus and sister of Eupheme.",
+		"size": 0.621371,
+		"planet_id": 5
+	},
+	{
+		"name": "Praxidike",
+		"name_history": "Originally called S/2000 J7, Praxidike was named for the Greek goddess of justice or punishment. She was the mother of Klesios, Harmonia and Arete by Zeus, the Greek equivalent of the Roman god Jupiter.",
+		"size": 2,
+		"planet_id": 5
+	},
+	{
+		"name": "Sinope",
+		"name_history": "Sinope was named for a nymph who outsmarted a smitten Zeus (the Greek equivalent of the Roman god Jupiter). Hoping to win her favor, he offered her anything she wanted and she replied that what she wanted was to remain a virgin. Sinope outsmarted Apollo in the same way.",
+		"size": 11.8,
+		"planet_id": 5
+	},
+	{
+		"name": "Sponde",
+		"name_history": "Originally called S/2001 J5, Sponde was named for one of the Horae, who were daughters of Themis and Zeus, the Greek equivalent of the Roman god, Jupiter.",
+		"size": 0.621371,
+		"planet_id": 5
+	},
+	{
+		"name": "Taygete",
+		"name_history": "Originally called S/2000 J9, Taygete was named for one of the Pleiades, who were the seven daughters of Atlas. Taygete was impregnated by Zeus, the Greek equivalent of the Roman god Jupiter, and bore him a son called Lakedaemon. According to one account, that smooth-talking Zeus once attempted to mollify his wife, Hera, by telling her that he had never been so charmed as by Hera — not even when he had Taygete.",
+		"size": 1.5,
+		"planet_id": 5
+	},
+	{
+		"name": "Thebe",
+		"name_history": "The satellite originally called S/1979 J2 was ultimately named 'Thebe', a name associated with Jupiter — or his Greek equivalent, Zeus — in a variety of ways in different myths. In one, Thebe was a nymph who was a love of Zeus. In another, she was an Egyptian king's daughter and a love of Jupiter.",
+		"size": 30.4472,
+		"planet_id": 5
+	},
+	{
+		"name": "Thelxinoe",
+		"name_history": "Originally called S/2003 J22, Thelxinoe was named for one of the Muses, who were daughters of Zeus, the Greek equivalent of the Roman god Jupiter. Thelxinoe means charm.",
+		"size": 0.62,
+		"planet_id": 5
+	},
+	{
+		"name": "Themisto",
+		"name_history": "Themisto was originally called S/1975 J1 and then S/2000 J1 when it was rediscovered. Its current name comes from the Greek mythological character who was the mother of Ister by Zeus, the Greek equivalent of the Roman god Jupiter. She was changed into a bear by a jealous Hera, who was Zeus' wife and sister.",
+		"size": 2.5,
+		"planet_id": 5
+	},
+	{
+		"name": "Thyone",
+		"name_history": "Originally called S/2001 J2, Thyone was named for the mother (originally named Semele) of Dionysos by Zeus, the Greek equivalent of the Roman god Jupiter. Her story is similar to that of Lysithea, namesake of another Jovian moon: Zeus promised to do whatever she asked after he impregnated her, and Hera (Zeus' wife and sister) tricked her into asking Zeus to come to her in the same way he appeared before Hera. So Zeus presented himself accompanied by lightning and thunder, which literally scared Thyone to death. Zeus sewed her fetus into his own thigh, so he could carry the child to term. At the appropriate time, Zeus undid the stitches and out popped Dionysus.",
+		"size": 1,
+		"planet_id": 5
+	},
+	{
+		"name": "Thyone",
+		"name_history": "Originally called S/2001 J2, Thyone was named for the mother (originally named Semele) of Dionysos by Zeus, the Greek equivalent of the Roman god Jupiter. Her story is similar to that of Lysithea, namesake of another Jovian moon: Zeus promised to do whatever she asked after he impregnated her, and Hera (Zeus' wife and sister) tricked her into asking Zeus to come to her in the same way he appeared before Hera. So Zeus presented himself accompanied by lightning and thunder, which literally scared Thyone to death. Zeus sewed her fetus into his own thigh, so he could carry the child to term. At the appropriate time, Zeus undid the stitches and out popped Dionysus.",
+		"size": 1,
+		"planet_id": 5
+	},
+	{
+		"name": "S/2016 J 2 (Valetudo)",
+		"name_history": "The name Valetudo has been proposed, after the Roman god Jupiter’s great-granddaughter, the goddess of health and hygiene. We do not have a confirmed size of the moon.",
+		"size": null,
+		"planet_id": 5
+	},
+	{
+		"name": "Aegaeon",
+		"name_history": "Originally designated S/2008 S1, Aegaeon is named for a fierce giant with many heads and arms who helped conquer the Titans.",
+		"size": 0.2,
+		"planet_id": 6
+	},
+	{
+		"name": "Aegir",
+		"name_history": "Originally called S/2004 S10, Aegir was named for a giant in Norse mythology who personified the ocean.",
+		"size": 1.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Albiorix",
+		"name_history": "Originally called S/2000 S11, Albiorix was named for a Gallic deity who may have been equivalent to the Roman god Mars.",
+		"size": 9.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Alvaldi",
+		"name_history": "This moon was named after Alvaldi, a jötunn from Norse mythology. He was very rich in gold, and when he died his sons divided his inheritance by taking a mouthful each",
+		"size": 1.55343,
+		"planet_id": 6
+	},
+	{
+		"name": "Angrboda",
+		"name_history": "This moon is named after Angrboða, a jötunn in Norse mythology. She is the consort of Loki and the mother of the wolf Fenrir, the Midgard serpent Jörmungandr, and the ruler of the dead Hel.",
+		"size": 0.932057,
+		"planet_id": 6
+	},
+	{
+		"name": "Anthe",
+		"name_history": "John Herschel suggested that the moons of Saturn be associated with the mythical brothers and sisters of Kronus. (Kronus is the equivalent of the Roman god Saturn in Greek mythology.) The International Astronomical Union now controls the official naming of astronomical bodies. The name Anthe comes from the name in Greek mythology of one of seven Alkyonides—daughters of the god (or Titan) Alkyoneus. Alkyoneus sprang from Gaea and the blood of Uranus. This blood was spilled when Uranus' son—and Alkyoneus' brother—Kronus castrated his father. Herakles (Hercules) killed Alkyoneus in the war between the gods of Mount Olympus and the Titans. Overcome by grief, the daughters threw themselves into the sea to die, but the goddess Amphitrite took pity on them and transformed them into halcyons or kingfishers.",
+		"size": 0.6,
+		"planet_id": 6
+	},
+	{
+		"name": "Atlas",
+		"name_history": "Moons of Saturn were originally named for Greco-Roman Titans and descendants of the Titans. But as many new moons were discovered, scientists began selecting names from more mythologies including Gallic, Inuit, and Norse stories. Originally designated S/1980 S28, this moon is named after Atlas, a Titan, and a son of Iapetus. Atlas was ordered by Zeus to uphold the vault of the sky after the defeat of the Titans. Atlas was so strong that he supported the weight of the Universe on his shoulders.",
+		"size": 9.4,
+		"planet_id": 6
+	},
+	{
+		"name": "Bebhionn",
+		"name_history": "Originally called S/2004 S11, Bebhionn was named for a beautiful giantess in Celtic mythology. In one story, she escapes from Maidens' Land—which was populated entirely by women except for the king and his three sons—only to be slain by her giant husband, who was the son of the king of the Isle of Men.​",
+		"size": 1.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Beli",
+		"name_history": "The moon is named after Beli, a jötunn from Norse mythology. He is killed by Freyr with the antler of a hart (stag). According to John Lindow, the myth of Beli is partially lost. Some scholars suggest that he may be the brother of Freyr's wife Gerðr, although this is uncertain.​",
+		"size": 1.24274,
+		"planet_id": 6
+	},
+	{
+		"name": "Bergelmir",
+		"name_history": "Originally called S/2004 S15, Bergelmir was named for the frost giant who, with his wife, escaped drowning in the flood of Ymir's blood that ensued when Ymir was slain by Odin and his brothers in the Norse tale of creation.​​",
+		"size": 1.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Bestla",
+		"name_history": "Originally called S/2004 S18, Bestla is named for a giantess and the mother of Odin, who is the supreme god in Norse mythology.",
+		"size": 2.2,
+		"planet_id": 6
+	},
+	{
+		"name": "Calypso",
+		"name_history": "Originally called S/1980 S25, Calypso is named for a nymph whose name means 'I hide.' A daughter of the Titans, Oceanus and Tethys, she lived alone on her island until she fell in love with the explorer Odysseus (called Ulysses by the Romans; his name means 'one who suffers'). Calypso helped Odysseus find his way home after his long voyage and dangerous adventures.",
+		"size": 6.6,
+		"planet_id": 6
+	},
+	{
+		"name": "Daphnis",
+		"name_history": "The moon was named in 2006 after Daphnis, a shepherd, pipes player, and pastoral poet in Greek mythology; he was descendant of the Titans, after whom the largest moons of Saturn are named. Both Daphnis and Pan, the only other known shepherd moon to orbit within Saturn's main rings, are named for mythological figures associated with shepherds.",
+		"size": 2.48548,
+		"planet_id": 6
+	},
+	{
+		"name": "Dione",
+		"name_history": "The name Dione comes from the Greek goddess (or Titan) Dione, who by some accounts was the daughter of Tethys (who is Kronus' sister) and Oceanus, and whom Homer described as the mother of Aphrodite.​",
+		"size": 349,
+		"planet_id": 6
+	},
+	{
+		"name": "Eggther",
+		"name_history": "On 24 August 2022, it was officially named after Eggþér, a jötunn from Norse mythology. He is the herder of the female jötunn (probably Angrboða) who lives in Járnviðr (Ironwood) and raises monstrous wolves. In the poem Völuspá, Eggþér is described as sitting on a mound and joyfully striking his harp while the red rooster Fjalarr begins to crow to herald the onset of Ragnarök.",
+		"size": 1.86411,
+		"planet_id": 6
+	},
+	{
+		"name": "Enceladus",
+		"name_history": "Enceladus is named after the giant Enceladus of Greek mythology. William Herschel's son John Herschel suggested the name in his 1847 publication Results of Astronomical Observation made at the Cape of Good Hope, in which he suggested names for the first seven Saturnian moons discovered. He chose these names in particular because Saturn, known in Greek mythology as Cronus, was the leader of the Titans.",
+		"size": 156.2,
+		"planet_id": 6
+	},
+	{
+		"name": "Epimetheus",
+		"name_history": "The name Epimetheus comes from the Greek god (or titan) Epimetheus (or hindsight) who was the brother of Prometheus (foresight). Together, they represented humanity. The craters on Epimetheus include Hilaeira (who was a priestess of Artemis and Athena) and Pollux (who was a warrior in The Illiad and who carried off Hilaeira).",
+		"size": 36,
+		"planet_id": 6
+	},
+	{
+		"name": "Erriapus",
+		"name_history": "Erriapus, originally designated S/2000 10, is named for a Gallic giant. It was named Erriapo in August 2003, but the name was changed from Erriapo to the nominative Erriapus per International Astronomical Union conventions in late 2007.​",
+		"size": 3.1,
+		"planet_id": 6
+	},
+	{
+		"name": "Farbauti",
+		"name_history": "Originally called S/2004 S9, Farbauti was named for a giant in Norse mythology who was the father of Loki, who was known as the disgrace of the gods.​",
+		"size": 1.6,
+		"planet_id": 6
+	},
+	{
+		"name": "Fenrir",
+		"name_history": "Originally called S/2004 S16, Fenrir was named for a monstrous wolf in Norse mythology who was the offspring of Loki, the disgrace of the gods, and Angrboda, a disagreeable giantess. The gods managed to bind Fenrir using a dwarf-manufactured fetter made of the sound of a cat's footfall, a woman's beard and other hard-to-find components. According to the mythology, Fenrir is destined to break free at doomsday (the time known as Ragnarok) and kill Odin, the supreme Norse god.",
+		"size": 1.2,
+		"planet_id": 6
+	},
+	{
+		"name": "Fornjot",
+		"name_history": "Originally called S/2004 S8, Fornjot was named for the giant (also called Forniot) in Norse mythology who was father to the giants and commanded the wind, the sea and fire.",
+		"size": 1.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Geirrod",
+		"name_history": "The moon is named after Geirröðr, a jötunn from Norse mythology. He is an enemy of Thor and is killed by him.",
+		"size": 1.24274,
+		"planet_id": 6
+	},
+	{
+		"name": "Gerd",
+		"name_history": "The moon is named after Gerðr, a jötunn from Norse mythology. She is the wife of Freyr and the personification of fertile soil.",
+		"size": 1.24274,
+		"planet_id": 6
+	},
+	{
+		"name": "Greip",
+		"name_history": "Originally called S/2006 S4, Greip was named for one of the nine giantesses who gave birth to Heimdall, the guard of the rainbow bridge that links our world to Asgard, home of the Norse gods.",
+		"size": 1.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Gridr",
+		"name_history": "This moon is named after Gríðr, a jötunn in Norse mythology. She is the mother of Víðarr the silent and the consort of Odin. She warned Thor about the treachery of Geirröðr and equipped him with her belt of strength, her iron glove, and her staff Gríðarvöl (Gríðr's-staff).",
+		"size": 1.24274,
+		"planet_id": 6
+	},
+	{
+		"name": "Gunnlod",
+		"name_history": "This moon is named after Gunnlǫð, a jötunn from Norse mythology.[5] She is the daughter of Suttungr and guarded the mead of poetry for him.[6] But Odin in the form of a snake gained access to the chamber in Hnitbjorg where the mead was kept, seduced Gunnlǫð, and slept with her for three nights. In return Gunnlǫð allowed Odin three drinks of the mead, and he then immediately flew out of the cavern in the form of an eagle.",
+		"size": 1.24274,
+		"planet_id": 6
+	},
+	{
+		"name": "Hati",
+		"name_history": "Originally called S/2004 S14, Hati was named for a giant wolf in Norse mythology who pursues the Moon (that is, the Moon chariot and the boy who drives it—see Mundilfari for an explanation) across the sky. According to the mythology, Hati is destined to catch and devour them at the doomsday time known as Ragnarok.",
+		"size": 1.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Helene",
+		"name_history": "Originally designated S/1980 S6, Helene is named after the granddaughter of Kronus and is the sister of Polydeuces. Helene was born out of an egg since Zeus took the shape of a swan when he raped her mother Leda. The account of this engendering is retold in the poem 'Leda and the Swan' by William Butler Yeats. This same figure in Greek mythology was the cause of the Trojan War.",
+		"size": 10.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Hyperion",
+		"name_history": "The name Hyperion comes from the Greek god (or Titan) Hyperion (he who watches over). Hyperion, the son of Uranus and Gaia, is a brother of Kronus and the husband of Thea. The children of Hyperion and Thea include Helios (the sun), Eos (the dawn) and Selene (the Moon).",
+		"size": 83.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Hyrrokkin",
+		"name_history": "Originally called S/2004 S19, Hyrrokkin was named for a giantess in Norse mythology who launched Baldur's enormous funeral ship with one mighty push when the gods, themselves, were unable to budge it.",
+		"size": 1.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Iapetus",
+		"name_history": "The name Iapetus comes from the Greek god (or Titan) Iapetus, who is a son of Uranus and Gaia, a brother to Kronus and the father of Atlas and Prometheus. As the father of Prometheus, the ancient Greeks regarded Iapetus as the father of the human race.Cassini referred to Iapetus as one of the four Sidera Lodoicea (Stars of Louis) after King Louis XIV (the other three were Tethys, Dione and Rhea). Other astronomers called Iapetus by its number in the order of moons discovered at the time. Iapetus started as Saturn V, and it became Saturn VIII after additional moons were discovered. Geological features on Iapetus generally get their names from the French epic poem 'The Song of Roland.'",
+		"size": 457,
+		"planet_id": 6
+	},
+	{
+		"name": "Ijiraq",
+		"name_history": "Originally called S/2000 S6, Ijiraq was named for a fictional character in the children's book, 'Hide and Sneak' by Michael Arvaarluk Kusugak. The moon's co-discoverer, John J. Kavelaars, was reading the book to his children when he was struck by the realization that the character, who helped children hide, would provide a fitting namesake for one of Saturn's elusive moons.",
+		"size": 3.7,
+		"planet_id": 6
+	},
+	{
+		"name": "Janus",
+		"name_history": "The name Janus comes from the Roman god of gates, doors, doorways, beginnings, and endings. He is usually represented as having one face to look forward and another to look back. The Romans may have partially adopted Janus from an Etruscan god, from the Greek god Hermes, or from both. His most apparent remnants in modern English are the month of January and the caretaker of doors and halls, the janitor.",
+		"size": 55.6,
+		"planet_id": 6
+	},
+	{
+		"name": "Jarnsaxa",
+		"name_history": "Originally called S/2006 S6, Jarnsaxa was named for one of the nine giantesses in Norse mythology who gave birth to Heimdall, the guard of the rainbow bridge that links our world to Asgard, home of the gods.",
+		"size": 1.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Kari",
+		"name_history": "Originally called S/2006 S2, Kari was named for a wind giant in Norse mythology.",
+		"size": 1.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Kiviuq",
+		"name_history": "Originally called S/2000 S5, Kiviuq was named for the wandering hero of epic stories told by the Inuit people. The name was suggested by Michael Arvaarluk Kusugak, who wrote the children's books from which two other names were taken for Saturnian moons: Ijiraq and Paaliaq. He also suggested the legendary Inuit name Siarnaq, which was used for yet another of Saturn's moons.",
+		"size": 5,
+		"planet_id": 6
+	},
+	{
+		"name": "Loge",
+		"name_history": "Originally called S/2006 S5, Loge was named for Logi, a god who was the personification of fire in Norse mythology. He beat the trickster god, Loki, in an eating contest when he consumed not only the same amount of meat as Loki, but also the bone and the trough which held the food.",
+		"size": 1.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Methone",
+		"name_history": "The name Methone comes from the name in Greek mythology of one of seven Alkyonides – daughters of the god (or Titan) Alkyoneus. Alkyoneus sprang from Gaea and the blood of Uranus. This blood was spilled when Uranus' son – and Alkyoneus' brother – Kronus castrated his father. Herakles (Hercules) killed Alkyoneus in the war between the gods of Mount Olympus and the Titans. Overcome by grief, the daughters threw themselves into the sea to die, but the goddess Amphitrite took pity on them and transformed them into halcyons or kingfishers.",
+		"size": 1,
+		"planet_id": 6
+	},
+	{
+		"name": "Mimas",
+		"name_history": "The mythological Mimas was a giant who was killed by Mars in the war between the Titans and the gods of Olympus. Even after his death, Mimas' legs – which were serpents – hissed vengeance and sought to attack his killer.",
+		"size": 123,
+		"planet_id": 6
+	},
+	{
+		"name": "Mundilfari",
+		"name_history": "Originally called S/2000 S9, Mundilfari was named for the father of two beautiful children in Norse mythology, a son whom he named 'Moon' and a daughter whom he named 'Sun'. The gods were angered at what they considered his arrogance, so they placed the children in the sky and made the daughter drive the chariot of the sun and the son drive the chariot of the Moon. Each is chased by a wolf who is destined to catch and devour them at the doomsday time known as Ragnarok.",
+		"size": 2.2,
+		"planet_id": 6
+	},
+	{
+		"name": "Narvi",
+		"name_history": "Originally called S/2003 S1, Narvi was named for a son of Loki in Norse mythology.",
+		"size": 2.2,
+		"planet_id": 6
+	},
+	{
+		"name": "Paaliaq",
+		"name_history": "Originally called S/2000 S2, Paaliaq was named for a fictional Inuit shaman in the book, 'The Curse of the Shaman', by Michael Arvaarluk Kusugak and Vladyana Langer Krykorka. Kusugak is responsible for the names of four of the five known moons in the Inuit group. He wrote the book from which the name Ijiraq was taken, and he suggested the names Kiviuq and Siarnaq, which came from Inuit legend and mythology.",
+		"size": 6.8,
+		"planet_id": 6
+	},
+	{
+		"name": "Pallene",
+		"name_history": "The name Pallene comes from the name in Greek mythology of one of seven Alkyonides, daughters of the god (or Titan) Alkyoneus who was born of Gaia and the blood of Uranus. Herakles (Hercules) killed their father in the war between the gods of Mount Olympus and the titans. Overcome by grief, the seven daughters threw themselves into the sea to die, but the goddess Amphitrite took pity on them and transformed them into halcyons or kingfishers.",
+		"size": 1.6,
+		"planet_id": 6
+	},
+	{
+		"name": "Pan",
+		"name_history": "Pan, a satyr (a creature resembling a man with the hind legs and hooves of a goat), is a Greek god of nature and the forest.",
+		"size": 8.8,
+		"planet_id": 6
+	},
+	{
+		"name": "Pandora",
+		"name_history": "Originally called S/1980 S26, Pandora was renamed in 1985. In mythology, Pandora (pan-DOR-uh) was a work of art who was transformed into a human by the gods. Her curiosity was said to have loosed all manner of ills upon the world when she let evil creatures out of a locked box; however, she is also responsible for hope entering the world ('hope' had been the last 'creature' in the box).",
+		"size": 25.3,
+		"planet_id": 6
+	},
+	{
+		"name": "Phoebe",
+		"name_history": "Phoebe is another name for the goddess that the Greeks called Artemis and the Romans called Diana. She was the youthful goddess of Earth's Moon, forests, wild animals, and hunting. Sworn to chastity and independence, she never married and was closely identified with her brother Apollo.",
+		"size": 66.2,
+		"planet_id": 6
+	},
+	{
+		"name": "Polydeuces",
+		"name_history": "Originally designated S/2004 S5, Polydeuces (another name for Pollux) is named for the son of Leda and Zeus.",
+		"size": 0.8,
+		"planet_id": 6
+	},
+	{
+		"name": "Prometheus",
+		"name_history": "Originally designated S/1980 S27, Prometheus [pro-MEE-thee-us] is named for the son of the Titan Iapetus and brother of Atlas and Epimetheus. He is best known in Greek mythology for stealing fire from the gods and giving it to humanity.",
+		"size": 26.8,
+		"planet_id": 6
+	},
+	{
+		"name": "Rhea",
+		"name_history": "The name Rhea comes from the Greek goddess (or Titan) Rhea, who was the daughter of Uranus and Gaea. Her husband was Kronus (the Roman Saturn). Rhea was also called the mother of the gods because she gave birth to several of the gods of Mount Olympus, including Zeus (the Roman Jupiter). Cassini referred to Rhea as one of the four Sidera Lodoicea (Stars of Louis) after King Louis XIV (the other three were Tethys, Dione, and Iapetus). Astronomers also refer to Rhea as Saturn V denoting the fifth moon in distance from Saturn. Geological features on Rhea generally get their names from people and places from creation myths. The International Astronomical Union now controls the naming of astronomical bodies.",
+		"size": 475,
+		"planet_id": 6
+	},
+	{
+		"name": "Siarnaq",
+		"name_history": "Originally called S/2000 S3, Siarnaq was named for an Inuit goddess of sea creatures who was also queen of the underworld. Siarnaq is a very important deity because, when angered, she withholds seals, walruses and whales from their Inuit hunters. Siarnaq is better known as Sedna, but that name was already taken by an object, believed to be a dwarf planet, which orbits the sun far beyond the Kuiper Belt (possibly in the inner Oort Cloud).",
+		"size": 12.4,
+		"planet_id": 6
+	},
+	{
+		"name": "Skathi",
+		"name_history": "Originally called S/2000 S8, Skathi was named for Skadi, a giantess in Norse mythology. Skadi donned armor and traveled to Asgard, home of the Norse gods, to avenge her father's death at their hands. However, she settled for an agreement that she could pick a husband from their ranks by inspecting only their feet, and that the gods would make her laugh. The latter was accomplished when Loki engaged in a tug of war with a goat, using a cord tied to the goat's beard and to a particularly sensitive part of Loki's anatomy. Originally the name was spelled Skadi, but in 2005 International Astronomical Union changed the spelling to Skathi. The two versions are alternate transliterations of the Norse word, Skadi, with the letter D (eth).",
+		"size": 2.5,
+		"planet_id": 6
+	},
+	{
+		"name": "Skoll",
+		"name_history": "Originally called S/2006 S8, Skoll was named for a giant wolf in Norse mythology, who pursues the sun (that is, the sun chariot and the girl who drives it — see Mundilfari for an explanation) across the sky. It is destined to catch and devour them at the doomsday time known as Ragnarok.",
+		"size": 1.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Skrymir",
+		"name_history": "This moon is named after Útgarða-Loki (also known as Skrýmir).[5] He is a jötunn from Norse mythology and master of illusions.",
+		"size": 1.24274,
+		"planet_id": 6
+	},
+	{
+		"name": "Surtur",
+		"name_history": "Originally called S/2006 S7, Surtur was named for Surt, who guards Muspell, the land of fire in Norse mythology. At the doomsday time known as Ragnarok, he is destined to lead the fire giants in battle against the gods. The gods will be vanquished and Heaven and Earth will be consumed in fire.",
+		"size": 1.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Suttungr",
+		"name_history": "Originally called S/2000 S12, Suttungr was named for Suttungr (also spelled Suttung), a giant in Norse mythology. Two dwarfs were responsible for the death of Suttungr's father in a 'boating accident.' Those same two dwarfs also murdered his mother. So Suttungr captured the dwarfs and took them to a reef, planning to leave them there to drown when the high tide came in. However, Suttung relented when the dwarfs offered to give him special mead (an alcoholic drink made of honey and, in this special case, the blood of a traveling wise man they had killed) which made anyone who drank the mead a poet or scholar. Suttungr ultimately lost the mead to Odin, the supreme Norse god.",
+		"size": 2.2,
+		"planet_id": 6
+	},
+	{
+		"name": "Tarqeq",
+		"name_history": "Originally called S/2007 S1, Tarqeq was named for the Inuit spirit of Earth's Moon. This spirit is said to be a mighty hunter who watches over human behavior. In the mythology of the indigenous people of northern Alaska, he controls the animals.",
+		"size": 1.9,
+		"planet_id": 6
+	},
+	{
+		"name": "Tarvos",
+		"name_history": "Originally called S/2000 S4, Tarvos was named for a bull in Celtic mythology. It is known from two stone sculptures, found in Paris and Trier, of a bull with three cranes and a tree which is presumed to be a willow. The narrative behind this imagery is lost to antiquity, but it has been hypothesized that the tree represents the cycle of life, the birds are spirits released when life has ended, and the bull represents the vigor and sexual potency that keeps the cycle spinning.",
+		"size": 4.7,
+		"planet_id": 6
+	},
+	{
+		"name": "Telesto",
+		"name_history": "Telesto is a daughter of the Titans Oceanus and Tethys in Greek mythology. It was originally designated S/1981 S13.",
+		"size": 7.7,
+		"planet_id": 6
+	},
+	{
+		"name": "Tethys",
+		"name_history": "Cassini referred to Tethys as one of the four Sidera Lodoicea (Stars of Louis) after King Louis XIV (the other three were Iapetus, Dione and Rhea). Other astronomers called the Saturn moons by number in terms of their distance from Saturn. Thus, Tethys was Saturn III. John Herschel suggested that the moons of Saturn be associated with the Greek mythical brothers and sisters of Kronus. (Kronus is the equivalent of the Roman god Saturn in Greek mythology.) The name comes from the Greek goddess (or Titan) Tethys, who was the daughter of Uranus and Gaea, a sister to Kronus and the wife of Oceanus. She was said to be the mother of the chief rivers, the mother of three thousand daughters called the Oceanids and the embodiment of the waters of the world.",
+		"size": 331,
+		"planet_id": 6
+	},
+	{
+		"name": "Thiazzi",
+		"name_history": "This moon is named after Þjazi, a jötunn from Norse mythology. He is a son of Alvaldi and kidnapped the goddess Iðunn, who guarded the apples of the gods.",
+		"size": 1.24274,
+		"planet_id": 6
+	},
+	{
+		"name": "Thrymr",
+		"name_history": "Originally called S/2000 S7, Thrymr was named for a giant in Norse mythology who stole Thor's hammer and offered to return it only if the gods gave him the very beautiful goddess Freyia to be his wife. The gods agree, but instead send Thor, disguised as Freyia. Thor as Freyia orders the hammer to be placed on 'her' knee, whereupon Thor uses the hammer to kill Thrymr, along with the giant's sister, who had asked for 'Freyia's' rings. It was first called Thrym, but the International Astronomical Union Working Group on Planetary System Nomenclature later decided to add the nominative case ending -r to the root Thrym.",
+		"size": 2.2,
+		"planet_id": 6
+	},
+	{
+		"name": "Titan",
+		"name_history": "The moon is named for the Titans of Greek mythology, which include Cronus (equated with the Roman god Saturn) and his 11 siblings.",
+		"size": 1600,
+		"planet_id": 6
+	},
+	{
+		"name": "Ymir",
+		"name_history": "Originally called S/2000 S1, Ymir was named for the first living being in Norse mythology, the first of a race of frost giants. Odin and his brothers killed Ymir and used his body parts to fashion the Earth. His skull became the heavens.",
+		"size": 5.6,
+		"planet_id": 6
 	}
 ]
