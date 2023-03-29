@@ -1,7 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Planet from './components/Planet';
+// import Planets from './components/planets';
+import Navbar from './components/navbar';
 
 function App() {
 	return (
@@ -23,6 +24,8 @@ function App() {
 			{/* 100% = 500px diameter */}
 
 			<Planet name='venus' scale='100%' />
+			<Navbar />
+			{/* <Planets /> */}
 		</div>
 	);
 }
