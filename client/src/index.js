@@ -21,6 +21,15 @@ const router = createBrowserRouter([
             {
                 path: "planets/:name",
                 element: <Details />,
+                id: 'planet',
+                loader: async ({ params }) => {
+                    const res = await fetch(`/api/${params.name}`);
+                    if (res.status === 404) {
+                        throw new Response("Not Found",{  status: 404 });
+                    }
+                    console.log(res);
+                    return res.body;
+                },
             },
         ],
     },
