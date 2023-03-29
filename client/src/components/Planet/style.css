@@ -5,13 +5,11 @@
 }
 
 .planet-container {
-	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 }
 
 .planet-scale {
@@ -21,7 +19,7 @@
 }
 
 /* stars */
-.planet-container::before {
+/* .planet-container::before {
 	content: '';
 	position: absolute;
 	background-color: black;
@@ -33,10 +31,10 @@
 	height: 120vw;
 	z-index: -10;
 	transform: rotate(30deg);
-}
+} */
 
 /* twinkle */
-.planet-container::after {
+/* .planet-container::after {
 	content: '';
 	position: absolute;
 	background-image: linear-gradient(45deg, #000 25%, transparent 0%), linear-gradient(135deg, #000 25%, transparent 0%), linear-gradient(225deg, #000 25%, transparent 0%), linear-gradient(315deg, #000 25%, transparent 0%);
@@ -47,7 +45,7 @@
 	height: 120vw;
 	z-index: -10;
 	animation: twinkle 500s linear infinite both;
-}
+} */
 
 @keyframes twinkle {
 	from {
