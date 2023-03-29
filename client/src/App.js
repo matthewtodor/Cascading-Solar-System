@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Planets from './components/planets';
+import Planet from './components/Planet';
 
 function App() {
 	return (
@@ -16,7 +16,13 @@ function App() {
 				</a>
 			</header>
 
-			<Planets />
+			{/* enter the name of the planet to display */}
+			{/* sun, mercury, venus, earth, mars, jupiter, saturn, uranus, neptune */}
+
+			{/* enter the scale of the planet as a percentage */}
+			{/* 100% = 500px diameter */}
+
+			<Planet name='venus' scale='100%' />
 		</div>
 	);
 }
