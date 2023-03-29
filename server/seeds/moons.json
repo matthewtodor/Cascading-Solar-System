@@ -284,7 +284,7 @@
 	{
 		"name": "Pandia",
 		"name_history": "Pandia is the daughter of Zeus and the Moon goddess Selene. Pandia is the goddess of the full moon and the sister of Ersa. The size of Pandia is unknown",
-		"size": null,
+		"size": 0,
 		"planet_id": 5
 	},
 	{
@@ -362,7 +362,7 @@
 	{
 		"name": "S/2016 J 2 (Valetudo)",
 		"name_history": "The name Valetudo has been proposed, after the Roman god Jupiter’s great-granddaughter, the goddess of health and hygiene. We do not have a confirmed size of the moon.",
-		"size": null,
+		"size": 0,
 		"planet_id": 5
 	},
 	{
@@ -770,7 +770,7 @@
 	{
 		"name": "Cordelia",
 		"name_history": "Originally called S/1986 U7, Cordelia was named for one of the youngest daughters of King Lear in William Shakespeare's play of the same name. King Lear disowns Cordelia for her refusal to flatter him. Others think highly of her, and the King of France marries her for her virtue alone. Cordelia forgives her father in spite of his cruelty toward her and remains loyal to him.",
-		"size": null,
+		"size": 0,
 		"planet_id": 7
 	},
 	{
