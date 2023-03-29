@@ -8,9 +8,11 @@ export default function Root() {
     return (
         <>
             <div className='App'>
-                <Navbar />
                 <Planets />
-                <Outlet />
+                <div className='overlay'>
+                    <Navbar />
+                    <Outlet /> 
+                </div>
             </div>
 
         </>

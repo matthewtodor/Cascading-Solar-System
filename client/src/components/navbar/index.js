@@ -2,6 +2,11 @@ import './style.css';
 import { Link } from "react-router-dom";
 
 function Navbar() {
+    //const history = useHistory();
+    //const goBack = () => {
+    //    history.goBack()
+    //}
+
 	return (
 		<div className='nav'>
             <h1>Cascading Solar System</h1>
