@@ -14,7 +14,6 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "planets/:name",
-				element: <Planet name="earth" scale="100%" />,
 				id: "planet",
 				loader: async ({ params }) => {
 					const res = await fetch(`/planets/${params.name}`);
@@ -24,6 +23,7 @@ const router = createBrowserRouter([
 					console.log(res.body);
 					return res.body;
 				},
+				element: <Planet name="earth" scale="100%" />,
 			},
 		],
 	},
