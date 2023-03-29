@@ -1,18 +1,17 @@
 import './root.css';
-import Planets from '../components/planets';
+import SolarSystem from '../components/SolarSystem';
 import Navbar from '../components/navbar';
 
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
 
 export default function Root() {
-    return (
-        <>
-            <div className='App'>
-                <Navbar />
-                <Planets />
-                <Outlet />
-            </div>
-
-        </>
-    );
+	return (
+		<>
+			<div className='App'>
+				<Navbar />
+				<SolarSystem />
+				<Outlet />
+			</div>
+		</>
+	);
 }

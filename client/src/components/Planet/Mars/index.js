@@ -17,35 +17,39 @@ function Mars({ scale }) {
 					</div>
 				</div>
 
-				<div id='mars-moon-1-orbit'>
-					<div id='mars-moon-1'>
-						{scale >= 100 && (
-							<div className='surface'>
-								<div id='mars-moon-1-surface-color-1' className='surface-color-gray' />
-								<div id='mars-moon-1-surface-color-2' className='surface-color-gray' />
+				{scale >= 15 && (
+					<>
+						<div id='mars-moon-1-orbit'>
+							<div id='mars-moon-1'>
+								{scale >= 100 && (
+									<div className='surface'>
+										<div id='mars-moon-1-surface-color-1' className='surface-color-gray' />
+										<div id='mars-moon-1-surface-color-2' className='surface-color-gray' />
+									</div>
+								)}
+
+								<div className='hazey-border-inset mars-moon-border-inset'>
+									<div className='shadow' />
+								</div>
 							</div>
-						)}
-
-						<div className='hazey-border-inset mars-moon-border-inset'>
-							<div className='shadow' />
 						</div>
-					</div>
-				</div>
 
-				<div id='mars-moon-2-orbit'>
-					<div id='mars-moon-2'>
-						{scale >= 100 && (
-							<div className='surface'>
-								<div id='mars-moon-2-surface-color-1' className='surface-color-gray' />
-								<div id='mars-moon-2-surface-color-2' className='surface-color-gray' />
+						<div id='mars-moon-2-orbit'>
+							<div id='mars-moon-2'>
+								{scale >= 100 && (
+									<div className='surface'>
+										<div id='mars-moon-2-surface-color-1' className='surface-color-gray' />
+										<div id='mars-moon-2-surface-color-2' className='surface-color-gray' />
+									</div>
+								)}
+
+								<div className='hazey-border-inset mars-moon-border-inset'>
+									<div className='shadow' />
+								</div>
 							</div>
-						)}
-
-						<div className='hazey-border-inset mars-moon-border-inset'>
-							<div className='shadow' />
 						</div>
-					</div>
-				</div>
+					</>
+				)}
 			</div>
 		</div>
 	);
