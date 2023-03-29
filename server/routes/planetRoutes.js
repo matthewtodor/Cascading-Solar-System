@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const sequelize = require("../../config/connection");
-const { Planet, Moon, Fact } = require("../../models");
+const sequelize = require("../config/connection");
+const { Planet, Moon, Fact } = require("../models");
 
 // GET all planets
 router.get("/", async (req, res) => {
@@ -15,11 +15,9 @@ router.get("/", async (req, res) => {
 });
 
 // GET a single Planet
-router.get("/:id", async (req, res) => {
+router.get("/:name", async (req, res) => {
 	try {
-		const PlanetData = await Planet.findByPk(req.params.id, {
-			include: [{ model: Moon }, { model: Fact }],
-		});
+		const PlanetData = await Planet.findOne({ where: { name: req.params.name }, include: [{ model: Moon }, { model: Fact }] });
 		if (!PlanetData) {
 			res.status(404).json({ message: "No Planet found with that id!" });
 			return;
