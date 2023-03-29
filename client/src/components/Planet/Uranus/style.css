@@ -28,6 +28,10 @@
 	animation: spin-surface 22s linear infinite both;
 }
 
+#uranus-surface-color-3 {
+	animation: spin-surface 25s linear infinite both;
+}
+
 /* moons */
 #uranus-moon-1 {
 	position: absolute;

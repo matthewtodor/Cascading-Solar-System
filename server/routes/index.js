@@ -1,6 +1,6 @@
-const router = require('express').Router();
-const apiRoutes = require('./api');
+const router = require("express").Router();
+const planetRoutes = require("./planetRoutes");
 
-router.use('/api', apiRoutes);
+router.use("/planets", planetRoutes);
 
 module.exports = router;
