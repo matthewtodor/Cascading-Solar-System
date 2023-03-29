@@ -9,7 +9,9 @@ export default function Root() {
 	return (
 		<>
 			<div className="App">
-				<Planet name="Sun" scale="100%" />
+				<div className="planet-display">
+					<Planet name="Sun" scale="100" />
+				</div>
 				<div className="overlay">
 					<Navbar />
 					<Outlet />
