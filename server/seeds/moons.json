@@ -742,5 +742,101 @@
 		"name_history": "Originally called S/2000 S1, Ymir was named for the first living being in Norse mythology, the first of a race of frost giants. Odin and his brothers killed Ymir and used his body parts to fashion the Earth. His skull became the heavens.",
 		"size": 5.6,
 		"planet_id": 6
+	},
+	{
+		"name": "Ariel",
+		"name_history": "Ariel is the name for a character in both Shakespeare's 'The Tempest' and Pope\\'s poem 'The Rape of the Lock.' This moon was named Ariel by Sir John Herschel (son of Uranus discoverer Sir William Herschel) at the request of the moon's discoverer, William Lassell. In 'The Tempest,' Ariel is a spirit who serves Prospero, a magician who rescued Ariel from a tree in which he had been imprisoned by a witch called Sycorax. Both Prospero and Sycorax were taken as the names of other Uranian moons. In Pope’s work, Ariel is a sylph who narrates the satirical poem.",
+		"size": 5.6,
+		"planet_id": 7
+	},
+	{
+		"name": "Belinda",
+		"name_history": "Originally called S/1986 U5, Belinda was named after the character whose lock of hair is stolen in Alexander Pope's 'Rape of the Lock.'",
+		"size": 13.98085,
+		"planet_id": 7
+	},
+	{
+		"name": "Bianca",
+		"name_history": "Originally called S/1986 U9, Bianca was named after the sister of Katharina (Kate) in Shakespeare's play, 'The Taming of the Shrew.'",
+		"size": 8.388511,
+		"planet_id": 7
+	},
+	{
+		"name": "Caliban",
+		"name_history": "Originally called S/1997 U1, Caliban was named for a character in Shakespeare's play, 'The Tempest.' Caliban was forced into labor on an island owned by Prospero. He was human, but 'not honour'd with a human shape,' and is referred to as a mooncalf or freckled monster.",
+		"size": 13.0488,
+		"planet_id": 7
+	},
+	{
+		"name": "Cordelia",
+		"name_history": "Originally called S/1986 U7, Cordelia was named for one of the youngest daughters of King Lear in William Shakespeare's play of the same name. King Lear disowns Cordelia for her refusal to flatter him. Others think highly of her, and the King of France marries her for her virtue alone. Cordelia forgives her father in spite of his cruelty toward her and remains loyal to him.",
+		"size": null,
+		"planet_id": 7
+	},
+	{
+		"name": "Cressida",
+		"name_history": "Originally called S/1986 U3, Cressida was named for the title character in William Shakespeare's play, 'Troilus and Cressida.'",
+		"size": 25.4762,
+		"planet_id": 7
+	},
+	{
+		"name": "Cupid",
+		"name_history": "Originally called S/2003 U2, Cupid was named for the Roman god of love, who appears in William Shakespeare's play,'Timon of Athens' (in keeping with the custom of naming most of Uranus' moons after Shakespearean characters).",
+		"size": 5.59234,
+		"planet_id": 7
+	},
+	{
+		"name": "Desdemona",
+		"name_history": "Originally called S/1986 U6, Desdemona was named after the wife of Othello in William Shakespeare's play, 'Othello, the Moor of Venice.' Desdemona is the daughter of a Venetian senator.",
+		"size": 19.8839,
+		"planet_id": 7
+	},
+	{
+		"name": "Ferdinand",
+		"name_history": "Originally called S/2001 U2, Ferdinand was named for the son of Alonso, king of Naples in William Shakespeare's play, 'The Tempest.' Ferdinand eventually marries Miranda, daughter of Prospero, and aids his father-in-law in regaining his Dukedom in Milan.",
+		"size": 6.21371,
+		"planet_id": 7
+	},
+	{
+		"name": "Francisco",
+		"name_history": "Originally called S/2001 U3, Francisco was named after a character in William Shakespeare's play, 'The Tempest.' Francisco is a nobleman who is shipwrecked along with King Alonso (father of Ferdinand) and others.",
+		"size": 6.83508,
+		"planet_id": 7
+	},
+	{
+		"name": "Juliet",
+		"name_history": "Originally called S/1986 U2, Juliet was named for the title character in William Shakespeare's play, 'Romeo and Juliet.' Juliet is the daughter of the Capulets, who are sworn enemies to the Montagues. Nevertheless, she falls in love with Romeo, son of the Montagues.",
+		"size": 14.54009,
+		"planet_id": 7
+	},
+	{
+		"name": "Mab",
+		"name_history": "Mab is queen of the fairies in English folklore. She is mentioned in a speech given in William Shakespeare's play, 'Romeo and Juliet,' so the name is at least somewhat in keeping with the practice of naming most Uranian moons after characters in Shakespeare's plays. The original designation for this moon was S/2003 U1.​",
+		"size": 7.45645,
+		"planet_id": 7
+	},
+	{
+		"name": "Margaret",
+		"name_history": "Originally called S/2003 U3, Margaret was named after a woman who serves Hero in William Shakespeare's play, 'Much Ado About Nothing.'",
+		"size": 3.10686,
+		"planet_id": 7
+	},
+	{
+		"name": "Miranda",
+		"name_history": "Miranda was named for the daughter of Prospero in William Shakespeare's play, 'The Tempest.'",
+		"size": 146.5,
+		"planet_id": 7
+	},
+	{
+		"name": "Oberon",
+		"name_history": "Named by Herschel's son John in early 19th century for the king of the fairies in Shakespeare's 'A Midsummer Night's Dream.'",
+		"size": 473.11203,
+		"planet_id": 7
+	},
+	{
+		"name": "Ophelia",
+		"name_history": "This moon was originally designated S/1986 U8, but was later renamed for the character of Ophelia in Shakespeare's 'Hamlet.' Ophelia is the daughter of Polonius and fiance of Hamlet in the play.",
+		"size": 13.29734,
+		"planet_id": 7
 	}
 ]
