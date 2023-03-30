@@ -49,17 +49,17 @@
 	top: 125px;
 }
 .dropdown:hover .mars-link {
-	top: 150px;
+	top: 160px;
 }
 .dropdown:hover .jupiter-link {
-	top: 185px;
+	top: 195px;
 }
 .dropdown:hover .saturn-link {
-	top: 220px;
+	top: 230px;
 }
 .dropdown:hover .uranus-link {
-	top: 255px;
+	top: 265px;
 }
 .dropdown:hover .neptune-link {
-	top: 290px;
+	top: 300px;
 }
