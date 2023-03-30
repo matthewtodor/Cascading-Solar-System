@@ -2,7 +2,12 @@ import Planet from '../Planet';
 
 import './style.css';
 
-function SolarSystem() {
+function SolarSystem({ scale }) {
+	// handle use of a percent symbol in scale
+	if (scale.charAt(scale.length - 1) === '%') {
+		scale = scale.slice(0, -1);
+	}
+
 	// planets at actual scale
 	// const planets = [
 	// 	{
@@ -84,10 +89,10 @@ function SolarSystem() {
 	];
 
 	return (
-		<div className='solar-system'>
+		<div className='solar-system' style={{ transform: `scale(${scale / 100})` }}>
 			{planets.map((planet) => {
 				return (
-					<div id={planet + '-orbit'} className='planet-orbit-container'>
+					<div id={planet.name + '-orbit'} className='planet-orbit-container'>
 						<Planet name={planet.name} scale={planet.scale} />
 					</div>
 				);

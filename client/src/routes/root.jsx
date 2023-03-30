@@ -11,7 +11,7 @@ export default function Root() {
 			<div className='App'>
 				<div className='planet-display'>
 					{/* <Planet name='Sun' scale='100' /> */}
-					<SolarSystem />
+					<SolarSystem scale='100' />
 				</div>
 
 				<div className='overlay'>
