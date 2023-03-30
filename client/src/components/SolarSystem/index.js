@@ -97,6 +97,7 @@ function SolarSystem({ scale }) {
 			{planets.map((planet) => {
 				return (
 					<div
+						key={planet.name}
 						id={planet.name + "-orbit"}
 						className="planet-orbit-container"
 						onClick={() => {
