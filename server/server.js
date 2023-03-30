@@ -9,16 +9,16 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// turn on routes
+// set up cors
 app.use(
 	cors({
 		origin: "http://localhost:3000",
 		exposedHeaders: "Access-Control-Allow-Origin",
-		methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+		methods: " GET,HEAD,PUT,PATCH,POST,DELETE",
 		preflightContinue: true,
 	})
 );
-console.log("app", app.use);
+// turn on routes
 app.use(routes);
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {
