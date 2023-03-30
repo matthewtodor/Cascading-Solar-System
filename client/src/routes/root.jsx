@@ -22,8 +22,8 @@ export default function Root() {
 			<div className='App'>
 				<div className='overlay'>
 					<div className='planet-display'>
-						<Planet name={name} scale='100' />
-						{/* <SolarSystem scale='100' /> */}
+						{/* <Planet name={name} scale='100' /> */}
+						<SolarSystem scale='100' />
 					</div>
 					<Navbar />
 					<Outlet props={{ scale, setScale }} />
