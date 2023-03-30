@@ -29,6 +29,7 @@ const router = createBrowserRouter([
 							throw new Response("Server Error", { status: 500 });
 						}
 						results = res.json();
+						console.log(results);
 					} catch (error) {
 						console.log(error);
 					}
