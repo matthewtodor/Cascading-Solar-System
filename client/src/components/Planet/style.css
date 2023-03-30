@@ -17,11 +17,12 @@
 }
 
 /* stars */
-/* .planet-container::before {
-	content: '';
+.planet-container::before {
+	content: "";
 	position: absolute;
 	background-color: black;
-	background-image: radial-gradient(hsla(0, 0%, 100%, 0.75) 1%, transparent 0%), radial-gradient(hsla(0, 0%, 100%, 0.5) 2%, transparent 0%), radial-gradient(hsla(0, 0%, 100%, 0.5) 1%, transparent 0%);
+	background-image: radial-gradient(hsla(0, 0%, 100%, 0.75) 1%, transparent 0%), radial-gradient(hsla(0, 0%, 100%, 0.5) 2%, transparent 0%),
+		radial-gradient(hsla(0, 0%, 100%, 0.5) 1%, transparent 0%);
 	background-size: 50px 50px;
 	background-position: 0 0, 30px 40px, 60px 50px;
 	background-repeat: repeat;
@@ -29,13 +30,14 @@
 	height: 120vw;
 	z-index: -10;
 	transform: rotate(30deg);
-} */
+}
 
 /* twinkle */
-/* .planet-container::after {
-	content: '';
+.planet-container::after {
+	content: "";
 	position: absolute;
-	background-image: linear-gradient(45deg, #000 25%, transparent 0%), linear-gradient(135deg, #000 25%, transparent 0%), linear-gradient(225deg, #000 25%, transparent 0%), linear-gradient(315deg, #000 25%, transparent 0%);
+	background-image: linear-gradient(45deg, #000 25%, transparent 0%), linear-gradient(135deg, #000 25%, transparent 0%),
+		linear-gradient(225deg, #000 25%, transparent 0%), linear-gradient(315deg, #000 25%, transparent 0%);
 	background-size: 400px 400px;
 	background-position: 0 0, 200px 200px;
 	background-repeat: repeat;
@@ -43,7 +45,7 @@
 	height: 120vw;
 	z-index: -10;
 	animation: twinkle 500s linear infinite both;
-} */
+}
 
 @keyframes twinkle {
 	from {
