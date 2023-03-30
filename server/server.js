@@ -14,7 +14,7 @@ app.use(
 	cors({
 		origin: "http://localhost:3000",
 		exposedHeaders: "Access-Control-Allow-Origin",
-		methods: " GET,HEAD,PUT,PATCH,POST,DELETE",
+		methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
 		preflightContinue: true,
 	})
 );
