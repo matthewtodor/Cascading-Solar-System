@@ -1,14 +1,6 @@
 /* jupiter */
 #jupiter {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 100%;
 	background: radial-gradient(circle at 15% 20%, hsl(45, 100%, 85%), hsl(45, 100%, 10%));
-	box-shadow: 20px 20px 200px 0 black;
-	width: 500px;
-	height: 500px;
 }
 
 .jupiter-border {

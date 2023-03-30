@@ -1,14 +1,6 @@
 /* earth */
 #earth {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 100%;
 	background: radial-gradient(circle at 15% 20%, hsl(200, 100%, 50%), hsl(240, 100%, 10%));
-	box-shadow: 20px 20px 200px 0 black;
-	width: 500px;
-	height: 500px;
 }
 
 .earth-border {

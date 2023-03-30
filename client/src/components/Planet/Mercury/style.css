@@ -1,13 +1,6 @@
 /* mercury */
 #mercury {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 100%;
 	background: radial-gradient(circle at 15% 20%, hsl(0, 0%, 100%), hsl(240, 100%, 10%));
-	width: 500px;
-	height: 500px;
 }
 
 .mercury-border {
