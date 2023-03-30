@@ -1,13 +1,6 @@
 /* saturn */
 #saturn {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 100%;
 	/* background: linear-gradient(-25deg, saddlebrown, tan, wheat, tan, wheat, burlywood, moccasin, linen, moccasin, sienna, wheat, linen, wheat, tan, saddlebrown 90%); */
-	width: 500px;
-	height: 500px;
 }
 
 .saturn-border {

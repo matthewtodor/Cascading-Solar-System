@@ -1,13 +1,6 @@
 /* sun */
 #sun {
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 100%;
 	background: radial-gradient(circle at 15% 20%, hsl(25, 100%, 50%), hsl(25, 100%, 10%));
-	width: 500px;
-	height: 500px;
 }
 
 .sun-border {

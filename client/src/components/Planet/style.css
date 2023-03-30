@@ -16,6 +16,17 @@
 	align-items: center;
 }
 
+.planet {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	box-shadow: 20px 20px 200px 0 black;
+	width: 500px;
+	height: 500px;
+}
+
 /* navigation */
 .temp-planet-select {
 	position: absolute;

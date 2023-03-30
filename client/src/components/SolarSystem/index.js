@@ -52,7 +52,7 @@ function SolarSystem({ scale }) {
 	const planets = [
 		{
 			name: 'sun',
-			scale: '10%'
+			scale: '12%'
 		},
 		{
 			name: 'mercury',
