@@ -1,10 +1,10 @@
-import Planet from '../Planet';
-
-import './style.css';
+import Planet from "../Planet";
+import { Link } from "react-router-dom";
+import "./style.css";
 
 function SolarSystem({ scale }) {
 	// handle use of a percent symbol in scale
-	if (scale.charAt(scale.length - 1) === '%') {
+	if (scale.charAt(scale.length - 1) === "%") {
 		scale = scale.slice(0, -1);
 	}
 
@@ -51,41 +51,41 @@ function SolarSystem({ scale }) {
 	// planets scaled for solar system visual
 	const planets = [
 		{
-			name: 'sun',
-			scale: '12%'
+			name: "sun",
+			scale: "12%",
 		},
 		{
-			name: 'mercury',
-			scale: '1%'
+			name: "mercury",
+			scale: "1%",
 		},
 		{
-			name: 'venus',
-			scale: '2%'
+			name: "venus",
+			scale: "2%",
 		},
 		{
-			name: 'earth',
-			scale: '3%'
+			name: "earth",
+			scale: "3%",
 		},
 		{
-			name: 'mars',
-			scale: '2%'
+			name: "mars",
+			scale: "2%",
 		},
 		{
-			name: 'jupiter',
-			scale: '7%'
+			name: "jupiter",
+			scale: "7%",
 		},
 		{
-			name: 'saturn',
-			scale: '6%'
+			name: "saturn",
+			scale: "6%",
 		},
 		{
-			name: 'uranus',
-			scale: '5%'
+			name: "uranus",
+			scale: "5%",
 		},
 		{
-			name: 'neptune',
-			scale: '4%'
-		}
+			name: "neptune",
+			scale: "4%",
+		},
 	];
 
 	const handlePlanetClick = (planet) => {
@@ -93,16 +93,19 @@ function SolarSystem({ scale }) {
 	};
 
 	return (
-		<div className='solar-system' style={{ transform: `scale(${scale / 100})` }}>
+		<div className="solar-system" style={{ transform: `scale(${scale / 100})` }}>
 			{planets.map((planet) => {
 				return (
 					<div
-						id={planet.name + '-orbit'}
-						className='planet-orbit-container'
+						id={planet.name + "-orbit"}
+						className="planet-orbit-container"
 						onClick={() => {
 							handlePlanetClick(planet.name);
-						}}>
-						<Planet name={planet.name} scale={planet.scale} />
+						}}
+					>
+						<Link to={`planets/${planet.name}`}>
+							<Planet name={planet.name} scale={planet.scale} />
+						</Link>
 					</div>
 				);
 			})}
