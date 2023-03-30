@@ -1,0 +1,7 @@
+.planet-page {
+	width: 100vw;
+	display: flex;
+}
+.planet-page section {
+	border: 4px solid white;
+}

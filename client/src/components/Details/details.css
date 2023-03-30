@@ -1,4 +1,5 @@
 .details {
+	left: 60vw;
 	position: absolute;
 	z-index: 20;
 	color: white;

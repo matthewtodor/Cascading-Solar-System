@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Details from "./routes/details";
+
 import "./index.css";
 import Root from "./routes/root";
 import ErrorPage from "./error-page";
+import PlanetPage from "./components/Planet Page/PlanetPage";
+import Navbar from "./components/navbar";
+import SolarSystem from "./components/SolarSystem";
 const router = createBrowserRouter([
 	{
 		path: "/",
@@ -12,8 +15,12 @@ const router = createBrowserRouter([
 		errorElement: <ErrorPage />,
 		children: [
 			{
+				path: "/",
+				element: <SolarSystem scale="100" />,
+			},
+			{
 				path: "planets/:name",
-				element: <Details />,
+				element: <PlanetPage />,
 				loader: async ({ params }) => {
 					let results;
 					try {
@@ -29,7 +36,6 @@ const router = createBrowserRouter([
 							throw new Response("Server Error", { status: 500 });
 						}
 						results = res.json();
-						console.log(results);
 					} catch (error) {
 						console.log(error);
 					}
