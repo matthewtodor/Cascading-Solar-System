@@ -9,62 +9,117 @@
 .planet-orbit-container {
 	position: absolute;
 	display: flex;
-	justify-content: flex-end;
 	border: 0.5px solid rgba(255, 255, 255, 0.5);
 	border-radius: 100%;
 }
 
 .solar-system .planet {
-	transform: rotate(-30deg);
 	box-shadow: none;
+}
+
+.solar-system .planet:hover {
+	cursor: pointer;
+}
+
+#sun-orbit {
+	z-index: 9;
 }
 
 #mercury-orbit {
 	width: 100px;
 	height: 100px;
 	animation: solar-system-orbit 4.82s linear infinite both;
+	z-index: 8;
+}
+
+#mercury-orbit .planet {
+	transform: rotate(138deg);
 }
 
 #venus-orbit {
 	width: 150px;
 	height: 150px;
+	justify-content: flex-end;
 	animation: solar-system-orbit 12.32s linear infinite both;
+	z-index: 7;
+}
+
+#venus-orbit .planet {
+	transform: rotate(-38deg);
 }
 
 #earth-orbit {
 	width: 200px;
 	height: 200px;
+	justify-content: center;
+	align-items: flex-start;
 	animation: solar-system-orbit 20s linear infinite both;
+	z-index: 6;
+}
+
+#earth-orbit .planet {
+	transform: rotate(-135deg);
 }
 
 #mars-orbit {
 	width: 250px;
 	height: 250px;
+	justify-content: center;
+	align-items: flex-end;
 	animation: solar-system-orbit 37.642s linear infinite both;
+	z-index: 5;
+}
+
+#mars-orbit .planet {
+	transform: rotate(50deg);
 }
 
 #jupiter-orbit {
 	width: 400px;
 	height: 400px;
 	animation: solar-system-orbit 240s linear infinite both;
+	z-index: 4;
+}
+
+#jupiter-orbit .planet {
+	transform: rotate(136deg);
 }
 
 #saturn-orbit {
 	width: 550px;
 	height: 550px;
+	justify-content: flex-end;
 	animation: solar-system-orbit 580s linear infinite both;
+	z-index: 3;
+}
+
+#saturn-orbit .planet {
+	transform: rotate(-45deg);
 }
 
 #uranus-orbit {
 	width: 675px;
 	height: 675px;
+	justify-content: center;
+	align-items: flex-start;
 	animation: solar-system-orbit 1680s linear infinite both;
+	z-index: 2;
+}
+
+#uranus-orbit .planet {
+	transform: rotate(-120deg);
 }
 
 #neptune-orbit {
 	width: 825px;
 	height: 825px;
+	justify-content: flex-end;
 	animation: solar-system-orbit 3300s linear infinite both;
+	z-index: 1;
+}
+
+#neptune-orbit .planet {
+	transform: rotate(-35deg);
 }
 
 .solar-system #earth-moon-orbit {

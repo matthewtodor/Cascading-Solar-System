@@ -88,11 +88,20 @@ function SolarSystem({ scale }) {
 		}
 	];
 
+	const handlePlanetClick = (planet) => {
+		console.log(planet);
+	};
+
 	return (
 		<div className='solar-system' style={{ transform: `scale(${scale / 100})` }}>
 			{planets.map((planet) => {
 				return (
-					<div id={planet.name + '-orbit'} className='planet-orbit-container'>
+					<div
+						id={planet.name + '-orbit'}
+						className='planet-orbit-container'
+						onClick={() => {
+							handlePlanetClick(planet.name);
+						}}>
 						<Planet name={planet.name} scale={planet.scale} />
 					</div>
 				);
