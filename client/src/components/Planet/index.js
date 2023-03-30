@@ -9,6 +9,8 @@ import Saturn from "./Saturn";
 import Uranus from "./Uranus";
 import Neptune from "./Neptune";
 
+import { Link } from "react-router-dom";
+
 import "./style.css";
 
 function Planet({ scale, name }) {
@@ -21,17 +23,19 @@ function Planet({ scale, name }) {
 	}
 
 	return (
-		<div className="planet-container">
-			{name === "sun" && <Sun scale={scale} />}
-			{name === "mercury" && <Mercury scale={scale} />}
-			{name === "venus" && <Venus scale={scale} />}
-			{name === "earth" && <Earth scale={scale} />}
-			{name === "mars" && <Mars scale={scale} />}
-			{name === "jupiter" && <Jupiter scale={scale} />}
-			{name === "saturn" && <Saturn scale={scale} />}
-			{name === "uranus" && <Uranus scale={scale} />}
-			{name === "neptune" && <Neptune scale={scale} />}
-		</div>
+        <Link to={`planets/${name}`}>
+            <div className="planet-container">
+                {name === "sun" && <Sun scale={scale} />}
+                {name === "mercury" && <Mercury scale={scale} />}
+                {name === "venus" && <Venus scale={scale} />}
+                {name === "earth" && <Earth scale={scale} />}
+                {name === "mars" && <Mars scale={scale} />}
+                {name === "jupiter" && <Jupiter scale={scale} />}
+                {name === "saturn" && <Saturn scale={scale} />}
+                {name === "uranus" && <Uranus scale={scale} />}
+                {name === "neptune" && <Neptune scale={scale} />}
+            </div>
+        </Link>
 	);
 }
 

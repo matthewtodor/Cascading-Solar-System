@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useRouteLoaderData } from 'react-router-dom';
 import SolarSystem from '../components/SolarSystem';
 import Planet from '../components/Planet';
-import Navbar from '../components/navbar';
+import Navbar from '../components/Navbar';
 
 import { Outlet } from 'react-router-dom';
 
