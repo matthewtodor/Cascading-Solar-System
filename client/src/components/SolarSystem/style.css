@@ -2,12 +2,79 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: black;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 }
 
 .planet-orbit-container {
-	width: 100%;
-	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+	border: 0.5px solid rgba(255, 255, 255, 0.5);
+	border-radius: 100%;
+}
+
+.planet-orbit-container .planet-container {
+	transform: rotate(-30deg);
+}
+
+#sun-orbit {
+}
+
+#mercury-orbit {
+	width: 100px;
+	height: 100px;
+	animation: solar-system-orbit 4.82s linear infinite both;
+}
+
+#venus-orbit {
+	width: 150px;
+	height: 150px;
+	animation: solar-system-orbit 12.32s linear infinite both;
+}
+
+#earth-orbit {
+	width: 200px;
+	height: 200px;
+	animation: solar-system-orbit 20s linear infinite both;
+}
+
+#mars-orbit {
+	width: 250px;
+	height: 250px;
+	animation: solar-system-orbit 37.642s linear infinite both;
+}
+
+#jupiter-orbit {
+	width: 400px;
+	height: 400px;
+	animation: solar-system-orbit 240s linear infinite both;
+}
+
+#saturn-orbit {
+	width: 550px;
+	height: 550px;
+	animation: solar-system-orbit 580s linear infinite both;
+}
+
+#uranus-orbit {
+	width: 675px;
+	height: 675px;
+	animation: solar-system-orbit 1680s linear infinite both;
+}
+
+#neptune-orbit {
+	width: 825px;
+	height: 825px;
+	animation: solar-system-orbit 3300s linear infinite both;
+}
+
+@keyframes solar-system-orbit {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
 }
