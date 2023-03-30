@@ -1,7 +1,7 @@
 import "./root.css";
 import { useState } from "react";
 import { useRouteLoaderData } from "react-router-dom";
-// import SolarSystem from "../components/SolarSystem";
+import SolarSystem from "../components/SolarSystem";
 import Planet from "../components/Planet";
 import Navbar from "../components/navbar";
 
@@ -22,6 +22,7 @@ export default function Root() {
 			<div className="App">
 				<div className="planet-display">
 					<Planet name={name} scale="100" />
+					{/* <SolarSystem scale="100" /> */}
 				</div>
 				<div className="overlay">
 					<Navbar />
