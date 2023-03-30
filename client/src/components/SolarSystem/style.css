@@ -14,11 +14,9 @@
 	border-radius: 100%;
 }
 
-.planet-orbit-container .planet-container {
+.solar-system .planet {
 	transform: rotate(-30deg);
-}
-
-#sun-orbit {
+	box-shadow: none;
 }
 
 #mercury-orbit {
@@ -69,7 +67,28 @@
 	animation: solar-system-orbit 3300s linear infinite both;
 }
 
+.solar-system #earth-moon-orbit {
+	position: absolute;
+	display: flex;
+	width: 900px;
+	animation: solar-system-earth-moon-orbit 1.48s linear infinite both;
+}
+
+.solar-system #earth-moon {
+	box-shadow: none;
+}
+
 @keyframes solar-system-orbit {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes solar-system-earth-moon-orbit {
 	from {
 		transform: rotate(0deg);
 	}
