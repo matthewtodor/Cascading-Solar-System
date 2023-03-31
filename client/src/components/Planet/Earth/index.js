@@ -6,8 +6,18 @@ function Earth({ scale }) {
 			<div id='earth' className='planet'>
 				{scale >= 5 && (
 					<div className='surface' style={{ opacity: scale / 200 }}>
-						<div id='earth-surface-color-1' className='surface-color-green' />
-						<div id='earth-surface-color-2' className='surface-color-green' />
+						{scale >= 25 ? (
+							<>
+								<div id='west' />
+								<div id='east' />
+							</>
+						) : (
+							<>
+								<div id='earth-surface-color-1' className='surface-color-green' />
+								<div id='earth-surface-color-2' className='surface-color-green' />
+							</>
+						)}
+
 						<div id='earth-surface-color-3' className='surface-color-white' />
 						<div id='earth-surface-color-4' className='surface-color-white' />
 					</div>

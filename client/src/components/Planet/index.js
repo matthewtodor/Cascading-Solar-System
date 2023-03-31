@@ -20,6 +20,7 @@ function Planet({ scale, name }) {
     	scale = scale.slice(0, -1);
     }
 
+<<<<<<< HEAD
     return (
             <div className="planet-container">
                 {name === "sun" && <Sun scale={scale} />}
@@ -33,6 +34,21 @@ function Planet({ scale, name }) {
                 {name === "neptune" && <Neptune scale={scale} />}
             </div>
     );
+=======
+	return (
+		<div className="planet-container">
+			{name === "sun" && <Sun scale={scale} />}
+			{name === "mercury" && <Mercury scale={scale} />}
+			{name === "venus" && <Venus scale={scale} />}
+			{name === "earth" && <Earth scale={scale} />}
+			{name === "mars" && <Mars scale={scale} />}
+			{name === "jupiter" && <Jupiter scale={scale} />}
+			{name === "saturn" && <Saturn scale={scale} />}
+			{name === "uranus" && <Uranus scale={scale} />}
+			{name === "neptune" && <Neptune scale={scale} />}
+		</div>
+	);
+>>>>>>> main
 }
 
 export default Planet;
