@@ -6,6 +6,7 @@
 	position: relative;
 	height: 50vh;
 	color: var(--highlight);
+	text-shadow: 5px 5px 5px var(--background-shadow);
 	overflow: hidden;
 	margin: 3%;
 	display: flex;
@@ -34,6 +35,9 @@
 	flex: 1 1 100%;
 	text-align: left;
 	margin-left: 3%;
+}
+.moons-container header h3 {
+	text-shadow: 3px 3px 1px var(--background-shadow);
 }
 .moons-container section {
 	background-color: var(--background-secondary);

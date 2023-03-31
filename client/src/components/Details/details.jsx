@@ -3,6 +3,7 @@ import { useRouteLoaderData } from "react-router-dom";
 
 export default function Details() {
 	const data = useRouteLoaderData("planets");
+	console.log(data.moons);
 	return (
 		<article className="details">
 			<header>
@@ -21,14 +22,24 @@ export default function Details() {
 				</ul>
 			</section>
 			<section className="moons-container">
-				<header>
-					<h3>Moons</h3>
-				</header>
-				<section>
-					{data.moons.map((moon) => {
-						return <button key={moon.id}>{moon.name}</button>;
-					})}
-				</section>
+				{/* are there moons? */}
+				{data.moons.length ? (
+					<>
+						<header>
+							<h3>Moons</h3>
+							<p>Total number of moons: {data.moons.length}</p>
+						</header>
+						<section>
+							{data.moons.map((moon) => {
+								return <button key={moon.id}>{moon.name}</button>;
+							})}
+						</section>
+					</>
+				) : (
+					<section>
+						<h3>{data.name} doesn't have any moons! Check out other planets to see if they have moons!</h3>
+					</section>
+				)}
 			</section>
 		</article>
 	);
