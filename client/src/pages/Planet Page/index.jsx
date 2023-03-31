@@ -1,5 +1,5 @@
 import React from "react";
-import Details from "../../components/Details/details";
+import Details from "../../components/Details";
 import Planet from "../../components/Planet";
 import { useRouteLoaderData } from "react-router-dom";
 import "./style.css";
