@@ -20,7 +20,9 @@
 .solar-system .planet:hover {
 	cursor: pointer;
 }
-
+.page-link {
+	display: flex;
+}
 #sun-orbit {
 	z-index: 9;
 }

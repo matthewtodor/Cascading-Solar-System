@@ -8,9 +8,7 @@ import Jupiter from "./Jupiter";
 import Saturn from "./Saturn";
 import Uranus from "./Uranus";
 import Neptune from "./Neptune";
-
 import "./style.css";
-import { useLocation } from "react-router-dom";
 
 function Planet({ scale, name }) {
 	// handle case sensitivity in name

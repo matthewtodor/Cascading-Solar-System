@@ -1,6 +1,6 @@
 import React from "react";
-import Details from "../Details/details";
-import Planet from "../Planet";
+import Details from "../../components/Details/details";
+import Planet from "../../components/Planet";
 import { useRouteLoaderData } from "react-router-dom";
 import "./style.css";
 const PlanetPage = () => {

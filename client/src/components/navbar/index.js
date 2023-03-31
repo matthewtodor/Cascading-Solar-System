@@ -6,36 +6,29 @@ function Navbar() {
 	//const goBack = () => {
 	//    history.goBack()
 	//}
-
+	const planets = ["mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "neptune"];
 	return (
 		<div className="nav">
-			<h1>Cascading Solar System</h1>
+			<Link to="/">
+				<h1>Cascading Solar System</h1>
+			</Link>
 			<div className="dropdown">
 				<span className="dropdown-head">Planets</span>
-				<Link to={`/planets/venus`} className="nav-link venus-link">
-					Venus
-				</Link>
-				<Link to={`/planets/mercury`} className="nav-link mercury-link">
-					Mercury
-				</Link>
-				<Link to={`/planets/earth`} className="nav-link earth-link">
-					Earth
-				</Link>
-				<Link to={`/planets/mars`} className="nav-link mars-link">
-					Mars
-				</Link>
-				<Link to={`/planets/jupiter`} className="nav-link jupiter-link">
-					Jupiter
-				</Link>
-				<Link to={`/planets/saturn`} className="nav-link saturn-link">
-					Saturn
-				</Link>
-				<Link to={`/planets/uranus`} className="nav-link uranus-link">
-					Uranus
-				</Link>
-				<Link to={`/planets/neptune`} className="nav-link neptune-link">
-					Neptune
-				</Link>
+				{/* Drop down links */}
+				{planets.map((planet) => {
+					const properName = () => {
+						const capLetter = planet.split("").shift().toUpperCase();
+						planet = planet.split("");
+						planet.shift();
+						planet.unshift(capLetter);
+						return planet.join("");
+					};
+					return (
+						<Link key={planet} to={`/planets/${planet}`} className={`nav-link ${planet}-link`}>
+							{properName()}
+						</Link>
+					);
+				})}
 			</div>
 		</div>
 	);
