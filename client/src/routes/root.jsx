@@ -12,7 +12,10 @@ export default function Root() {
 	const [scale, setScale] = useState("50");
 	const location = useLocation();
 	let name;
+
+
 	data ? (name = data.name) : (name = "sun");
+
 	return (
 		<>
 			<div className="App">
