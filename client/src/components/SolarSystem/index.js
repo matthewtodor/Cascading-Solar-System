@@ -54,7 +54,7 @@ function SolarSystem({ scale }) {
 	const planets = [
 		{
 			name: 'sun',
-			scale: '12%'
+			scale: '9%'
 		},
 		{
 			name: 'mercury',
@@ -62,60 +62,53 @@ function SolarSystem({ scale }) {
 		},
 		{
 			name: 'venus',
-			scale: '2%'
+			scale: '1.5%'
 		},
 		{
 			name: 'earth',
-			scale: '3%'
-		},
-		{
-			name: 'mars',
 			scale: '2%'
 		},
 		{
+			name: 'mars',
+			scale: '1.5%'
+		},
+		{
 			name: 'jupiter',
-			scale: '7%'
+			scale: '4%'
 		},
 		{
 			name: 'saturn',
-			scale: '6%'
+			scale: '3.5%'
 		},
 		{
 			name: 'uranus',
-			scale: '5%'
+			scale: '3%'
 		},
 		{
 			name: 'neptune',
-			scale: '4%'
+			scale: '2.5%'
 		}
 	];
 
 	// get current url path
 	// const { pathname } = useLocation();
-	const pathname = 'planets/neptune';
+	const pathname = '/';
+
+	// set conditional class on system for zoom effect
+	const systemClass = pathname === '/' ? ' focus-system' : ' unfocus-system';
 
 	return (
-		<div className='solar-system' style={{ transform: `scale(${scale / 100})` }}>
+		<div className={'solar-system ' + systemClass} style={{ transform: `scale(${scale / 100})` }}>
 			{planets.map((planet) => {
-				// set conditional class on planet
-				let conditionalClass;
-				let currentScale;
-
-				if (pathname === '/') {
-					conditionalClass = ' default-planet';
-					currentScale = planet.scale;
-				} else if (pathname === `planets/${planet.name}`) {
-					conditionalClass = ' focus-planet';
-					currentScale = '100';
-				} else {
-					conditionalClass = ' unfocus-planet';
-					currentScale = planet.scale;
-				}
+				// set conditional class on planet for zoom effect
+				const planetClass = pathname === `planets/${planet.name}` ? ' focus-planet' : pathname === '/' ? '' : ' unfocus-planet';
+				const planetScale = pathname === `planets/${planet.name}` ? '100' : pathname === '/' ? planet.scale : '0';
 
 				return (
-					<div key={planet.name} id={planet.name + '-orbit'} className={'planet-orbit-container' + conditionalClass}>
+					<div key={planet.name} id={planet.name + '-orbit'} className={'planet-orbit-container' + planetClass}>
+						<div className='orbit-path' />
 						<Link to={`planets/${planet.name}`} className='page-link'>
-							<Planet name={planet.name} scale={currentScale} />
+							<Planet name={planet.name} scale={planetScale} />
 						</Link>
 					</div>
 				);

@@ -2,8 +2,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
-	height: 100%;
+	width: 100vh;
+	height: 100vh;
 }
 
 .solar-system *,
@@ -14,8 +14,16 @@
 .planet-orbit-container {
 	position: absolute;
 	display: flex;
+	border-radius: 100%;
+}
+
+.orbit-path {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 	border: 0.5px solid rgba(255, 255, 255, 0.5);
 	border-radius: 100%;
+	animation: add-border 1s 2s ease-in-out both;
 }
 
 .solar-system .planet {
@@ -26,24 +34,26 @@
 	cursor: pointer;
 }
 
-.default-planet {
-	animation: default-planet 1s 2s ease-in-out both !important;
-}
-
 .focus-planet {
-	border: 0.5px solid rgba(255, 255, 255, 0);
-	width: 0px !important;
-	height: 0px !important;
-	transform: rotate(0deg);
-	/* animation: focus-planet 3s ease-in-out both !important; */
+	width: 0% !important;
+	height: 0% !important;
+	transform: rotate(0deg) !important;
 }
 
 .focus-planet .planet {
 	transform: rotate(0deg) !important;
 }
 
-.unfocus-planet {
-	animation: unfocus-planet 3s ease-in-out both !important;
+.focus-planet .orbit-path {
+	animation: remove-border 1s ease-in-out both !important;
+}
+
+/* .unfocus-planet {
+	animation: unfocus-planet 2s 1s ease-in-out both !important;
+} */
+
+.unfocus-planet .orbit-path {
+	animation: remove-border 1s ease-in-out both !important;
 }
 
 .page-link {
@@ -55,8 +65,8 @@
 }
 
 #mercury-orbit {
-	width: 100px;
-	height: 100px;
+	width: 10%;
+	height: 10%;
 	animation: solar-system-orbit 4.82s linear infinite both;
 	z-index: 8;
 }
@@ -66,8 +76,8 @@
 }
 
 #venus-orbit {
-	width: 150px;
-	height: 150px;
+	width: 15%;
+	height: 15%;
 	justify-content: flex-end;
 	animation: solar-system-orbit 12.32s linear infinite both;
 	z-index: 7;
@@ -78,8 +88,8 @@
 }
 
 #earth-orbit {
-	width: 200px;
-	height: 200px;
+	width: 22%;
+	height: 22%;
 	justify-content: center;
 	align-items: flex-start;
 	animation: solar-system-orbit 20s linear infinite both;
@@ -91,8 +101,8 @@
 }
 
 #mars-orbit {
-	width: 250px;
-	height: 250px;
+	width: 29%;
+	height: 29%;
 	justify-content: center;
 	align-items: flex-end;
 	animation: solar-system-orbit 37.642s linear infinite both;
@@ -104,8 +114,8 @@
 }
 
 #jupiter-orbit {
-	width: 400px;
-	height: 400px;
+	width: 45%;
+	height: 45%;
 	animation: solar-system-orbit 240s linear infinite both;
 	z-index: 4;
 }
@@ -115,8 +125,8 @@
 }
 
 #saturn-orbit {
-	width: 550px;
-	height: 550px;
+	width: 60%;
+	height: 60%;
 	justify-content: flex-end;
 	animation: solar-system-orbit 580s linear infinite both;
 	z-index: 3;
@@ -127,8 +137,8 @@
 }
 
 #uranus-orbit {
-	width: 675px;
-	height: 675px;
+	width: 70%;
+	height: 70%;
 	justify-content: center;
 	align-items: flex-start;
 	animation: solar-system-orbit 1680s linear infinite both;
@@ -140,8 +150,8 @@
 }
 
 #neptune-orbit {
-	width: 825px;
-	height: 825px;
+	width: 85%;
+	height: 85%;
 	justify-content: flex-end;
 	animation: solar-system-orbit 3300s linear infinite both;
 	z-index: 1;
@@ -162,8 +172,9 @@
 	box-shadow: none;
 }
 
-@keyframes default-planet {
+@keyframes add-border {
 	from {
+		opacity: 0;
 	}
 
 	to {
@@ -171,25 +182,31 @@
 	}
 }
 
-@keyframes focus-planet {
+@keyframes remove-border {
 	from {
-		max-width: 1000px;
-		max-height: 1000px;
+		opacity: 1;
 	}
 
 	to {
-		max-width: 0px;
-		max-height: 0px;
-		transform: rotate(0deg);
+		opacity: 0;
 	}
 }
 
 @keyframes unfocus-planet {
 	from {
+		display: flex;
+	}
+
+	99% {
+		display: flex;
+		width: 500%;
+		height: 500%;
 	}
 
 	to {
-		opacity: 0;
+		width: 500%;
+		height: 500%;
+		display: none;
 	}
 }
 
