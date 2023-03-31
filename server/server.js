@@ -12,7 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 // set up cors
 app.use(
 	cors({
-		origin: "http://localhost:3000",
 		exposedHeaders: "Access-Control-Allow-Origin",
 		methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
 		preflightContinue: true,
