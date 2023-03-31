@@ -19,7 +19,7 @@ const router = createBrowserRouter([
 				loader: async ({ params }) => {
 					let results;
 					try {
-						const res = await fetch(`http://localhost:3001/api/${params.name}`, {
+						const res = await fetch(`/api/${params.name}`, {
 							method: "GET",
 							headers: {
 								"Content-Type": "application/json",
