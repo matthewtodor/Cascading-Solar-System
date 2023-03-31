@@ -4,15 +4,32 @@ import { useRouteLoaderData } from "react-router-dom";
 export default function Details() {
 	const data = useRouteLoaderData("planets");
 	return (
-		<div className="details">
-			{<span>{data.name}</span>}
-			{data.facts.map((fact) => {
-				console.log(fact.fact);
-				return <span key={fact.id}>{fact.fact}</span>;
-			})}
-			{/* {data.moons.map((moon) => {
-					return <p key={moon.id}>{moon.name}</p>;
-				})} */}
-		</div>
+		<article className="details">
+			<header>
+				<h2>{data.name}</h2>
+				<section>
+					<p>
+						Radius of {data.name}:{data.size}
+					</p>
+				</section>
+			</header>
+			<section>
+				<ul>
+					{data.facts.map((fact) => {
+						return <li key={fact.id}>{fact.fact}</li>;
+					})}
+				</ul>
+			</section>
+			<section className="moons-container">
+				<header>
+					<h3>Moons</h3>
+				</header>
+				<section>
+					{data.moons.map((moon) => {
+						return <button key={moon.id}>{moon.name}</button>;
+					})}
+				</section>
+			</section>
+		</article>
 	);
 }
