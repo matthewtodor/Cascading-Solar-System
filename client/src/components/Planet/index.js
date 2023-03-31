@@ -8,17 +8,16 @@ import Jupiter from "./Jupiter";
 import Saturn from "./Saturn";
 import Uranus from "./Uranus";
 import Neptune from "./Neptune";
-
 import "./style.css";
 
 function Planet({ scale, name }) {
-    // handle case sensitivity in name
-    name = name.toLowerCase();
-    console.log(name);
-    // handle use of a percent symbol in scale
-    if (scale.charAt(scale.length - 1) === "%") {
-    	scale = scale.slice(0, -1);
-    }
+	// handle case sensitivity in name
+	name = name.toLowerCase();
+	console.log(name);
+	// handle use of a percent symbol in scale
+	if (scale.charAt(scale.length - 1) === "%") {
+		scale = scale.slice(0, -1);
+	}
 
 	return (
 		<div className="planet-container">

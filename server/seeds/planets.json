@@ -46,5 +46,11 @@
 		"size": 15299.4,
 		"sun_distance": 2880000000,
 		"core": "solid"
+	},
+	{
+		"name": "Sun",
+		"size": 432690,
+		"sun_distance": 0,
+		"core": "gas"
 	}
 ]
