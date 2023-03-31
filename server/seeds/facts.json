@@ -10,5 +10,18 @@
 	{
 		"fact": "Along with Venus, Earth, and Mars, Mercury is one of the rocky planets. It has a solid surface that is covered with craters like our Moon. It has a thin atmosphere, and it doesn’t have any moons.",
 		"planet_id": 1
+	},
+	{
+		"fact": "Jupiter is twice as large as all other planets combined!",
+		"planet_id": 5
+	},
+
+	{
+		"fact": "The planet has rings, like Saturn, but they are very faint, and are made of dust instead of ice.",
+		"planet_id": 5
+	},
+	{
+		"fact": "It takes Sunlight 43 minutes to travel from the Sun to Jupiter!",
+		"planet_id": 5
 	}
 ]

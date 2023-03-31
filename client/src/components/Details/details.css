@@ -1,3 +1,58 @@
 .details {
-	color: white;
+	border: 2px solid var(--background-primary);
+	border-radius: 5px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	position: relative;
+	height: 50vh;
+	color: var(--highlight);
+	overflow: hidden;
+	margin: 3%;
+	display: flex;
+	flex-direction: column;
+}
+.details header section {
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-color: var(--shadow);
+	border-top-style: outset;
+	border-bottom-style: inset;
+	margin-left: 1px;
+	margin-right: 5px;
+	padding: 3px;
+}
+
+.details section {
+	display: flex;
+	justify-content: left;
+	flex-wrap: wrap;
+}
+.moons-container {
+	margin-top: auto;
+}
+.moons-container header {
+	flex: 1 1 100%;
+	text-align: left;
+	margin-left: 3%;
+}
+.moons-container section {
+	background-color: var(--background-secondary);
+	margin-top: 5px;
+	padding-top: 6px;
+	flex: 1 1 50%;
+	display: flex;
+	flex-wrap: wrap;
+	border-top: 3px solid var(--primary);
+	justify-content: center;
+}
+.moons-container section button {
+	color: var(--highlight);
+	font-weight: bold;
+	text-shadow: 1px 1px 1px var(--shadow);
+	background-color: var(--background-primary);
+	padding: 3px 4px 3px 4px;
+	border-radius: 10%;
+	border-style: solid;
+	border-color: var(--primary);
+	margin: 4px;
 }

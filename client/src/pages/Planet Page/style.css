@@ -1,7 +1,19 @@
 .planet-page {
 	width: 100vw;
 	display: flex;
+	align-items: center;
+	margin-right: 10%;
 }
-.planet-page section {
-	width: 50%;
+.planet-page-planet-container {
+	width: 65%;
+}
+.planet-page-details-container {
+	z-index: 1;
+	width: 35%;
+	border: 2px solid var(--primary);
+	border-radius: 3px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	background-color: var(--background-primary);
+	box-shadow: inset 0 0 30px var(--primary);
 }

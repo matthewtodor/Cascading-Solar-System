@@ -9,11 +9,11 @@
 	z-index: 20;
 }
 .nav h1 {
-    z-index: 50;
+	z-index: 50;
 }
 .nav a {
-    text-decoration: none;
-    color: white;
+	text-decoration: none;
+	color: white;
 }
 .dropdown {
 	display: flex;
@@ -28,13 +28,11 @@
 	z-index: 50;
 }
 .dropdown-head {
-    {/*background: linear-gradient(#000000, transparent, #000000 ) ;*/}
 	transition: background-color 0.5s;
 	padding: 0.5rem;
 	z-index: 20;
 }
 .nav-link {
-    {/*background: linear-gradient(#000000, transparent, #000000 ) ;*/}
 	color: white;
 	right: 0;
 	top: 0;
@@ -43,10 +41,10 @@
 	transition: opacity 0.4s, top 0.4s, background-color 0.2s;
 }
 .nav-link:hover {
-	color: #D27685;
+	color: #d27685;
 }
 .dropdown-head:hover {
-	color: #D27685;
+	color: #d27685;
 }
 .dropdown:hover .nav-link {
 	opacity: 1;
