@@ -9,21 +9,18 @@ import Saturn from "./Saturn";
 import Uranus from "./Uranus";
 import Neptune from "./Neptune";
 
-import { Link } from "react-router-dom";
-
 import "./style.css";
 
 function Planet({ scale, name }) {
-	// handle case sensitivity in name
-	name = name.toLowerCase();
-	console.log(name);
-	// handle use of a percent symbol in scale
-	if (scale.charAt(scale.length - 1) === "%") {
-		scale = scale.slice(0, -1);
-	}
+    // handle case sensitivity in name
+    name = name.toLowerCase();
+    console.log(name);
+    // handle use of a percent symbol in scale
+    if (scale.charAt(scale.length - 1) === "%") {
+    	scale = scale.slice(0, -1);
+    }
 
-	return (
-        <Link to={`planets/${name}`}>
+    return (
             <div className="planet-container">
                 {name === "sun" && <Sun scale={scale} />}
                 {name === "mercury" && <Mercury scale={scale} />}
@@ -35,8 +32,7 @@ function Planet({ scale, name }) {
                 {name === "uranus" && <Uranus scale={scale} />}
                 {name === "neptune" && <Neptune scale={scale} />}
             </div>
-        </Link>
-	);
+    );
 }
 
 export default Planet;

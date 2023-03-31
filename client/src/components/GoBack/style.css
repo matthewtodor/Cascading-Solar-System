@@ -1,0 +1,15 @@
+.back {
+	place-content: center;
+	text-decoration: none;
+	font-family: inherit;
+	font-size: 2rem;
+	margin-right: 3rem;
+	border-right: 2px solid white;
+	position: relative;
+	z-index: 50;
+    background: linear-gradient(90deg, #000000, transparent) #000000;
+    transition: background-color 0.5s;
+}
+.back:hover .back {
+	background-color: #e91e63;
+}
