@@ -8,6 +8,11 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: all 3s ease-in-out;
+}
+
+.planet-container * {
+	transition: all 3s ease-in-out;
 }
 
 .planet-scale {
@@ -25,6 +30,10 @@
 	box-shadow: 20px 20px 200px 0 black;
 	width: 500px;
 	height: 500px;
+}
+
+.planet * {
+	transition: all 3s ease-in-out;
 }
 
 /* navigation */

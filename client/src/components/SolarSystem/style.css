@@ -6,6 +6,11 @@
 	height: 100%;
 }
 
+.solar-system *,
+.planet-orbit-container * {
+	transition: all 3s ease-in-out;
+}
+
 .planet-orbit-container {
 	position: absolute;
 	display: flex;
@@ -20,9 +25,31 @@
 .solar-system .planet:hover {
 	cursor: pointer;
 }
+
+.default-planet {
+	animation: default-planet 1s 2s ease-in-out both !important;
+}
+
+.focus-planet {
+	border: 0.5px solid rgba(255, 255, 255, 0);
+	width: 0px !important;
+	height: 0px !important;
+	transform: rotate(0deg);
+	/* animation: focus-planet 3s ease-in-out both !important; */
+}
+
+.focus-planet .planet {
+	transform: rotate(0deg) !important;
+}
+
+.unfocus-planet {
+	animation: unfocus-planet 3s ease-in-out both !important;
+}
+
 .page-link {
 	display: flex;
 }
+
 #sun-orbit {
 	z-index: 9;
 }
@@ -133,6 +160,37 @@
 
 .solar-system #earth-moon {
 	box-shadow: none;
+}
+
+@keyframes default-planet {
+	from {
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes focus-planet {
+	from {
+		max-width: 1000px;
+		max-height: 1000px;
+	}
+
+	to {
+		max-width: 0px;
+		max-height: 0px;
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes unfocus-planet {
+	from {
+	}
+
+	to {
+		opacity: 0;
+	}
 }
 
 @keyframes solar-system-orbit {
