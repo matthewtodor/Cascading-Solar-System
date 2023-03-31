@@ -8,6 +8,13 @@
 	padding: 3rem;
 	z-index: 20;
 }
+.nav h1 {
+    z-index: 50;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+}
 .dropdown {
 	display: flex;
 	flex-direction: column;
@@ -21,22 +28,25 @@
 	z-index: 50;
 }
 .dropdown-head {
-	background: linear-gradient(90deg, #000000, transparent) #000000;
+    {/*background: linear-gradient(#000000, transparent, #000000 ) ;*/}
 	transition: background-color 0.5s;
 	padding: 0.5rem;
 	z-index: 20;
 }
 .nav-link {
+    {/*background: linear-gradient(#000000, transparent, #000000 ) ;*/}
 	color: white;
 	right: 0;
 	top: 0;
 	opacity: 0;
 	position: absolute;
-	transition: opacity 0.5s ease-out, top 0.5s;
-	z-index: 10;
+	transition: opacity 0.4s, top 0.4s, background-color 0.2s;
 }
-.dropdown:hover .dropdown-head {
-	background-color: #e91e63;
+.nav-link:hover {
+	color: #D27685;
+}
+.dropdown-head:hover {
+	color: #D27685;
 }
 .dropdown:hover .nav-link {
 	opacity: 1;
