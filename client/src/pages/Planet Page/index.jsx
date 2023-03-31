@@ -5,15 +5,14 @@ import { useRouteLoaderData } from "react-router-dom";
 import "./style.css";
 const PlanetPage = () => {
 	const data = useRouteLoaderData("planets");
-	console.log(data);
 	let name = data.name;
 
 	return (
 		<main className="planet-page">
-			<section>
+			<figure className="planet-page-planet-container">
 				<Planet name={name} scale="100" />
-			</section>
-			<section>
+			</figure>
+			<section className="planet-page-details-container">
 				<Details />
 			</section>
 		</main>
