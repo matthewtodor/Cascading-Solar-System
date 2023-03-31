@@ -5,6 +5,7 @@ import PlanetPage from "../pages/Planet Page";
 import SolarSystem from "../components/SolarSystem";
 const apiUrl = process.env.REACT_APP_API_URL || `${window.location.protocol}//${window.location.hostname}:${window.location.port}/api/`;
 console.log(process.env.REACT_APP_API_URL);
+console.log(`${window.location.protocol}//${window.location.hostname}:${window.location.port}/api/`);
 const router = createBrowserRouter([
 	{
 		path: "/",
