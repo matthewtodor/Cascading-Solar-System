@@ -1,8 +1,10 @@
 import "./details.css";
-import { useRouteLoaderData } from "react-router-dom";
+import { useRouteLoaderData, useOutletContext } from "react-router-dom";
 
 export default function Details() {
 	const data = useRouteLoaderData("planets");
+    const [modalState, setModalState] = useOutletContext();
+
 	console.log(data.moons);
 	return (
 		<article className="details">
@@ -31,7 +33,22 @@ export default function Details() {
 						</header>
 						<section>
 							{data.moons.map((moon) => {
-								return <button key={moon.id}>{moon.name}</button>;
+								return <button 
+                                        key={moon.id} 
+                                        onClick={ () => { 
+                                            setModalState(
+                                                { 
+                                                    "show": !modalState.show, 
+                                                    "moon": [ 
+                                                        `${moon.name}`, 
+                                                        `${moon.name_history}`, 
+                                                        `${moon.size}`,
+                                                    ],
+                                                }
+                                            );
+                                        }}
+                                        type="button"
+                                    >{moon.name}</button>;
 							})}
 						</section>
 					</>
@@ -41,6 +58,7 @@ export default function Details() {
 					</section>
 				)}
 			</section>
+
 		</article>
 	);
 }
