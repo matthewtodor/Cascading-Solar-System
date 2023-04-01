@@ -1,4 +1,4 @@
-import "./Modal.css";
+import "./style.css";
 
 export default function MoonModal({ show, set, moon }) {
 	return (
@@ -13,8 +13,7 @@ export default function MoonModal({ show, set, moon }) {
 							<h3>Size</h3>
 							<p>
 								{" "}
-								<strong>Radius:</strong>
-								{moon[2]} miles
+								<strong>Radius:</strong> {moon[2]} miles
 							</p>
 							<p>
 								<strong>Diameter:</strong> {moon[3]} miles

@@ -14,7 +14,7 @@ const PlanetPage = () => {
 			</figure>
 			<article className="planet-page-details-container">
 				<div className="planet-page-name">
-					<h2>{name}</h2>
+					<h1>{name}</h1>
 				</div>
 				<div className="planet-page-details-content">
 					<Details />

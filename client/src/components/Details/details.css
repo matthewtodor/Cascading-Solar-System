@@ -22,7 +22,7 @@
 	padding-left: 10px;
 }
 
-.details header h3 {
+.details header h2 {
 	width: 100%;
 	margin-bottom: 8px;
 }
@@ -56,6 +56,8 @@
 	padding-left: 3%;
 }
 .moons-container header h3 {
+	width: 100%;
+	margin-bottom: 8px;
 	text-shadow: 3px 3px 1px var(--background-shadow-30);
 }
 .moons-container section {

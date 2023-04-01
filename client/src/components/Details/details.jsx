@@ -12,7 +12,7 @@ export default function Details() {
 		<section className="details">
 			<div className="scroll-container">
 				<header>
-					<h3>Size:</h3>
+					<h2>Size</h2>
 					<p>
 						<strong>Radius: </strong>
 						{data.size} miles
