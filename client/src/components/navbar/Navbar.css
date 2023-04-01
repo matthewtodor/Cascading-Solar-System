@@ -1,0 +1,75 @@
+.nav {
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	width: 100vw;
+	padding: 3rem;
+	z-index: 20;
+}
+.nav h1 {
+    z-index: 50;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+.dropdown {
+	display: flex;
+	flex-direction: column;
+	place-content: center;
+	text-decoration: none;
+	font-family: inherit;
+	font-size: 2rem;
+	margin-right: 3rem;
+	border-right: 2px solid white;
+	position: relative;
+	z-index: 50;
+}
+.dropdown-head {
+	transition: background-color 0.5s;
+	padding: 0.5rem;
+	z-index: 20;
+}
+.nav-link {
+	color: white;
+	right: 0;
+	top: 0;
+	opacity: 0;
+	position: absolute;
+	transition: opacity 0.4s, top 0.4s, background-color 0.2s;
+}
+.nav-link:hover {
+	color: #D27685;
+}
+.dropdown-head:hover {
+	color: #D27685;
+}
+.dropdown:hover .nav-link {
+	opacity: 1;
+}
+.dropdown:hover .venus-link {
+	top: 55px;
+}
+.dropdown:hover .mercury-link {
+	top: 90px;
+}
+.dropdown:hover .earth-link {
+	top: 125px;
+}
+.dropdown:hover .mars-link {
+	top: 160px;
+}
+.dropdown:hover .jupiter-link {
+	top: 195px;
+}
+.dropdown:hover .saturn-link {
+	top: 230px;
+}
+.dropdown:hover .uranus-link {
+	top: 265px;
+}
+.dropdown:hover .neptune-link {
+	top: 300px;
+}
