@@ -50,27 +50,3 @@ nav a {
 .dropdown:hover .nav-link {
 	opacity: 1;
 }
-.dropdown:hover .venus-link {
-	top: 55px;
-}
-.dropdown:hover .mercury-link {
-	top: 90px;
-}
-.dropdown:hover .earth-link {
-	top: 125px;
-}
-.dropdown:hover .mars-link {
-	top: 160px;
-}
-.dropdown:hover .jupiter-link {
-	top: 195px;
-}
-.dropdown:hover .saturn-link {
-	top: 230px;
-}
-.dropdown:hover .uranus-link {
-	top: 265px;
-}
-.dropdown:hover .neptune-link {
-	top: 300px;
-}
