@@ -1,25 +1,26 @@
-.nav {
+nav {
 	position: absolute;
 	top: 0;
 	display: flex;
-	justify-content: space-between;
+	justify-content: right;
 	color: white;
 	width: 100vw;
 	padding: 3rem;
-	z-index: 20;
 }
-.nav h1 {
+nav h1 {
 	z-index: 50;
 }
-.nav a {
+nav a {
 	text-decoration: none;
 	color: white;
 }
 .dropdown {
+	width: auto;
 	display: flex;
 	flex-direction: column;
 	place-content: center;
 	text-decoration: none;
+	text-align: end;
 	font-family: inherit;
 	font-size: 2rem;
 	margin-right: 3rem;

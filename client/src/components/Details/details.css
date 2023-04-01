@@ -1,62 +1,93 @@
 .details {
-	border: 2px solid var(--background-primary);
+	border: 2px solid var(--background-primary-30);
 	border-radius: 5px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	position: relative;
 	height: 50vh;
 	color: var(--highlight);
-	text-shadow: 5px 5px 5px var(--background-shadow);
+	text-shadow: 5px 5px 5px var(--background-shadow-30);
 	overflow: hidden;
 	margin: 3%;
 	display: flex;
 	flex-direction: column;
 }
-.details header section {
-	border-top-width: 2px;
-	border-bottom-width: 2px;
-	border-color: var(--shadow);
-	border-top-style: outset;
-	border-bottom-style: inset;
-	margin-left: 1px;
-	margin-right: 5px;
+
+.details header {
+	box-shadow: inset 0 0 5px var(--background-primary-30);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: left;
 	padding: 3px;
+	padding-left: 10px;
 }
 
-.details section {
+.details header h2 {
+	width: 100%;
+	margin-bottom: 8px;
+}
+.details header p {
+	flex: 1 1 50%;
+	margin-bottom: 6px;
+}
+
+.scroll-container {
+	height: inherit;
+	overflow: auto;
+}
+.facts-container {
 	display: flex;
-	justify-content: left;
 	flex-wrap: wrap;
+	text-align: left;
+}
+.facts-container ul {
+	margin-left: 5%;
+}
+.facts-container li {
+	list-style-type: circle;
 }
 .moons-container {
 	margin-top: auto;
 }
 .moons-container header {
+	box-shadow: inset 0 0 5px var(--background-primary-30);
 	flex: 1 1 100%;
 	text-align: left;
-	margin-left: 3%;
+	padding-left: 3%;
 }
 .moons-container header h3 {
-	text-shadow: 3px 3px 1px var(--background-shadow);
+	width: 100%;
+	margin-bottom: 8px;
+	text-shadow: 3px 3px 1px var(--background-shadow-30);
 }
 .moons-container section {
-	background-color: var(--background-secondary);
-	margin-top: 5px;
+	box-shadow: inset 0 0 5px var(--background-primary-30);
 	padding-top: 6px;
 	flex: 1 1 50%;
-	display: flex;
 	flex-wrap: wrap;
-	border-top: 3px solid var(--primary);
-	justify-content: center;
+
+	justify-content: flex-start;
+	max-height: 95%;
+	overflow: auto;
 }
 .moons-container section button {
+	cursor: pointer;
+	width: 30%;
 	color: var(--highlight);
 	font-weight: bold;
 	text-shadow: 1px 1px 1px var(--shadow);
-	background-color: var(--background-primary);
+	background-color: var(--background-primary-30);
 	padding: 3px 4px 3px 4px;
-	border-radius: 10%;
+	border-radius: 8px;
 	border-style: solid;
 	border-color: var(--primary);
 	margin: 4px;
+}
+.button-text {
+	margin: auto;
+	display: block;
+	width: 90%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
