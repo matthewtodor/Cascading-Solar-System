@@ -17,7 +17,7 @@ const PlanetPage = () => {
 					<h1>{name}</h1>
 				</div>
 				<div className="planet-page-details-content">
-					<Details />
+					<Details name={data.name} size={data.size} facts={data.facts} moons={data.moons} />
 				</div>
 			</article>
 		</main>

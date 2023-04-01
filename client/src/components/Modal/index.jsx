@@ -1,14 +1,14 @@
 import "./style.css";
 export default function MoonModal({ show, set, moon }) {
-    const handleClick = (e) => {
-        e.preventDefault();
-        set();
-    }
+	const handleClick = (e) => {
+		e.preventDefault();
+		set();
+	};
 	return (
 		<>
 			{show ? (
-				<div className="modal" >
-                <div className="modal-click" onClick={() => set()}></div>
+				<div className="modal">
+					<div className="modal-click" onClick={() => handleClick()}></div>
 					<div className="modal-content">
 						<header>
 							<h2>{moon[0]}</h2>

@@ -21,6 +21,7 @@
 	color: var(--primary);
 	font-size: 4em;
 	text-align: center;
+	pointer-events: none;
 }
 .planet-page-details-content {
 	border: 2px solid var(--primary);
