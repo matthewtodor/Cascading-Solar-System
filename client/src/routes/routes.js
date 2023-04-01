@@ -3,7 +3,7 @@ import App from "../App";
 import ErrorPage from "../pages/Error Page";
 import PlanetPage from "../pages/Planet Page";
 import SolarSystem from "../components/SolarSystem";
-
+const apiUrl = process.env.REACT_APP_API_URL || "/api/";
 const router = createBrowserRouter([
 	{
 		path: "/",
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
 				loader: async ({ params }) => {
 					let results;
 					try {
-						const res = await fetch(`/api/${params.name}`, {
+						const res = await fetch(`${apiUrl}${params.name}`, {
 							method: "GET",
 							headers: {
 								"Content-Type": "application/json",
