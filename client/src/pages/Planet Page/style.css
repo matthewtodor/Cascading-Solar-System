@@ -8,12 +8,25 @@
 	width: 65%;
 }
 .planet-page-details-container {
-	z-index: 1;
 	width: 35%;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+}
+.planet-page-name {
+	text-shadow: 5px 5px 5px var(--background-primary-30);
+	position: relative;
+	top: 23px;
+	z-index: 1;
+	color: var(--primary);
+	font-size: 4em;
+	text-align: center;
+}
+.planet-page-details-content {
 	border: 2px solid var(--primary);
 	border-radius: 3px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	background-color: var(--background-primary);
+	background-color: var(--background-primary-30);
 	box-shadow: inset 0 0 30px var(--primary);
 }

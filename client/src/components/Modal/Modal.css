@@ -1,13 +1,13 @@
 .modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
-    color: white;
-    background-color: var(--background-shadow);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+	color: white;
+	background-color: var(--background-shadow-60);
 }
 /*
 	--primary: #78cce2; 
@@ -15,11 +15,11 @@
 	--tertiary: #005066; 
 	--shadow: #002439; 
 	--highlight: #e4eff0;
-    */
+*/
 .modal-content {
 	display: flex;
 	flex-direction: column;
-    width: 40vw;
+	width: 40vw;
 	margin: 4px;
 	padding: 1rem;
 	color: var(--highlight);
@@ -27,26 +27,26 @@
 	border-radius: 5px;
 	border-style: solid;
 	border-color: var(--primary);
-	background-color: var(--shadow);
-    
+	background-color: var(--background-primary-60);
 }
 .modal-content header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
-.modal-content > span {
-    width: 100%;
-    padding: 0.3rem;
-    margin-top: 0.6rem;
-	border-top-width: 0.2rem;
-	border-bottom-width: 0.2rem;
-	border-color: var(--shadow);
-	border-top-style: outset;
-	border-bottom-style: inset;
+.modal-content aside {
+	display: flex;
+	flex-wrap: wrap;
+}
+.modal-content aside h3 {
+	width: 100%;
+	margin-bottom: 8px;
+}
+.modal-content aside p {
+	flex: 1 1 50%;
+	margin-bottom: 6px;
+}
 
-}
-.modal-content section {
+.modal-content article {
 	padding: 1rem;
 }
-

@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "./style.css";
 import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
@@ -10,12 +10,7 @@ function Navbar() {
 
 	let location = useLocation();
 	return (
-		<div className="nav">
-			<h1>
-				<Link to={`../..`} relative="path">
-					Cascading Solar System
-				</Link>
-			</h1>
+		<nav className="nav">
 			<div className="dropdown">
 				<Link to={`../..`} relative="path" className="dropdown-head">
 					{location.pathname === "/" ? `Planets` : `Back`}
@@ -43,7 +38,7 @@ function Navbar() {
 					);
 				})}
 			</div>
-		</div>
+		</nav>
 	);
 }
 export default Navbar;
