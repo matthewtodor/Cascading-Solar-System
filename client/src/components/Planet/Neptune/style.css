@@ -46,7 +46,7 @@
 }
 
 #neptune-moon-1-orbit {
-	animation: neptune-moon-1-orbit 100s ease-in-out infinite both;
+	animation: moon-orbit-medium 100s ease-in-out infinite both;
 }
 
 /* moon 2 */
@@ -70,7 +70,7 @@
 }
 
 #neptune-moon-2-orbit {
-	animation: neptune-moon-2-orbit 88s ease-in-out infinite both;
+	animation: moon-orbit-small 88s ease-in-out infinite both;
 }
 
 /* moon 3 */
@@ -94,78 +94,11 @@
 }
 
 #neptune-moon-3-orbit {
-	animation: neptune-moon-3-orbit 76s ease-in-out infinite both;
+	animation: moon-orbit-x-small 76s ease-in-out infinite both;
 }
 
 .neptune-moon-border-inset {
 	box-shadow: inset 1px 1px 6px hsla(210, 100%, 65%, 0.95);
-}
-
-/* animations */
-@keyframes neptune-moon-1-orbit {
-	from {
-		transform: matrix(1, 0, 0, 1, 800, -300);
-		z-index: 3;
-	}
-
-	50% {
-		transform: matrix(1, 0, 0, 1, -800, 300);
-		z-index: 3;
-	}
-
-	51% {
-		transform: matrix(1, 0, 0, 1, -800, 300);
-		z-index: -3;
-	}
-
-	to {
-		transform: matrix(1, 0, 0, 1, 800, -300);
-		z-index: -3;
-	}
-}
-
-@keyframes neptune-moon-2-orbit {
-	from {
-		transform: matrix(1, 0, 0, 1, 750, -250);
-		z-index: 2;
-	}
-
-	50% {
-		transform: matrix(1, 0, 0, 1, -750, 250);
-		z-index: 2;
-	}
-
-	51% {
-		transform: matrix(1, 0, 0, 1, -750, 250);
-		z-index: -2;
-	}
-
-	to {
-		transform: matrix(1, 0, 0, 1, 750, -250);
-		z-index: -2;
-	}
-}
-
-@keyframes neptune-moon-3-orbit {
-	from {
-		transform: matrix(1, 0, 0, 1, 700, -200);
-		z-index: 1;
-	}
-
-	50% {
-		transform: matrix(1, 0, 0, 1, -700, 200);
-		z-index: 1;
-	}
-
-	51% {
-		transform: matrix(1, 0, 0, 1, -700, 200);
-		z-index: -1;
-	}
-
-	to {
-		transform: matrix(1, 0, 0, 1, 700, -200);
-		z-index: -1;
-	}
 }
 
 /* resize in orbit for perspective */
@@ -185,15 +118,15 @@
 
 @keyframes neptune-moon-2-resize {
 	0% {
-		transform: matrix(0.4, 0, 0, 0.4, 0, 0);
-	}
-
-	50% {
 		transform: matrix(0.27, 0, 0, 0.27, 0, 0);
 	}
 
-	100% {
+	50% {
 		transform: matrix(0.4, 0, 0, 0.4, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.27, 0, 0, 0.27, 0, 0);
 	}
 }
 
