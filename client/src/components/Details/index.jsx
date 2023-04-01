@@ -1,11 +1,12 @@
 import "./details.css";
-import { useOutletContext } from "react-router-dom";
+import { useRouteLoaderData, useOutletContext } from "react-router-dom";
 
-export default function Details({ name, size, facts, moons }) {
+export default function Details() {
+	const data = useRouteLoaderData("planets");
 	const [modalState, setModalState] = useOutletContext();
-	let diameter = size * 2;
+	let diameter = data.size * 2;
 	diameter = diameter.toFixed(2);
-	let circumference = 2 * Math.PI * size;
+	let circumference = 2 * Math.PI * data.size;
 	circumference = circumference.toFixed(2);
 	return (
 		<section className="details">
@@ -14,7 +15,7 @@ export default function Details({ name, size, facts, moons }) {
 					<h2>Size</h2>
 					<p>
 						<strong>Radius: </strong>
-						{size} miles
+						{data.size} miles
 					</p>
 					<p>
 						<strong>Diameter: </strong>
@@ -27,21 +28,21 @@ export default function Details({ name, size, facts, moons }) {
 				</header>
 				<section className="facts-container">
 					<ul>
-						{facts.map((fact) => {
+						{data.facts.map((fact) => {
 							return <li key={fact.id}>{fact.fact}</li>;
 						})}
 					</ul>
 				</section>
 				<section className="moons-container">
 					{/* are there moons? */}
-					{moons.length ? (
+					{data.moons.length ? (
 						<>
 							<header>
 								<h3>Moons</h3>
-								<p>Total number of moons: {moons.length}</p>
+								<p>Total number of moons: {data.moons.length}</p>
 							</header>
 							<section>
-								{moons.map((moon) => {
+								{data.moons.map((moon) => {
 									return (
 										<button
 											key={moon.id}
@@ -61,7 +62,7 @@ export default function Details({ name, size, facts, moons }) {
 						</>
 					) : (
 						<section>
-							<h3>{name} doesn't have any moons! Check out other planets to see if they have moons!</h3>
+							<h3>{data.name} doesn't have any moons! Check out other planets to see if they have moons!</h3>
 						</section>
 					)}
 				</section>

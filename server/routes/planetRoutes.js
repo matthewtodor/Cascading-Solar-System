@@ -19,7 +19,7 @@ router.get("/:name", async (req, res) => {
 	try {
 		const PlanetData = await Planet.findOne({ where: { name: req.params.name }, include: [{ model: Moon }, { model: Fact }] });
 		if (!PlanetData) {
-			res.status(404).json({ message: "No Planet found with that id!" });
+			res.status(404).json({ message: "No Planet found with that name!" });
 			return;
 		}
 		res.status(200).json(PlanetData);

@@ -47,7 +47,7 @@
 }
 
 #jupiter-moon-1-orbit {
-	animation: jupiter-moon-1-orbit 80s ease-in-out infinite both;
+	animation: moon-orbit-large 80s ease-in-out infinite both;
 }
 
 /* moon 2 */
@@ -71,7 +71,7 @@
 }
 
 #jupiter-moon-2-orbit {
-	animation: jupiter-moon-2-orbit 60s ease-in-out infinite both;
+	animation: moon-orbit-medium 60s ease-in-out infinite both;
 }
 
 /* moon 3 */
@@ -95,7 +95,7 @@
 }
 
 #jupiter-moon-3-orbit {
-	animation: jupiter-moon-3-orbit 40s ease-in-out infinite both;
+	animation: moon-orbit-small 40s ease-in-out infinite both;
 }
 
 /* moon 4 */
@@ -119,114 +119,25 @@
 }
 
 #jupiter-moon-4-orbit {
-	animation: jupiter-moon-4-orbit 20s ease-in-out infinite both;
+	animation: moon-orbit-x-small 20s ease-in-out infinite both;
 }
 
 .jupiter-moon-border-inset {
 	box-shadow: inset 1px 1px 6px hsla(25, 100%, 90%, 0.95);
 }
 
-/* animations */
-@keyframes jupiter-moon-1-orbit {
-	from {
-		transform: matrix(1, 0, 0, 1, 700, -300);
-		z-index: 4;
-	}
-
-	50% {
-		transform: matrix(1, 0, 0, 1, -700, 300);
-		z-index: 4;
-	}
-
-	51% {
-		transform: matrix(1, 0, 0, 1, -700, 300);
-		z-index: -4;
-	}
-
-	to {
-		transform: matrix(1, 0, 0, 1, 700, -300);
-		z-index: -4;
-	}
-}
-
-@keyframes jupiter-moon-2-orbit {
-	from {
-		transform: matrix(1, 0, 0, 1, 600, -250);
-		z-index: 3;
-	}
-
-	50% {
-		transform: matrix(1, 0, 0, 1, -600, 250);
-		z-index: 3;
-	}
-
-	51% {
-		transform: matrix(1, 0, 0, 1, -600, 250);
-		z-index: -3;
-	}
-
-	to {
-		transform: matrix(1, 0, 0, 1, 600, -250);
-		z-index: -3;
-	}
-}
-
-@keyframes jupiter-moon-3-orbit {
-	from {
-		transform: matrix(1, 0, 0, 1, 500, -200);
-		z-index: 2;
-	}
-
-	50% {
-		transform: matrix(1, 0, 0, 1, -500, 200);
-		z-index: 2;
-	}
-
-	51% {
-		transform: matrix(1, 0, 0, 1, -500, 200);
-		z-index: -2;
-	}
-
-	to {
-		transform: matrix(1, 0, 0, 1, 500, -200);
-		z-index: -2;
-	}
-}
-
-@keyframes jupiter-moon-4-orbit {
-	from {
-		transform: matrix(1, 0, 0, 1, 400, -150);
-		z-index: 1;
-	}
-
-	50% {
-		transform: matrix(1, 0, 0, 1, -400, 150);
-		z-index: 1;
-	}
-
-	51% {
-		transform: matrix(1, 0, 0, 1, -400, 150);
-		z-index: -1;
-	}
-
-	to {
-		transform: matrix(1, 0, 0, 1, 400, -150);
-		z-index: -1;
-	}
-}
-
 /* resize in orbit for perspective */
 @keyframes jupiter-moon-1-resize {
 	0% {
-		transform: matrix(0.5, 0, 0, 0.5, 0, 0);
-	}
-
-	50% {
 		transform: matrix(0.11, 0, 0, 0.11, 0, 0);
 	}
 
-	100% {
+	50% {
 		transform: matrix(0.5, 0, 0, 0.5, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.11, 0, 0, 0.11, 0, 0);
 	}
 }
 
@@ -246,15 +157,15 @@
 
 @keyframes jupiter-moon-3-resize {
 	0% {
-		transform: matrix(0.3, 0, 0, 0.3, 0, 0);
-	}
-
-	50% {
 		transform: matrix(0.11, 0, 0, 0.11, 0, 0);
 	}
 
-	100% {
+	50% {
 		transform: matrix(0.3, 0, 0, 0.3, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.11, 0, 0, 0.11, 0, 0);
 	}
 }
 
