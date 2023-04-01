@@ -10,12 +10,7 @@ export default function Navbar() {
 
 	let location = useLocation();
 	return (
-		<div className="nav">
-			<h1>
-				<Link to={`../..`} relative="path">
-					Cascading Solar System
-				</Link>
-			</h1>
+		<nav className="nav">
 			<div className="dropdown">
 				<Link to={`../..`} relative="path" className="dropdown-head">
 					{location.pathname === "/" ? `Planets` : `Back`}
@@ -43,6 +38,6 @@ export default function Navbar() {
 					);
 				})}
 			</div>
-		</div>
+		</nav>
 	);
 }

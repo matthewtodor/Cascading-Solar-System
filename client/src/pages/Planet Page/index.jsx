@@ -12,9 +12,14 @@ const PlanetPage = () => {
 			<figure className="planet-page-planet-container">
 				<Planet name={name} scale="100" />
 			</figure>
-			<section className="planet-page-details-container">
-				<Details />
-			</section>
+			<article className="planet-page-details-container">
+				<div className="planet-page-name">
+					<h1>{name}</h1>
+				</div>
+				<div className="planet-page-details-content">
+					<Details />
+				</div>
+			</article>
 		</main>
 	);
 };
