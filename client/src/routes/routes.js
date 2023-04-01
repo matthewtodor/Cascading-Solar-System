@@ -3,9 +3,9 @@ import App from "../App";
 import ErrorPage from "../pages/Error Page";
 import PlanetPage from "../pages/Planet Page";
 import SolarSystem from "../components/SolarSystem";
-const apiUrl = process.env.REACT_APP_API_URL || `${window.location.protocol}//${window.location.hostname}/api/`;
-console.log(process.env.REACT_APP_API_URL);
-console.log(`${window.location.protocol}//${window.location.hostname}/api/`);
+const apiUrl = process.env.REACT_APP_API_URL || `${process.env.REACT_APP_PORT}/api`;
+console.log("REACT_APP_API_URL : ", process.env.REACT_APP_API_URL);
+console.log("REACT_APP_PORT : ", process.env.REACT_APP_PORT);
 const router = createBrowserRouter([
 	{
 		path: "/",
