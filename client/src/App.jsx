@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import MoonModal from "./components/Modal/Modal";
+import MoonModal from "./components/Modal";
 
 const App = () => {
 	const [modalState, setModalState] = useState({
