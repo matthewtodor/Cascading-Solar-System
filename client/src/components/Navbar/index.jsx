@@ -1,7 +1,7 @@
 import "./style.css";
 import { Link, useLocation } from "react-router-dom";
 
-function Navbar() {
+export default function Navbar() {
 	//const history = useHistory();
 	//const goBack = () => {
 	//    history.goBack()
@@ -41,4 +41,3 @@ function Navbar() {
 		</nav>
 	);
 }
-export default Navbar;

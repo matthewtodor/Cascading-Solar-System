@@ -4,7 +4,6 @@ import ErrorPage from "../pages/Error Page";
 import PlanetPage from "../pages/Planet Page";
 import SolarSystem from "../components/SolarSystem";
 const apiUrl = process.env.REACT_APP_API_URL || "/api/";
-
 const router = createBrowserRouter([
 	{
 		path: "/",
