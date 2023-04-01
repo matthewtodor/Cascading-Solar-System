@@ -246,3 +246,158 @@
 		background-position: 150% 0%, 225% 35%;
 	}
 }
+
+/* moon orbit paths */
+@keyframes moon-orbit-xx-large {
+	from {
+		transform: matrix(1, 0, 0, 1, 1000, -350);
+		z-index: 5;
+	}
+
+	50% {
+		transform: matrix(1, 0, 0, 1, -1000, 350);
+		z-index: 5;
+	}
+
+	51% {
+		transform: matrix(1, 0, 0, 1, -1000, 350);
+		z-index: -5;
+	}
+
+	to {
+		transform: matrix(1, 0, 0, 1, 1000, -350);
+		z-index: -5;
+	}
+}
+
+@keyframes moon-orbit-x-large {
+	from {
+		transform: matrix(1, 0, 0, 1, -950, 300);
+		z-index: -4;
+	}
+
+	50% {
+		transform: matrix(1, 0, 0, 1, 950, -300);
+		z-index: -4;
+	}
+
+	51% {
+		transform: matrix(1, 0, 0, 1, 950, -300);
+		z-index: 4;
+	}
+
+	to {
+		transform: matrix(1, 0, 0, 1, -950, 300);
+		z-index: 4;
+	}
+}
+
+@keyframes moon-orbit-large {
+	from {
+		transform: matrix(1, 0, 0, 1, 900, -250);
+		z-index: 3;
+	}
+
+	50% {
+		transform: matrix(1, 0, 0, 1, -900, 250);
+		z-index: 3;
+	}
+
+	51% {
+		transform: matrix(1, 0, 0, 1, -900, 250);
+		z-index: -3;
+	}
+
+	to {
+		transform: matrix(1, 0, 0, 1, 900, -250);
+		z-index: -3;
+	}
+}
+
+@keyframes moon-orbit-medium {
+	from {
+		transform: matrix(1, 0, 0, 1, -850, 200);
+		z-index: -2;
+	}
+
+	50% {
+		transform: matrix(1, 0, 0, 1, 850, -200);
+		z-index: -2;
+	}
+
+	51% {
+		transform: matrix(1, 0, 0, 1, 850, -200);
+		z-index: 2;
+	}
+
+	to {
+		transform: matrix(1, 0, 0, 1, -850, 200);
+		z-index: 2;
+	}
+}
+
+@keyframes moon-orbit-small {
+	from {
+		transform: matrix(1, 0, 0, 1, 800, -150);
+		z-index: 1;
+	}
+
+	50% {
+		transform: matrix(1, 0, 0, 1, -800, 150);
+		z-index: 1;
+	}
+
+	51% {
+		transform: matrix(1, 0, 0, 1, -800, 150);
+		z-index: -1;
+	}
+
+	to {
+		transform: matrix(1, 0, 0, 1, 800, -150);
+		z-index: -1;
+	}
+}
+
+@keyframes moon-orbit-x-small {
+	from {
+		transform: matrix(1, 0, 0, 1, 700, -150);
+		z-index: 1;
+	}
+
+	50% {
+		transform: matrix(1, 0, 0, 1, -700, 150);
+		z-index: 1;
+	}
+
+	51% {
+		transform: matrix(1, 0, 0, 1, -700, 150);
+		z-index: -1;
+	}
+
+	to {
+		transform: matrix(1, 0, 0, 1, 700, -150);
+		z-index: -1;
+	}
+}
+
+@keyframes moon-orbit-xx-small {
+	from {
+		transform: matrix(1, 0, 0, 1, 600, -150);
+		z-index: 1;
+	}
+
+	50% {
+		transform: matrix(1, 0, 0, 1, -600, 150);
+		z-index: 1;
+	}
+
+	51% {
+		transform: matrix(1, 0, 0, 1, -600, 150);
+		z-index: -1;
+	}
+
+	to {
+		transform: matrix(1, 0, 0, 1, 600, -150);
+		z-index: -1;
+	}
+}
