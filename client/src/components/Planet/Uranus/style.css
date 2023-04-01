@@ -45,7 +45,7 @@
 }
 
 #uranus-moon-1-orbit {
-	animation: uranus-moon-1-orbit 100s ease-in-out infinite both;
+	animation: moon-orbit-x-large 100s ease-in-out infinite both;
 }
 
 /* moon 2 */
@@ -69,7 +69,7 @@
 }
 
 #uranus-moon-2-orbit {
-	animation: uranus-moon-2-orbit 88s ease-in-out infinite both;
+	animation: moon-orbit-large 88s ease-in-out infinite both;
 }
 
 /* moon 3 */
@@ -93,7 +93,7 @@
 }
 
 #uranus-moon-3-orbit {
-	animation: uranus-moon-3-orbit 76s ease-in-out infinite both;
+	animation: moon-orbit-medium 76s ease-in-out infinite both;
 }
 
 /* moon 4 */
@@ -117,7 +117,7 @@
 }
 
 #uranus-moon-4-orbit {
-	animation: uranus-moon-4-orbit 64s ease-in-out infinite both;
+	animation: moon-orbit-small 64s ease-in-out infinite both;
 }
 
 /* moon 5 */
@@ -141,122 +141,11 @@
 }
 
 #uranus-moon-5-orbit {
-	animation: uranus-moon-5-orbit 52s ease-in-out infinite both;
+	animation: moon-orbit-x-small 52s ease-in-out infinite both;
 }
 
 .uranus-moon-border-inset {
 	box-shadow: inset 1px 1px 6px hsla(210, 100%, 75%, 0.95);
-}
-
-/* animations */
-@keyframes uranus-moon-1-orbit {
-	from {
-		transform: matrix(1, 0, 0, 1, 700, -300);
-		z-index: 5;
-	}
-
-	50% {
-		transform: matrix(1, 0, 0, 1, -700, 300);
-		z-index: 5;
-	}
-
-	51% {
-		transform: matrix(1, 0, 0, 1, -700, 300);
-		z-index: -5;
-	}
-
-	to {
-		transform: matrix(1, 0, 0, 1, 700, -300);
-		z-index: -5;
-	}
-}
-
-@keyframes uranus-moon-2-orbit {
-	from {
-		transform: matrix(1, 0, 0, 1, 600, -250);
-		z-index: 4;
-	}
-
-	50% {
-		transform: matrix(1, 0, 0, 1, -600, 250);
-		z-index: 4;
-	}
-
-	51% {
-		transform: matrix(1, 0, 0, 1, -600, 250);
-		z-index: -4;
-	}
-
-	to {
-		transform: matrix(1, 0, 0, 1, 600, -250);
-		z-index: -4;
-	}
-}
-
-@keyframes uranus-moon-3-orbit {
-	from {
-		transform: matrix(1, 0, 0, 1, 500, -200);
-		z-index: 3;
-	}
-
-	50% {
-		transform: matrix(1, 0, 0, 1, -500, 200);
-		z-index: 3;
-	}
-
-	51% {
-		transform: matrix(1, 0, 0, 1, -500, 200);
-		z-index: -3;
-	}
-
-	to {
-		transform: matrix(1, 0, 0, 1, 500, -200);
-		z-index: -3;
-	}
-}
-
-@keyframes uranus-moon-4-orbit {
-	from {
-		transform: matrix(1, 0, 0, 1, 400, -150);
-		z-index: 2;
-	}
-
-	50% {
-		transform: matrix(1, 0, 0, 1, -400, 150);
-		z-index: 2;
-	}
-
-	51% {
-		transform: matrix(1, 0, 0, 1, -400, 150);
-		z-index: -2;
-	}
-
-	to {
-		transform: matrix(1, 0, 0, 1, 400, -150);
-		z-index: -2;
-	}
-}
-
-@keyframes uranus-moon-5-orbit {
-	from {
-		transform: matrix(1, 0, 0, 1, 400, -150);
-		z-index: 1;
-	}
-
-	50% {
-		transform: matrix(1, 0, 0, 1, -400, 150);
-		z-index: 1;
-	}
-
-	51% {
-		transform: matrix(1, 0, 0, 1, -400, 150);
-		z-index: -1;
-	}
-
-	to {
-		transform: matrix(1, 0, 0, 1, 400, -150);
-		z-index: -1;
-	}
 }
 
 /* resize in orbit for perspective */
@@ -276,15 +165,15 @@
 
 @keyframes uranus-moon-2-resize {
 	0% {
-		transform: matrix(0.4, 0, 0, 0.4, 0, 0);
-	}
-
-	50% {
 		transform: matrix(0.15, 0, 0, 0.15, 0, 0);
 	}
 
-	100% {
+	50% {
 		transform: matrix(0.4, 0, 0, 0.4, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.15, 0, 0, 0.15, 0, 0);
 	}
 }
 
@@ -304,15 +193,15 @@
 
 @keyframes uranus-moon-4-resize {
 	0% {
-		transform: matrix(0.2, 0, 0, 0.2, 0, 0);
-	}
-
-	50% {
 		transform: matrix(0.12, 0, 0, 0.12, 0, 0);
 	}
 
-	100% {
+	50% {
 		transform: matrix(0.2, 0, 0, 0.2, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.12, 0, 0, 0.12, 0, 0);
 	}
 }
 
