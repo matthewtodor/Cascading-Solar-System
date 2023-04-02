@@ -1,0 +1,21 @@
+.moon-button {
+	cursor: pointer;
+	width: 30%;
+	color: var(--highlight);
+	font-weight: bold;
+	text-shadow: 1px 1px 1px var(--shadow);
+	background-color: var(--background-primary-30);
+	padding: 6px 6px 6px 6px;
+	border-radius: 8px;
+	border-style: solid;
+	border-color: var(--primary);
+	margin: 4px;
+}
+.button-text {
+	margin: auto;
+	display: block;
+	width: 90%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

@@ -4,13 +4,16 @@ import SolarSystem from "../../components/SolarSystem";
 import "./style.css";
 const Home = () => {
 	return (
-		<main className="home">
-			<section className="solarsystem">
+		<>
+			<main className="home">
 				<SolarSystem scale="100" />
-			</section>
 
-			<HomePanel />
-		</main>
+				<HomePanel />
+			</main>
+			<footer>
+				<p> For more information about the creators of this application, visit our githubs:</p>
+			</footer>
+		</>
 	);
 };
 

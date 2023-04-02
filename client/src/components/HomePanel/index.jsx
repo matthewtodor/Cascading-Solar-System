@@ -1,29 +1,28 @@
 import "./style.css";
 const HomePanel = () => {
 	return (
-		<section className="home-panel-outer">
-			<div className="scroll-container">
-				<header>
-					<h2>Size</h2>
-					<p>
-						<strong>Radius: </strong>
-						miles
-					</p>
-					<p>
-						<strong>Diameter: </strong>
-						miles
-					</p>
-					<p>
-						<strong>Circumference: </strong>
-						miles
-					</p>
-				</header>
-				<section className="facts-container">
-					<ul></ul>
+		<article className="home-panel">
+			<header className="home-panel-name">
+				<h1>Our Solar System</h1>
+			</header>
+			<section className="home-panel-outer">
+				<section className="home-panel-inner">
+					<div className="scroll-container">
+						<section className="facts-container" id="solar-system-facts-container">
+							<h2>Welcome to our galactic home!</h2>
+							<p>The solar system we live in is massive, despite it currently fitting on this screen! It contains:</p>
+							<ul>
+								<li>8 planets</li>
+								<li>5 dwarf planets</li>
+								<li>1 asteroid belt (between Mars and Saturn)</li>
+							</ul>
+							<p>It is within the Milky Way galaxy, and is the only known location of life</p>
+							<p>To find out information about the planets, click on them, or use the navigation panel!</p>
+						</section>
+					</div>
 				</section>
-				<section className="moons-container"></section>
-			</div>
-		</section>
+			</section>
+		</article>
 	);
 };
 export default HomePanel;

@@ -1,6 +1,6 @@
 .home {
 	display: flex;
 }
-.solarsystem {
-	width: 100vw;
+.solar-system {
+	flex: 1;
 }

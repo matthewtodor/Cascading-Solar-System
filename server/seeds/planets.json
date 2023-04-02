@@ -3,54 +3,54 @@
 		"name": "Mercury",
 		"size": 1516,
 		"sun_distance": 36000000,
-		"core": "solid"
+		"core": "Terrestrial"
 	},
 	{
 		"name": "Venus",
 		"size": 3760.4,
 		"sun_distance": 67000000,
-		"core": "solid"
+		"core": "Terrestrial"
 	},
 	{
 		"name": "Earth",
 		"size": 3958.8,
 		"sun_distance": 93000000,
-		"core": "solid"
+		"core": "Terrestrial"
 	},
 	{
 		"name": "Mars",
 		"size": 2106.1,
 		"sun_distance": 142000000,
-		"core": "solid"
+		"core": "Terrestrial"
 	},
 	{
 		"name": "Jupiter",
 		"size": 43440.7,
 		"sun_distance": 484000000,
-		"core": "solid"
+		"core": "Jovian (Gas Giant)"
 	},
 	{
 		"name": "Saturn",
 		"size": 36183.7,
 		"sun_distance": 889000000,
-		"core": "solid"
+		"core": "Jovian (Gas Giant)"
 	},
 	{
 		"name": "Uranus",
 		"size": 15759.2,
 		"sun_distance": 1790000000,
-		"core": "solid"
+		"core": "Jovian (Ice Giant)"
 	},
 	{
 		"name": "Neptune",
 		"size": 15299.4,
 		"sun_distance": 2880000000,
-		"core": "solid"
+		"core": "Jovian (Ice Giant)"
 	},
 	{
 		"name": "Sun",
 		"size": 432690,
 		"sun_distance": 0,
-		"core": "gas"
+		"core": "Full of Explosives"
 	}
 ]

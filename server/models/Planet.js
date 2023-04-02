@@ -24,7 +24,7 @@ Planet.init(
 			allowNull: false,
 		},
 		core: {
-			type: DataTypes.ENUM("solid", "gas"),
+			type: DataTypes.ENUM("Terrestrial", "Jovian (Gas Giant)", "Jovian (Ice Giant)", "Full of Explosives"),
 			allowNull: false,
 		},
 	},
