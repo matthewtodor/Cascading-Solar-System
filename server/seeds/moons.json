@@ -838,5 +838,156 @@
 		"name_history": "This moon was originally designated S/1986 U8, but was later renamed for the character of Ophelia in Shakespeare's 'Hamlet.' Ophelia is the daughter of Polonius and fiance of Hamlet in the play.",
 		"size": 13.29734,
 		"planet_id": 7
+	},
+	{
+		"name": "Perdita",
+		"name_history": "Originally called S/1986 U10, Perdita was named for the daughter of Leontes and Hermione in William Shakespeare's play, 'The Winter's Tale.'' In the play Leontes initially refuses to believe that Perdita is his daughter because he thinks that his wife has had an affair with king Polixenes of Bohemia. Circumstances lead to Perdita being abandoned by her father and later found and raised by a Bohemian shepherd. 16 years later Bohemian Prince Florizel meets and falls in love with Perdita and it is revealed that she is the princess of Sicily. Perdita's father Leontes reconciles his differences with king Polixenes, and the marriage is ratified.",
+		"size": 9.32057,
+		"planet_id": 7
+	},
+	{
+		"name": "Portia",
+		"name_history": "This moon is named after Portia, the heroine of William Shakespeare's 16th century play 'The Merchant of Venice.' It was originally designated S/1986 U 1",
+		"size": 43.496,
+		"planet_id": 7
+	},
+	{
+		"name": "Prospero",
+		"name_history": "Originally called S/1999 U3, Prospero was named for a sorcerer in William Shakespeare's play, 'The Tempest.' Prospero, rightfully Duke of Milan, has his dukedom usurped by his brother Antonio with the help of Alonso, King of Naples. He is forced to flee with his daughter Miranda to an island in the Mediterranean, where he perfects his magical powers, hoping to use them to regain his dukedom.",
+		"size": 15.5343,
+		"planet_id": 7
+	},
+	{
+		"name": "Puck",
+		"name_history": "Originally designated S/1985 U1, Puck is named for a mischievous sprite in William Shakespeare's 'A Midsummer Night's Dream.'",
+		"size": 46.6028,
+		"planet_id": 7
+	},
+
+	{
+		"name": "Rosalind",
+		"name_history": "Originally designated S/1986 U4, Rosalind was named for the daughter of a banished Duke in Shakespeare's play 'As You Like It.'",
+		"size": 22.3694,
+		"planet_id": 7
+	},
+	{
+		"name": "Setebos",
+		"name_history": "Originally called S/1999 U1, Setebos was the name of a South American (Patagonian) deity, which William Shakespeare used as the god worshipped by Sycorax the witch and her son Caliban in the play, 'The Tempest.'",
+		"size": 14.9129,
+		"planet_id": 7
+	},
+	{
+		"name": "Stephano",
+		"name_history": "Originally called S/1999 U2, Stephano was named for a boisterous butler of King Alonso in William Shakespeare's play, 'The Tempest.'",
+		"size": 9.94194,
+		"planet_id": 7
+	},
+	{
+		"name": "Sycorax",
+		"name_history": "Originally called S/1997 U2, Sycorax was named for a witch who was the mother of Caliban in William Shakespeare's play, 'The Tempest,' and who has died before the action of the play begins.",
+		"size": 46.6028,
+		"planet_id": 7
+	},
+	{
+		"name": "Titania",
+		"name_history": "Titania is named for the queen of the fairies in William Shakespeare's 16th century play 'A Midsummer Night's Dream.'",
+		"size": 497.097,
+		"planet_id": 7
+	},
+	{
+		"name": "Trinculo",
+		"name_history": "Originally called S/2001 U1, Trinculo was named for the jester in Shakespeare's play 'The Tempest.'",
+		"size": 3.72823,
+		"planet_id": 7
+	},
+	{
+		"name": "Umbriel",
+		"name_history": "Umbriel is named for a malevolent spirit in English poet Alexander Pope's 18th century poem 'Rape of the Lock.'",
+		"size": 372.823,
+		"planet_id": 7
+	},
+	{
+		"name": "Despina",
+		"name_history": "Despina is a daughter of Poseidon (the Roman god Neptune) and Demeter. Despina was originally designated S/1989 N3.",
+		"size": 48.467,
+		"planet_id": 8
+	},
+	{
+		"name": "Galatea",
+		"name_history": "Galatea was a sea nymph who attended to Poseidon (the Roman god Neptune). The nymphs are also known as the Nereids. The moon was originally designated S/1989 N 4.",
+		"size": 54.30784,
+		"planet_id": 8
+	},
+	{
+		"name": "Halimede",
+		"name_history": "Halimede is named after one of the Nereids. Halimede was originally designated S/2002 N 1.",
+		"size": 19.2625,
+		"planet_id": 8
+	},
+	{
+		"name": "Hippocamp",
+		"name_history": "Hippocamp is a half-horse half-fish from Greek mythology. The scientific name for the seahorse is Hippocampus, also the name of an important part of the human brain. The rules of the International Astronomical Union require that the moons of Neptune are named after Greek and Roman mythology of the undersea world.",
+		"size": 10.5633,
+		"planet_id": 8
+	},
+	{
+		"name": "Laomedeia",
+		"name_history": "Irregular satellites are named for the Nereids, daughters of Nereus and Doris and the attendants of Neptune. Laomedeia is named for one of the Nereids. Laomedeia was originally designated as S/2002 N 3.",
+		"size": 13.0488,
+		"planet_id": 8
+	},
+	{
+		"name": "Larissa",
+		"name_history": "Larissa was a nymph from Greek mythology. The moon was originally designated S/1989 N 2.",
+		"size": 60.273,
+		"planet_id": 8
+	},
+	{
+		"name": "Naiad",
+		"name_history": "Naiad is named after a type of nymph who presided over fountains, wells, springs, streams, and brooks in Greek mythology. Naiad was originally designated S/1989 N 6.",
+		"size": 18.76541,
+		"planet_id": 8
+	},
+	{
+		"name": "Nereid",
+		"name_history": "Nereid is named after the Nereids, sea-nymphs, in Greek mythology. Gerard P. Kuiper proposed the name when he reported his discovery.",
+		"size": 110.91476,
+		"planet_id": 8
+	},
+	{
+		"name": "Neso",
+		"name_history": "Neso like many of the outer satellites of Neptune, is named after one of the Nereids. Neso was originally designated S/2002 N 4.",
+		"size": 18.6411,
+		"planet_id": 8
+	},
+	{
+		"name": "Proteus",
+		"name_history": "Proteus is named after the shape-changing sea god of Greek mythology. Proteus was originally designated S/1989 N 1.",
+		"size": 130.488,
+		"planet_id": 8
+	},
+	{
+		"name": "Psamathe",
+		"name_history": "Psamathe like many of the satellites of Neptune, is named after one of the Nereids. Psamathe was originally designated S/2003 N 1.",
+		"size": 12.4274,
+		"planet_id": 8
+	},
+	{
+		"name": "Sao",
+		"name_history": "Moons of Neptune are named for characters from Greek or Roman mythology associated with Neptune or Poseidon, or the oceans. Irregular satellites are named for the Nereids, daughters of Nereus and Doris and the attendants of Neptune.",
+		"size": 13.6702,
+		"planet_id": 8
+	},
+	{
+		"name": "Thalassa",
+		"name_history": "Thalassa was named after a daughter of Aether and Hemera from Greek mythology. Thalassa is also the Greek word for sea. The moon was originally designated as S/1989 N 5.",
+		"size": 25.28981,
+		"planet_id": 8
+	},
+	{
+		"name": "Triton",
+		"name_history": "Triton is named after the son of Poseidon (the Greek god comparable to the Roman Neptune). Until the discovery of the second moon Nereid in 1949, Triton was commonly known as simply 'the satellite of Neptune.'",
+		"size": 838.8511,
+		"planet_id": 8
 	}
 ]
