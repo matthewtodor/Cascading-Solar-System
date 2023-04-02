@@ -57,6 +57,53 @@ The information about our solar system and it's bodies were collected from NASA'
 
 [Solar System Exploration: Our Galactic Neighborhood - NASA](https://solarsystem.nasa.gov/ "Solar System Exploration: Our Galactic Neighborhood")
 
+<details>
+<summary><h3><strong>Technical Requirements</strong></h3></summary>
+
+ <h4>Planets:</h4>
+    <ul>
+    <li>
+Each planet of the solar system must have its own profile page.
+    </li>
+    <ul>
+    <li>Navigating to a planet changes the URL and displays the planet associated with that url endpoint</li>
+    </ul>
+    <li>
+    
+Each page must include at a minimum (Name of the planet, size, distance from the Sun, three identifying facts, solid or gas core, and a visual representation of the planet)
+NOTE: No images, assets, emojis, or SVGs are permitted. The visual representation of each planet must be made ENTIRELY out of CSS.
+    </li>
+    <li>
+If the planet has a moon, you must display the following information for every moon (Name, history behind name, and size). 
+    </li>
+<li>
+Planet pages must include at least two different components that are NOT used on your homepage.
+    </li>
+    <li>
+    
+If a planet has more than one moon, the moon information must be displayed in repeating elements.
+    </li>
+    <li>
+    
+All planet and moon content MUST be stored in a database.
+    </li>
+    </ul>
+
+Backend:
+
+-- You must use foreign keys.
+-- Planets and Moons must be stored separate from one another.
+-- You must incorporate one ENUM for the planet data.
+
+Homepage:
+
+-- The homepage should be an overview of the solar system.
+-- The data included will be up to each team.
+-- The homepage must include at least two components that are NOT used on any planet page.
+-- Homepage content does not need to be stored in a database and can be coded into your components.
+
+</details>
+
 ### Current Wireframe:
 
 ![Solar System Wireframe](./assets/images/solar-system-wireframe.png)
