@@ -3,6 +3,7 @@ import App from "../App";
 import ErrorPage from "../pages/Error Page";
 import PlanetPage from "../pages/Planet Page";
 import SolarSystem from "../components/SolarSystem";
+import Home from "../pages/Home";
 const apiUrl = process.env.REACT_APP_API_URL || "/api/";
 const router = createBrowserRouter([
 	{
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: "/",
-				element: <SolarSystem scale="100" />,
+				element: <Home scale="100" />,
 			},
 			{
 				path: "planets/:name",

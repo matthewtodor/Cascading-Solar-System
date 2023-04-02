@@ -1,0 +1,55 @@
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: var(--background-highlight-30);
+}
+.home-panel {
+	position: absolute;
+	top: 15%;
+	right: 2vw;
+	width: 25%;
+}
+
+.home-panel-name {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-shadow: 5px 5px 5px var(--background-primary-30);
+	position: relative;
+	top: 15px;
+	z-index: 1;
+	color: var(--primary);
+	font-size: 4em;
+	text-align: center;
+	pointer-events: none;
+}
+.home-panel-name h1 {
+	font-size: smaller;
+}
+.home-panel-outer {
+	border: 2px solid var(--primary);
+	border-radius: 3px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	background-color: var(--background-tertiary-60);
+	box-shadow: inset 0 0 30px var(--primary);
+	color: var(--highlight);
+}
+.home-panel-inner {
+	border: 2px solid var(--background-primary-30);
+	border-radius: 5px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	height: 50vh;
+	color: var(--highlight);
+	text-shadow: 5px 5px 5px var(--background-shadow-30);
+	overflow: hidden;
+	margin: 3%;
+	display: flex;
+	flex-direction: column;
+}
+
+#solar-system-facts-container {
+	padding: 8px;
+}

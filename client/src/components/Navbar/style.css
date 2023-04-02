@@ -3,13 +3,13 @@ nav {
 	top: 0;
 	display: flex;
 	justify-content: left;
-	color: white;
+	color: var(--highlight);
 	width: 100vw;
 	padding: 3rem;
 }
 nav a {
 	text-decoration: none;
-	color: white;
+	color: var(--highlight);
 }
 .dropdown {
 	width: auto;
@@ -21,7 +21,7 @@ nav a {
 	font-family: inherit;
 	font-size: 2rem;
 	margin-left: 3rem;
-	border-left: 2px solid white;
+	border-left: 2px solid var(--primary);
 	position: relative;
 	z-index: 50;
 }
@@ -31,7 +31,7 @@ nav a {
 	z-index: 20;
 }
 .nav-link {
-	color: white;
+	color: var(--highlight);
 	left: 0;
 	top: 0;
 	display: none;
@@ -40,10 +40,10 @@ nav a {
 	padding-left: 0.5rem;
 }
 .nav-link:hover {
-	color: #d27685;
+	color: var(--primary);
 }
 .dropdown-head:hover {
-	color: #d27685;
+	color: var(--primary);
 }
 .dropdown:hover .nav-link {
 	display: block;
