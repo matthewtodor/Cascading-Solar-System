@@ -17,7 +17,7 @@ export default function MoonModal({ open, name, size, nameHistory, onClose }) {
 		return function cleanUp() {
 			document.body.removeEventListener("keydown", closeOnEscape);
 		};
-	}, []);
+	});
 	if (!open) {
 		return null;
 	}

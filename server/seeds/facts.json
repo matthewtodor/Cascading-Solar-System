@@ -15,7 +15,6 @@
 		"fact": "Jupiter is twice as large as all other planets combined!",
 		"planet_id": 5
 	},
-
 	{
 		"fact": "The planet has rings, like Saturn, but they are very faint, and are made of dust instead of ice.",
 		"planet_id": 5
@@ -23,5 +22,89 @@
 	{
 		"fact": "It takes Sunlight 43 minutes to travel from the Sun to Jupiter!",
 		"planet_id": 5
+	},
+	{
+		"fact": "Venus is the hottest planet in our solar system, due to it's think atmosphere trapping heat in a greenhouse effect.",
+		"planet_id": 2
+	},
+	{
+		"fact": "The planet rotates on its axis backward, compared to most other planets in the solar system",
+		"planet_id": 2
+	},
+	{
+		"fact": "The yellow color of the planet partially comes from the clouds of sulfuric acid.",
+		"planet_id": 2
+	},
+	{
+		"fact": "Earth is the only planet in our solar system with liquid water on the surface",
+		"planet_id": 3
+	},
+	{
+		"fact": "The name 'Earth' is at least 1000 years old. Earth is a Germanic word, which simply means 'the ground'",
+		"planet_id": 3
+	},
+	{
+		"fact": "If the Sun were as tall as a typical front door, Earth would be the size of a nickel.",
+		"planet_id": 3
+	},
+	{
+		"fact": "Mars is a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past.",
+		"planet_id": 4
+	},
+	{
+		"fact": "Mars is known as the Red Planet because iron minerals in the Martian soil oxidize, or rust, causing the soil and atmosphere to look red.",
+		"planet_id": 4
+	},
+	{
+		"fact": "Phobos, the innermost and larger moon, is slowly moving towards Mars and will crash into the planet or break apart in about 50 million years.",
+		"planet_id": 4
+	},
+	{
+		"fact": "Saturn's rings are thought to be pieces of comets, asteroids, or shattered moons that broke up before they reached the planet, torn apart by Saturn's powerful gravity.",
+		"planet_id": 6
+	},
+	{
+		"fact": "Saturn's ring system extends up to 175,000 miles (282,000 kilometers) from the planet.",
+		"planet_id": 6
+	},
+	{
+		"fact": "Saturn is made mostly of hydrogen and helium.",
+		"planet_id": 6
+	},
+	{
+		"fact": "Uranus rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side",
+		"planet_id": 7
+	},
+	{
+		"fact": "Uranus is about four times wider than Earth. If Earth were a large apple, Uranus would be the size of a basketball.",
+		"planet_id": 7
+	},
+	{
+		"fact": "Uranus is an ice giant. Most of its mass is a hot, dense fluid of 'icy' materials - water, methane and ammonia - above a small rocky core.",
+		"planet_id": 7
+	},
+	{
+		"fact": "Neptune is more than 30 times as far from the Sun as Earth is.",
+		"planet_id": 8
+	},
+	{
+		"fact": "Since Neptune was named for the Roman god of the sea, its moons are named for various lesser sea gods and nymphs in Greek mythology.",
+		"planet_id": 8
+	},
+	{
+		"fact": "Neptune has at least five main rings and four prominent ring arcs that we know of so far.",
+		"planet_id": 8
+	},
+	{
+		"fact": "The Sun is estimated to be about 4.5 billion years old.",
+		"planet_id": 9
+	},
+	{
+		"fact": "The Sun could fit 1.3 million Earths in it!",
+		"planet_id": 9
+	},
+	{
+		"fact": "The Sun is made up of mostly hydrogen and helium, with constant volatile reactions causing the heat and light we get from it!",
+		"planet_id": 9
 	}
 ]
