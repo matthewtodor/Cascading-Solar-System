@@ -1,0 +1,10 @@
+.error-page {
+	z-index: 1;
+	color: var(--highlight);
+}
+.error-page h3 {
+	font-size: xx-large;
+}
+.error-page a {
+	color: var(--highlight);
+}
