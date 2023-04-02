@@ -7,9 +7,6 @@ nav {
 	width: 100vw;
 	padding: 3rem;
 }
-nav h1 {
-	z-index: 50;
-}
 nav a {
 	text-decoration: none;
 	color: white;
