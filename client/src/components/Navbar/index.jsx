@@ -1,12 +1,14 @@
 import "./style.css";
 import { Link, useLocation } from "react-router-dom";
 
-export default function Navbar() {
-	//const history = useHistory();
-	//const goBack = () => {
-	//    history.goBack()
-	//}
+function Navbar() {
 	const planets = ["mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "neptune"];
+
+	// Plan: create a function that, when on a planet page, the function is skipped over. For each time the function is called, it adds 35 to a variable. That variable is then used to assign a value of top: ${var} to the name-link class css
+	var topValue = 20;
+	const setTop = () => {
+		topValue = topValue + 35;
+	};
 
 	let location = useLocation();
 	return (
@@ -15,29 +17,20 @@ export default function Navbar() {
 				<Link to={`../..`} relative="path" className="dropdown-head">
 					{location.pathname === "/" ? `Planets` : `Back`}
 				</Link>
-				{/*<span className="dropdown-head">Planets</span> */}
 				{planets.map((planet) => {
-					/*
-					This checks the current page and returns nothing if it is the planet displayed. Due to the nature of the navbar styling at the moment, it is rendering a gap at the planet name location.
-					if (location.pathname.includes(planet)) {
-						console.log("Nav if statement");
+					if (location.pathname.slice(9) !== planet) {
+						setTop();
+						return (
+							<Link key={planet} to={`/planets/${planet}`} className={`nav-link`} style={{ top: topValue }}>
+								{`${planet.slice(0, 1).toUpperCase() + planet.slice(1)}`}
+							</Link>
+						);
+					} else {
 						return "";
 					}
-					*/
-					const properName = () => {
-						const capLetter = planet.split("").shift().toUpperCase();
-						planet = planet.split("");
-						planet.shift();
-						planet.unshift(capLetter);
-						return planet.join("");
-					};
-					return (
-						<Link key={planet} to={`/planets/${planet}`} className={`nav-link ${planet}-link`}>
-							{properName()}
-						</Link>
-					);
 				})}
 			</div>
 		</nav>
 	);
 }
+export default Navbar;

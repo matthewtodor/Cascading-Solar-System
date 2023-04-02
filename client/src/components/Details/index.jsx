@@ -1,9 +1,8 @@
 import "./details.css";
-import { useRouteLoaderData, useOutletContext } from "react-router-dom";
-
+import { useRouteLoaderData } from "react-router-dom";
+import MoonButton from "../MoonButton";
 export default function Details() {
 	const data = useRouteLoaderData("planets");
-	const [modalState, setModalState] = useOutletContext();
 	let diameter = data.size * 2;
 	diameter = diameter.toFixed(2);
 	let circumference = 2 * Math.PI * data.size;
@@ -43,20 +42,7 @@ export default function Details() {
 							</header>
 							<section>
 								{data.moons.map((moon) => {
-									return (
-										<button
-											key={moon.id}
-											onClick={() => {
-												setModalState({
-													show: !modalState.show,
-													moon: [`${moon.name}`, `${moon.name_history}`, `${moon.size}`, `${diameter}`, `${circumference}`],
-												});
-											}}
-											type="button"
-										>
-											<span className="button-text">{moon.name}</span>
-										</button>
-									);
+									return <MoonButton key={moon.id} name={moon.name} size={moon.size} nameHistory={moon.name_history} />;
 								})}
 							</section>
 						</>
