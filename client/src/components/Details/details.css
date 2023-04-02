@@ -10,7 +10,6 @@
 	margin: 3%;
 	display: flex;
 	flex-direction: column;
-	pointer-events: none;
 }
 
 .details header {

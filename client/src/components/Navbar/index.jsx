@@ -26,7 +26,7 @@ function Navbar() {
 							</Link>
 						);
 					} else {
-						return <></>;
+						return "";
 					}
 				})}
 			</div>
