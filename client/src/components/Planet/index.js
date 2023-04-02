@@ -13,7 +13,6 @@ import "./style.css";
 function Planet({ scale, name }) {
 	// handle case sensitivity in name
 	name = name.toLowerCase();
-	console.log(name);
 	// handle use of a percent symbol in scale
 	if (scale.charAt(scale.length - 1) === "%") {
 		scale = scale.slice(0, -1);

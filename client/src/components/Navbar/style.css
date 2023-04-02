@@ -2,14 +2,10 @@ nav {
 	position: absolute;
 	top: 0;
 	display: flex;
-	justify-content: right;
+	justify-content: left;
 	color: white;
 	width: 100vw;
 	padding: 3rem;
-	z-index: 20;
-}
-nav h1 {
-	z-index: 50;
 }
 nav a {
 	text-decoration: none;
@@ -21,11 +17,11 @@ nav a {
 	flex-direction: column;
 	place-content: center;
 	text-decoration: none;
-	text-align: end;
+	text-align: start;
 	font-family: inherit;
 	font-size: 2rem;
-	margin-right: 3rem;
-	border-right: 2px solid white;
+	margin-left: 3rem;
+	border-left: 2px solid white;
 	position: relative;
 	z-index: 50;
 }
@@ -36,11 +32,12 @@ nav a {
 }
 .nav-link {
 	color: white;
-	right: 0;
+	left: 0;
 	top: 0;
-	opacity: 0;
+	display: none;
 	position: absolute;
 	transition: opacity 0.4s, top 0.4s, background-color 0.2s;
+	padding-left: 0.5rem;
 }
 .nav-link:hover {
 	color: #d27685;
@@ -49,29 +46,6 @@ nav a {
 	color: #d27685;
 }
 .dropdown:hover .nav-link {
+	display: block;
 	opacity: 1;
-}
-.dropdown:hover .venus-link {
-	top: 55px;
-}
-.dropdown:hover .mercury-link {
-	top: 90px;
-}
-.dropdown:hover .earth-link {
-	top: 125px;
-}
-.dropdown:hover .mars-link {
-	top: 160px;
-}
-.dropdown:hover .jupiter-link {
-	top: 195px;
-}
-.dropdown:hover .saturn-link {
-	top: 230px;
-}
-.dropdown:hover .uranus-link {
-	top: 265px;
-}
-.dropdown:hover .neptune-link {
-	top: 300px;
 }
