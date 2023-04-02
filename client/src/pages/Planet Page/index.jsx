@@ -6,11 +6,22 @@ import "./style.css";
 const PlanetPage = () => {
 	const data = useRouteLoaderData("planets");
 	let name = data.name;
+    const mediaQuery = window.matchMedia('(max-width: 1000px)');
+
+    const handleChange = (e) => {
+        if (e.matches) {
+            console.log("ayyyy");
+            return true;
+        }
+    }
+
+    mediaQuery.addListener(handleChange);
+    handleChange(mediaQuery);
 
 	return (
 		<main className="planet-page">
 			<figure className="planet-page-planet-container">
-				<Planet name={name} scale="100" />
+				<Planet name={name} scale={handleChange(mediaQuery) ? "170" : "100"} />
 			</figure>
 			<article className="planet-page-details-container">
 				<div className="planet-page-name">

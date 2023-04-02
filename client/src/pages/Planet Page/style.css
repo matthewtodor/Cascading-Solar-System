@@ -31,3 +31,21 @@
 	background-color: var(--background-tertiary-60);
 	box-shadow: inset 0 0 30px var(--primary);
 }
+
+@media only screen and (max-width: 1000px) {
+    .planet-page{
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .planet-page-planet-container {
+        width: 20%;
+    }
+    .planet-page-name {
+        font-size: 3em;
+    }
+    .planet-page-details-container {
+        position: absolute;
+        width: 98%;
+        bottom: 0.5%;
+    }
+}
