@@ -5,7 +5,7 @@ export default function MoonModal({ show, set, moon }) {
 		<>
 			{show ? (
 				<div className="modal" onClick={() => set()}>
-					<div className="modal-content">
+					<div className="modal-content" onClick={(e) => e.stopPropagation()}>
 						<header>
 							<h2>{moon[0]}</h2>
 						</header>
