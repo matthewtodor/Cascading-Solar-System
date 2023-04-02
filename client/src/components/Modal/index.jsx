@@ -1,9 +1,6 @@
 import "./style.css";
 import { useEffect } from "react";
 export default function MoonModal({ open, name, size, nameHistory, onClose }) {
-	if (!open) {
-		return null;
-	}
 	let diameter = size * 2;
 	diameter = diameter.toFixed(2);
 	let circumference = 2 * Math.PI * size;
@@ -21,6 +18,9 @@ export default function MoonModal({ open, name, size, nameHistory, onClose }) {
 			document.body.removeEventListener("keydown", closeOnEscape);
 		};
 	}, []);
+	if (!open) {
+		return null;
+	}
 
 	return (
 		<div className="modal" onClick={onClose}>
