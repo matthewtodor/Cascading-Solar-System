@@ -1,6 +1,16 @@
 .home {
 	display: flex;
 }
+
 .solar-system {
 	flex: 1;
+}
+
+/* mobile styles */
+@media only screen and (max-width: 1000px) {
+	.home {
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+	}
 }

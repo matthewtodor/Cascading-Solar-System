@@ -209,6 +209,31 @@
 	transform: translateY(5%);
 }
 
+/* mobile */
+@media only screen and (max-width: 1000px) {
+	/* surface */
+	#saturn-surface {
+		transform: rotate(-15deg);
+		animation: none;
+	}
+
+	#saturn-surface-color-1 {
+		animation: none;
+	}
+
+	/* rings */
+	#saturn-rings-back-rotator,
+	#saturn-rings-front-rotator {
+		animation: none;
+	}
+
+	#saturn-rings-back,
+	#saturn-rings-front {
+		transform: rotate(-15deg);
+		animation: none;
+	}
+}
+
 /* animations */
 @keyframes rotate-saturn-surface {
 	from {

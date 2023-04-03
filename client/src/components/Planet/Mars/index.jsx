@@ -4,7 +4,7 @@ function Mars({ scale }) {
 	return (
 		<div className='planet-scale' style={{ transform: `scale(${scale / 100})` }}>
 			<div id='mars' className='planet'>
-				{scale >= 10 && (
+				{scale > 15 && (
 					<div className='surface' style={{ opacity: scale / 200 }}>
 						<div id='mars-surface-color-1' className='surface-color-orange' />
 						<div id='mars-surface-color-2' className='surface-color-sand' />
@@ -17,7 +17,7 @@ function Mars({ scale }) {
 					</div>
 				</div>
 
-				{scale >= 15 && (
+				{scale > 15 && (
 					<>
 						<div id='mars-moon-1-orbit'>
 							<div id='mars-moon-1'>

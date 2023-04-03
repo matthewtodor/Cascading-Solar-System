@@ -135,6 +135,238 @@
 	box-shadow: none;
 }
 
+/* mobile styles */
+@media only screen and (max-width: 1000px) {
+	.solar-system {
+		position: absolute;
+		height: 100vh;
+	}
+
+	#mercury-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 15vh;
+		height: 15vh;
+		animation: none;
+		transform: rotate(30deg);
+	}
+
+	#mercury-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#venus-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 22vh;
+		height: 22vh;
+		animation: none;
+		transform: rotate(-20deg);
+	}
+
+	#venus-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#earth-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 30vh;
+		height: 30vh;
+		animation: none;
+		transform: rotate(20deg);
+	}
+
+	#earth-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#mars-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 40vh;
+		height: 40vh;
+		animation: none;
+		transform: rotate(-40deg);
+	}
+
+	#mars-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#jupiter-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 55vh;
+		height: 55vh;
+		animation: none;
+		transform: rotate(35deg);
+	}
+
+	#jupiter-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#saturn-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 70vh;
+		height: 70vh;
+		animation: none;
+		transform: rotate(-15deg);
+	}
+
+	#saturn-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#uranus-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 90vh;
+		height: 90vh;
+		animation: none;
+		transform: rotate(25deg);
+	}
+
+	#uranus-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#neptune-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 110vh;
+		height: 110vh;
+		animation: none;
+		transform: rotate(-25deg);
+	}
+
+	#neptune-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	.solar-system #earth-moon-orbit {
+		animation: solar-system-earth-moon-orbit 14.8s linear infinite both;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.solar-system {
+		position: absolute;
+		height: 100vh;
+	}
+
+	#mercury-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 15vh;
+		height: 15vh;
+		animation: none;
+		transform: rotate(30deg);
+	}
+
+	#mercury-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#venus-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 22vh;
+		height: 22vh;
+		animation: none;
+		transform: rotate(-10deg);
+	}
+
+	#venus-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#earth-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 30vh;
+		height: 30vh;
+		animation: none;
+		transform: rotate(40deg);
+	}
+
+	#earth-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#mars-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 40vh;
+		height: 40vh;
+		animation: none;
+		transform: rotate(-30deg);
+	}
+
+	#mars-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#jupiter-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 55vh;
+		height: 55vh;
+		animation: none;
+		transform: rotate(20deg);
+	}
+
+	#jupiter-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#saturn-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 70vh;
+		height: 70vh;
+		animation: none;
+		transform: rotate(-15deg);
+	}
+
+	#saturn-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#uranus-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 90vh;
+		height: 90vh;
+		animation: none;
+		transform: rotate(15deg);
+	}
+
+	#uranus-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	#neptune-orbit {
+		justify-content: center;
+		align-items: flex-end;
+		width: 110vh;
+		height: 110vh;
+		animation: none;
+		transform: rotate(-10deg);
+	}
+
+	#neptune-orbit .planet {
+		transform: rotate(45deg);
+	}
+
+	.solar-system #earth-moon-orbit {
+		animation: solar-system-earth-moon-orbit 14.8s linear infinite both;
+	}
+}
+
+/* animations */
 @keyframes solar-system-orbit {
 	from {
 		transform: rotate(0deg);

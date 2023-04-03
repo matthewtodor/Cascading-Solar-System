@@ -52,39 +52,39 @@ function SolarSystem({ scale }) {
 	const planets = [
 		{
 			name: 'sun',
-			scale: '12%'
+			scale: window.innerWidth < 1000 ? '14%' : '12%'
 		},
 		{
 			name: 'mercury',
-			scale: '1%'
+			scale: window.innerWidth < 1000 ? '3%' : '1%'
 		},
 		{
 			name: 'venus',
-			scale: '2%'
+			scale: window.innerWidth < 1000 ? '4%' : '2%'
 		},
 		{
 			name: 'earth',
-			scale: '3%'
+			scale: window.innerWidth < 1000 ? '6%' : '3%'
 		},
 		{
 			name: 'mars',
-			scale: '2%'
+			scale: window.innerWidth < 1000 ? '5%' : '2%'
 		},
 		{
 			name: 'jupiter',
-			scale: '7%'
+			scale: window.innerWidth < 1000 ? '12%' : '7%'
 		},
 		{
 			name: 'saturn',
-			scale: '6%'
+			scale: window.innerWidth < 1000 ? '11%' : '6%'
 		},
 		{
 			name: 'uranus',
-			scale: '5%'
+			scale: window.innerWidth < 1000 ? '12%' : '5%'
 		},
 		{
 			name: 'neptune',
-			scale: '4%'
+			scale: window.innerWidth < 1000 ? '15%' : '4%'
 		}
 	];
 

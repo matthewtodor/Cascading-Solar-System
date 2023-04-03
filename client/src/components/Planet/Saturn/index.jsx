@@ -28,7 +28,7 @@ function Saturn({ scale }) {
 					</div>
 				</div>
 
-				{scale >= 7 && (
+				{scale > 15 && (
 					<>
 						<div id='saturn-moon-1-orbit'>
 							<div id='saturn-moon-1'>
