@@ -93,11 +93,11 @@
 /* animations */
 @keyframes spin-continents {
 	from {
-		transform: translateX(-410%) scale(500%);
+		transform: translateX(-200%) scale(500%);
 	}
 
 	to {
-		transform: translateX(410%) scale(500%);
+		transform: translateX(360%) scale(500%);
 	}
 }
 
