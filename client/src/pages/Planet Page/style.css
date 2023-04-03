@@ -33,71 +33,71 @@
 }
 
 @media only screen and (max-width: 1000px) {
-    .planet-page{
-        position: absolute;
-        height: 100vh;
-        margin-right: 0;
-        justify-content: space-between;
-    }
-    .planet-page-planet-container {
-        width: 20%;
-    }
-    .planet-page-name {
-        font-size: 3em;
-    }
-    .planet-page-details-container {
-        align-self: start;
-        width: 50%;
-        height: 90%;
-        margin-right: 5%;
-    }
-    .planet-page-details-content {
-        height: auto;
-    }
+	.planet-page {
+		position: absolute;
+		height: 100vh;
+		margin-right: 0;
+		justify-content: space-between;
+	}
+	.planet-page-planet-container {
+		width: 20%;
+	}
+	.planet-page-name {
+		font-size: 3em;
+	}
+	.planet-page-details-container {
+		align-self: start;
+		width: 50%;
+		height: 90%;
+		margin-right: 5%;
+	}
+	.planet-page-details-content {
+		height: auto;
+	}
 }
 
-@media only screen and (min-height: 1000px), @media only screen and (max-width: 1000px){
-    .planet-page{
-        height: 100vh;
-        margin-right: 0;
-        justify-content: space-between;
-    }
-    .planet-page-planet-container {
-        width: 20%;
-    }
-    .planet-page-name {
-        font-size: 3em;
-    }
-    .planet-page-details-container {
-        align-self: center;
-        width: 50%;
-        height: 50%;
-        margin-right: 5%;
-    }
-    .planet-page-details-content {
-        height: auto;
-    }
+@media only screen and (min-height: 1000px), only screen and (max-width: 1000px) {
+	.planet-page {
+		height: 100vh;
+		margin-right: 0;
+		justify-content: space-between;
+	}
+	.planet-page-planet-container {
+		width: 20%;
+	}
+	.planet-page-name {
+		font-size: 3em;
+	}
+	.planet-page-details-container {
+		align-self: center;
+		width: 50%;
+		height: 50%;
+		margin-right: 5%;
+	}
+	.planet-page-details-content {
+		height: auto;
+	}
 }
 @media only screen and (max-width: 767px) {
-    .planet-page{
-        align-items: end;
-        justify-content: center;
-        height: 100vh;
-        margin-right: 0;
-    }
-    .planet-page-planet-container {
-        align-self: center;
-        justify-self: left;
-        width: 0;
-    }
-    .planet-page-name {
-        font-size: 3em;
-    }
-    .planet-page-details-container {
-        align-self: end;
-        width: 95%;
-        height: auto;
-        bottom: 0.5%;
-        margin-right: 0;
-    }
+	.planet-page {
+		align-items: end;
+		justify-content: center;
+		height: 100vh;
+		margin-right: 0;
+	}
+	.planet-page-planet-container {
+		align-self: center;
+		justify-self: left;
+		width: 0;
+	}
+	.planet-page-name {
+		font-size: 3em;
+	}
+	.planet-page-details-container {
+		align-self: end;
+		width: 95%;
+		height: auto;
+		bottom: 0.5%;
+		margin-right: 0;
+	}
 }
