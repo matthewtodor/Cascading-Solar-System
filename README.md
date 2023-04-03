@@ -33,30 +33,9 @@ Navigate back to the root directory of the application and run:
 
 The server will run on `localhost:3001` by default, and the react application will run on `localhost:3000` by default.
 
-## Screenshots
+## Technology Summary
 
-![Solar System Homepage](./assets//images/solar-system-homepage.png)
-![Solar System Planet Page](./assets//images/solar-system-planet-page.png)
-
-## License
-
-This project is licensed under the [MIT copyright license](./LICENSE "MIT copyright license").
-
-## Contact Information
-
-If you have any questions, please reach out via an email to one of us!
-
-[Matthew Todor](todor.matthew.john@gmail.com "Matthew Todor")
-
-[Eli Wood](contact.eliwood@gmail.com "Eli Wood")
-
-[Jason Duran](jasonduran303@gmail.com "Jason Duran")
-
-## Sources
-
-The information about our solar system and it's bodies were collected from NASA's Solar System Exploration: Our Galactic Neighborhood. More information can be found at their website:
-
-[Solar System Exploration: Our Galactic Neighborhood - NASA](https://solarsystem.nasa.gov/ "Solar System Exploration: Our Galactic Neighborhood")
+We have a mySQL database running on an express server, with Sequelize handling the routing to the database. The react application uses react-router-dom to navigate to the planet pages, as well as query the server upon navigation. The site's font is Jetbrains mono, via the fontsource node package.
 
 <details>
 <summary><h3><strong>Technical Requirements</strong></h3></summary>
@@ -105,7 +84,7 @@ The information about our solar system and it's bodies were collected from NASA'
         </li>
     </ul>
 <h4>
-Backend:
+    Backend:
 </h4>
 <ul>
     <li>
@@ -134,7 +113,7 @@ Backend:
         </ul>
 </ul>
 <h4>
-Homepage:
+    Homepage:
 </h4>
 <ul>
     <li>
@@ -163,6 +142,31 @@ Homepage:
         </ul>
 </ul>
 </details>
+
+## Screenshots
+
+![Solar System Homepage](./assets//images/solar-system-homepage.png)
+![Solar System Planet Page](./assets//images/solar-system-planet-page.png)
+
+## Sources
+
+The information about our solar system and it's bodies were collected from NASA's Solar System Exploration: Our Galactic Neighborhood. More information can be found at their website:
+
+[Solar System Exploration: Our Galactic Neighborhood - NASA](https://solarsystem.nasa.gov/ "Solar System Exploration: Our Galactic Neighborhood")
+
+## License
+
+This project is licensed under the [MIT copyright license](./LICENSE "MIT copyright license").
+
+## Contact Information
+
+If you have any questions, please reach out via an email to one of us!
+
+[Matthew Todor](todor.matthew.john@gmail.com "Matthew Todor")
+
+[Eli Wood](contact.eliwood@gmail.com "Eli Wood")
+
+[Jason Duran](jasonduran303@gmail.com "Jason Duran")
 
 ### Wire Frame:
 
