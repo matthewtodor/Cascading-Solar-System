@@ -16,7 +16,7 @@ function Neptune({ scale }) {
 					</div>
 				</div>
 
-				{scale >= 5 && (
+				{scale > 15 && (
 					<>
 						<div id='neptune-moon-1-orbit'>
 							<div id='neptune-moon-1'>

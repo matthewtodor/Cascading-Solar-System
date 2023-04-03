@@ -1,6 +1,6 @@
 /* jupiter */
 #jupiter {
-	background: radial-gradient(circle at 15% 20%, hsl(45, 100%, 85%), hsl(45, 100%, 10%));
+	background-image: linear-gradient(180deg, burlywood 10%, wheat 15%, 17%, rgb(209, 171, 132) 18%, tan 19%, antiquewhite 20%, tan 24%, rgb(241, 180, 126) 24%, linen 26%, 32%, rgb(233, 170, 148) 35%, rgb(196, 139, 139) 37%, rgb(230, 213, 192) 41%, 44%, rgb(243, 182, 129) 47%, moccasin 50%, 58%, darksalmon 63%, linen 68%, 78%, wheat 80%, burlywood);
 }
 
 .jupiter-border {
@@ -12,28 +12,53 @@
 }
 
 /* surface */
+#jupiter .surface {
+	opacity: 1 !important;
+}
+
+#jupiter-surface-spot {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(ellipse at 20% 66.5%, darksalmon 0.5%, transparent 2%), radial-gradient(ellipse at 20% 66.5%, transparent, 2%, darksalmon 3%, transparent 5.5%), radial-gradient(ellipse at 20% 66%, rgb(255, 192, 137) 2%, transparent 5%), radial-gradient(ellipse at 20% 65%, linen 4%, transparent 6%), radial-gradient(ellipse at 21% 64%, darksalmon 2%, transparent 7%), radial-gradient(ellipse at 16% 65%, wheat 2%, transparent 7%);
+	background-size: 125% 100%;
+	background-repeat: repeat;
+	animation: spin-jupiter-spot 8.3s linear infinite both;
+}
+
 #jupiter-surface-color-1 {
-	animation: spin-surface-down-right 20s linear infinite both;
+	animation: spin-surface 8.3s linear infinite both;
+	opacity: 0.15;
 }
 
 #jupiter-surface-color-2 {
-	animation: spin-surface 22s linear infinite both;
-	transform: translateY(5%);
+	animation: spin-surface-down-right 7s linear infinite both;
+	opacity: 0.25;
 }
 
 #jupiter-surface-color-3 {
-	animation: spin-surface-up-right 18s linear infinite both;
-	transform: translateY(10%);
+	animation: spin-surface-up-right 6s linear infinite both;
+	opacity: 0.5;
 }
 
 /* moons */
+.jupiter-moon-border-inset {
+	box-shadow: inset 1px 1px 6px hsla(25, 100%, 90%, 0.95);
+}
+
+/* moon 1 */
 #jupiter-moon-1 {
 	position: absolute;
 	background: radial-gradient(circle at 15% 20%, hsl(0, 100%, 100%), hsl(0, 100%, 10%));
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
-	animation: jupiter-moon-1-resize 80s 20s ease-in-out infinite both;
+	animation: jupiter-moon-1-resize 144s 36s ease-in-out infinite both;
+}
+
+#jupiter-moon-1-orbit {
+	animation: moon-orbit-large 144s ease-in-out infinite both;
 }
 
 /* moon surface */
@@ -46,10 +71,6 @@
 	transform: translateY(5%);
 }
 
-#jupiter-moon-1-orbit {
-	animation: moon-orbit-large 80s ease-in-out infinite both;
-}
-
 /* moon 2 */
 #jupiter-moon-2 {
 	position: absolute;
@@ -57,7 +78,12 @@
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
-	animation: jupiter-moon-2-resize 60s 15s ease-in-out infinite both;
+	animation: jupiter-moon-2-resize 334s 83.5s ease-in-out infinite both;
+	border: 5px solid red;
+}
+
+#jupiter-moon-2-orbit {
+	animation: moon-orbit-medium 334s ease-in-out infinite both;
 }
 
 /* moon surface */
@@ -70,10 +96,6 @@
 	transform: translateY(5%);
 }
 
-#jupiter-moon-2-orbit {
-	animation: moon-orbit-medium 60s ease-in-out infinite both;
-}
-
 /* moon 3 */
 #jupiter-moon-3 {
 	position: absolute;
@@ -81,7 +103,11 @@
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
-	animation: jupiter-moon-3-resize 40s 10s ease-in-out infinite both;
+	animation: jupiter-moon-3-resize 36s 9s ease-in-out infinite both;
+}
+
+#jupiter-moon-3-orbit {
+	animation: moon-orbit-small 36s ease-in-out infinite both;
 }
 
 /* moon surface */
@@ -94,10 +120,6 @@
 	transform: translateY(5%);
 }
 
-#jupiter-moon-3-orbit {
-	animation: moon-orbit-small 40s ease-in-out infinite both;
-}
-
 /* moon 4 */
 #jupiter-moon-4 {
 	position: absolute;
@@ -105,7 +127,11 @@
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
-	animation: jupiter-moon-4-resize 20s 5s ease-in-out infinite both;
+	animation: jupiter-moon-4-resize 72s 18s ease-in-out infinite both;
+}
+
+#jupiter-moon-4-orbit {
+	animation: moon-orbit-x-small 72s ease-in-out infinite both;
 }
 
 /* moon surface */
@@ -118,12 +144,19 @@
 	transform: translateY(5%);
 }
 
-#jupiter-moon-4-orbit {
-	animation: moon-orbit-x-small 20s ease-in-out infinite both;
-}
+/* animations */
+@keyframes spin-jupiter-spot {
+	from {
+		background-position: 150% 0%;
+	}
 
-.jupiter-moon-border-inset {
-	box-shadow: inset 1px 1px 6px hsla(25, 100%, 90%, 0.95);
+	60% {
+		background-position: -300% 0%;
+	}
+
+	to {
+		background-position: -300% 0%;
+	}
 }
 
 /* resize in orbit for perspective */

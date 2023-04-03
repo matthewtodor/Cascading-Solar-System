@@ -4,7 +4,7 @@ function Earth({ scale }) {
 	return (
 		<div className='planet-scale' style={{ transform: `scale(${scale / 100})` }}>
 			<div id='earth' className='planet'>
-				{scale >= 5 && (
+				{scale > 15 && (
 					<div className='surface' style={{ opacity: scale / 200 }}>
 						{scale >= 25 ? (
 							<>

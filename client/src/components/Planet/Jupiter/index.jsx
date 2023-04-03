@@ -4,10 +4,11 @@ function Jupiter({ scale }) {
 	return (
 		<div className='planet-scale' style={{ transform: `scale(${scale / 100})` }}>
 			<div id='jupiter' className='planet'>
-				{scale >= 10 && (
+				{scale > 15 && (
 					<div className='surface' style={{ opacity: scale / 200 }}>
-						<div id='jupiter-surface-color-1' className='surface-color-pink' />
-						<div id='jupiter-surface-color-2' className='surface-color-gray' />
+						<div id='jupiter-surface-spot' />
+						<div id='jupiter-surface-color-1' className='surface-color-red' />
+						<div id='jupiter-surface-color-2' className='surface-color-sand' />
 						<div id='jupiter-surface-color-3' className='surface-color-white' />
 					</div>
 				)}
@@ -18,7 +19,7 @@ function Jupiter({ scale }) {
 					</div>
 				</div>
 
-				{scale >= 8 && (
+				{scale > 15 && (
 					<>
 						<div id='jupiter-moon-1-orbit'>
 							<div id='jupiter-moon-1'>

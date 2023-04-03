@@ -4,7 +4,7 @@ function Uranus({ scale }) {
 	return (
 		<div className='planet-scale' style={{ transform: `scale(${scale / 100})` }}>
 			<div id='uranus' className='planet'>
-				{scale >= 10 && (
+				{scale > 15 && (
 					<div className='surface' style={{ opacity: scale / 200 }}>
 						<div id='uranus-surface-color-1' className='surface-color-white' />
 						<div id='uranus-surface-color-2' className='surface-color-sky' />
@@ -18,7 +18,7 @@ function Uranus({ scale }) {
 					</div>
 				</div>
 
-				{scale >= 6 && (
+				{scale > 15 && (
 					<>
 						<div id='uranus-moon-1-orbit'>
 							<div id='uranus-moon-1'>

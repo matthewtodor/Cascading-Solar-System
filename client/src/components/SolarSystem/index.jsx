@@ -1,10 +1,10 @@
-import Planet from "../Planet";
-import { Link } from "react-router-dom";
-import "./style.css";
+import Planet from '../Planet';
+import { Link } from 'react-router-dom';
+import './style.css';
 
 function SolarSystem({ scale }) {
 	// handle use of a percent symbol in scale
-	if (scale.charAt(scale.length - 1) === "%") {
+	if (scale.charAt(scale.length - 1) === '%') {
 		scale = scale.slice(0, -1);
 	}
 
@@ -51,49 +51,49 @@ function SolarSystem({ scale }) {
 	// planets scaled for solar system visual
 	const planets = [
 		{
-			name: "sun",
-			scale: "12%",
+			name: 'sun',
+			scale: window.innerWidth < 1000 ? '14%' : '12%'
 		},
 		{
-			name: "mercury",
-			scale: "1%",
+			name: 'mercury',
+			scale: window.innerWidth < 1000 ? '3%' : '1%'
 		},
 		{
-			name: "venus",
-			scale: "2%",
+			name: 'venus',
+			scale: window.innerWidth < 1000 ? '4%' : '2%'
 		},
 		{
-			name: "earth",
-			scale: "3%",
+			name: 'earth',
+			scale: window.innerWidth < 1000 ? '6%' : '3%'
 		},
 		{
-			name: "mars",
-			scale: "2%",
+			name: 'mars',
+			scale: window.innerWidth < 1000 ? '5%' : '2%'
 		},
 		{
-			name: "jupiter",
-			scale: "7%",
+			name: 'jupiter',
+			scale: window.innerWidth < 1000 ? '12%' : '7%'
 		},
 		{
-			name: "saturn",
-			scale: "6%",
+			name: 'saturn',
+			scale: window.innerWidth < 1000 ? '11%' : '6%'
 		},
 		{
-			name: "uranus",
-			scale: "5%",
+			name: 'uranus',
+			scale: window.innerWidth < 1000 ? '12%' : '5%'
 		},
 		{
-			name: "neptune",
-			scale: "4%",
-		},
+			name: 'neptune',
+			scale: window.innerWidth < 1000 ? '15%' : '4%'
+		}
 	];
 
 	return (
-		<div className="solar-system" style={{ transform: `scale(${scale / 100})` }}>
+		<div className='solar-system' style={{ transform: `scale(${scale / 100})` }}>
 			{planets.map((planet) => {
 				return (
-					<Link key={planet.name} to={`planets/${planet.name}`} className="page-link">
-						<div id={planet.name + "-orbit"} className="planet-orbit-container" aria-label={`${planet.name}`}>
+					<Link key={planet.name} to={`planets/${planet.name}`} className='page-link'>
+						<div id={planet.name + '-orbit'} className='planet-orbit-container' aria-label={`${planet.name}`}>
 							<Planet name={planet.name} scale={planet.scale} aria-label={`${planet.name}`} />
 						</div>
 					</Link>
