@@ -1,7 +1,6 @@
 {
 	"short_name": "Cascading Solar System",
 	"name": "Cascading Solar System",
-
 	"start_url": ".",
 	"display": "standalone",
 	"theme_color": "#000000",
