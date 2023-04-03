@@ -10,7 +10,7 @@ nav {
 nav a {
 	text-decoration: none;
 	color: var(--highlight);
-    z-index: 3;
+	z-index: 3;
 }
 .dropdown {
 	width: auto;
@@ -57,28 +57,28 @@ nav a {
 	cursor: pointer;
 }
 @media only screen and (max-width: 767px) {
+	nav {
+		justify-content: space-between;
+		flex-direction: row-reverse;
+	}
 	.dropdown {
 		margin-left: 0.1rem;
 		width: 60%;
 	}
 	.dropdown-head {
-		font-size: medium;
+		font-size: large;
 	}
 	.dropdown-links {
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-
 	.nav-link {
-		font-size: medium;
+		font-size: large;
+		padding: 1px;
 		width: 50%;
 	}
 	.nav-link:nth-child(2n) {
 		text-align: right;
-	}
-	nav {
-		justify-content: space-between;
-        flex-direction: row-reverse;
 	}
 	.dropdown-head {
 		text-align: end;
