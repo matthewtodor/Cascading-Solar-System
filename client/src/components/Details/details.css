@@ -75,9 +75,8 @@
 	.moons-container section button {
 		width: 40%;
 	}
-
 }
-@media only screen and (min-height: 1000px), @media only screen and (max-width: 1000px){
+@media only screen and (min-height: 1000px), only screen and (max-width: 1000px) {
 	.details {
 		height: 35vh;
 	}
@@ -86,13 +85,13 @@
 	}
 }
 @media only screen and (max-width: 768px) {
-	.details {
-		height: 55vh;
+	.scroll-container {
+		height: 65vh;
 	}
 	.moons-container section button {
 		width: 40%;
 	}
-    .facts-container article { 
-        align-self: flex-end;
-    }
+	.facts-container article {
+		align-self: flex-end;
+	}
 }

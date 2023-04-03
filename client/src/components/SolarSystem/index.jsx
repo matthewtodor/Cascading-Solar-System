@@ -92,11 +92,11 @@ function SolarSystem({ scale }) {
 		<div className='solar-system' style={{ transform: `scale(${scale / 100})` }}>
 			{planets.map((planet) => {
 				return (
-					<div key={planet.name} id={planet.name + '-orbit'} className='planet-orbit-container'>
-						<Link to={`planets/${planet.name}`} className='page-link'>
-							<Planet name={planet.name} scale={planet.scale} />
-						</Link>
-					</div>
+					<Link key={planet.name} to={`planets/${planet.name}`} className='page-link'>
+						<div id={planet.name + '-orbit'} className='planet-orbit-container' aria-label={`${planet.name}`}>
+							<Planet name={planet.name} scale={planet.scale} aria-label={`${planet.name}`} />
+						</div>
+					</Link>
 				);
 			})}
 		</div>

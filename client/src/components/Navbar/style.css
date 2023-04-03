@@ -10,6 +10,7 @@ nav {
 nav a {
 	text-decoration: none;
 	color: var(--highlight);
+    z-index: 3;
 }
 .dropdown {
 	width: auto;
@@ -76,7 +77,8 @@ nav a {
 		text-align: right;
 	}
 	nav {
-		justify-content: right;
+		justify-content: space-between;
+        flex-direction: row-reverse;
 	}
 	.dropdown-head {
 		text-align: end;
