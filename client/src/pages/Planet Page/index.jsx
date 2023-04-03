@@ -6,18 +6,14 @@ import "./style.css";
 const PlanetPage = () => {
 	const data = useRouteLoaderData("planets");
 	let name = data.name;
-    const mediaQuerySmall = window.matchMedia('(max-width: 768px)');
-    const mediaQueryMedium = window.matchMedia('(max-width: 1000px)');
-
-    const handleChange = (e) => {
-        if (e.matches) {
-            console.log("ayyyy");
-            return true;
-        }
-    }
-
-    mediaQuerySmall.addListener(handleChange);
-    handleChange(mediaQuerySmall);
+	const mediaQuerySmall = window.matchMedia("(max-width: 768px)");
+	const handleChange = (e) => {
+		if (e.matches) {
+			return true;
+		}
+	};
+	mediaQuerySmall.addListener(handleChange);
+	handleChange(mediaQuerySmall);
 
 	return (
 		<main className="planet-page">
