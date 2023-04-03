@@ -77,28 +77,28 @@
 /* resize in orbit for perspective */
 @keyframes mars-moon-1-resize {
 	0% {
-		transform: matrix(0.2, 0, 0, 0.2, 0, 0);
+		transform: matrix(0.1, 0, 0, 0.1, 0, 0);
 	}
 
 	50% {
-		transform: matrix(0.02, 0, 0, 0.02, 0, 0);
+		transform: matrix(0.2, 0, 0, 0.2, 0, 0);
 	}
 
 	100% {
-		transform: matrix(0.2, 0, 0, 0.2, 0, 0);
+		transform: matrix(0.1, 0, 0, 0.1, 0, 0);
 	}
 }
 
 @keyframes mars-moon-2-resize {
 	0% {
-		transform: matrix(0.1, 0, 0, 0.1, 0, 0);
-	}
-
-	50% {
 		transform: matrix(0.04, 0, 0, 0.04, 0, 0);
 	}
 
-	100% {
+	50% {
 		transform: matrix(0.1, 0, 0, 0.1, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.04, 0, 0, 0.04, 0, 0);
 	}
 }

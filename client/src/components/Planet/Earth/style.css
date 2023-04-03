@@ -125,14 +125,14 @@
 
 @keyframes earth-moon-resize-in-orbit {
 	from {
-		transform: matrix(1.2, 0, 0, 1.2, 0, 0);
-	}
-
-	50% {
 		transform: matrix(0.8, 0, 0, 0.8, 0, 0);
 	}
 
-	to {
+	50% {
 		transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+	}
+
+	to {
+		transform: matrix(0.8, 0, 0, 0.8, 0, 0);
 	}
 }
