@@ -11,42 +11,37 @@ const router = createBrowserRouter([
 		errorElement: <ErrorPage />,
 		children: [
 			{
-				errorElement: <ErrorPage />,
-				children: [
-					{
-						path: "/",
-						element: <Home scale="100" />,
-					},
-					{
-						path: "planets",
-						element: <ErrorPage />,
-					},
-					{
-						path: "planets/:name",
-						element: <PlanetPage />,
-						loader: async ({ params }) => {
-							let results;
-							try {
-								const res = await fetch(`${apiUrl}${params.name}`, {
-									method: "GET",
-									headers: {
-										"Content-Type": "application/json",
-									},
-								});
-								if (res.status === 404) {
-									throw new Response("Not Found", { status: 404 });
-								} else if (res.status === 500) {
-									throw new Response("Server Error", { status: 500 });
-								}
-								results = res.json();
-							} catch (error) {
-								console.log(error);
-							}
-							return results || null;
-						},
-						id: "planets",
-					},
-				],
+				path: "/",
+				element: <Home scale="100" />,
+			},
+			{
+				path: "planets",
+				element: <ErrorPage />,
+			},
+			{
+				path: "planets/:name",
+				element: <PlanetPage />,
+				loader: async ({ params }) => {
+					let results;
+					try {
+						const res = await fetch(`${apiUrl}${params.name}`, {
+							method: "GET",
+							headers: {
+								"Content-Type": "application/json",
+							},
+						});
+						if (res.status === 404) {
+							throw new Response("Not Found", { status: 404 });
+						} else if (res.status === 500) {
+							throw new Response("Server Error", { status: 500 });
+						}
+						results = res.json();
+					} catch (error) {
+						console.log(error);
+					}
+					return results || null;
+				},
+				id: "planets",
 			},
 		],
 	},
