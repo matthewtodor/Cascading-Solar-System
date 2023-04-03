@@ -18,9 +18,6 @@ const HomePanel = () => {
 							</ul>
 							<p>It is within the Milky Way galaxy, and is the only known location of life</p>
 							<p>To find out information about the planets, click on them, or use the navigation panel!</p>
-                            <article>
-                                <p> For more information about the creators of this application, visit our githubs:</p>
-                            </article>
 						</section>
 					</div>
 				</section>
