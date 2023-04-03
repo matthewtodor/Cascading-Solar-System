@@ -5,6 +5,15 @@ function Navbar() {
 	const planets = ["mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "neptune"];
 
 	let location = useLocation();
+
+	const mediaQueryNav = window.matchMedia("(max-width: 768px)");
+	const handleChange = (e) => {
+		if (e.matches) {
+			return true;
+		}
+	};
+	mediaQueryNav.addListener(handleChange);
+	handleChange(mediaQueryNav);
 	return (
 		<nav className="nav">
 			<div className="dropdown">
@@ -32,7 +41,15 @@ function Navbar() {
 					</Link>
 				</div>
 			</div>
-            
+            {handleChange(mediaQueryNav) ? (
+            <a href="https://github.com/Ccatalyst/Cascading-Solar-System" className="github">
+                <img src="/icons8-github-45.svg" alt="Cascading-Solar-System github svg"></img>
+            </a>
+            ) : (
+            <a href="https://github.com/Ccatalyst/Cascading-Solar-System" className="github">
+                <img src="/icons8-github-64.svg" alt="Cascading-Solar-System github svg"></img>
+            </a>
+            )}
 		</nav>
 	);
 }
