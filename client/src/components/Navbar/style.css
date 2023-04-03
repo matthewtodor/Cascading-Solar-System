@@ -49,3 +49,8 @@ nav a {
 	display: block;
 	opacity: 1;
 }
+#disabled-link {
+	opacity: 0.5;
+	text-decoration: none;
+	cursor: pointer;
+}
