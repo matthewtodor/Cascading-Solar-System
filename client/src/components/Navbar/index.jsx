@@ -29,6 +29,7 @@ function Navbar() {
 					}
 				})}
 			</div>
+            
 		</nav>
 	);
 }
