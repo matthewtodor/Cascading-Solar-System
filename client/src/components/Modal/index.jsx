@@ -25,24 +25,26 @@ export default function MoonModal({ open, name, size, nameHistory, onClose }) {
 	return (
 		<div className="modal" onClick={onClose}>
 			<div className="modal-content" onClick={(e) => e.stopPropagation()}>
-				<header>
-					<h2>{name}</h2>
-				</header>
-				<aside>
-					<h3>Size</h3>
-					<p>
-						<strong>Radius:</strong> {size} miles
-					</p>
-					<p>
-						<strong>Diameter:</strong> {diameter} miles
-					</p>
-					<p>
-						<strong>Circumference:</strong> {circumference} miles
-					</p>
-				</aside>
-				<article>
-					<span>{nameHistory}</span>
-				</article>
+				<div className="scroll-container">
+					<header>
+						<h2>{name}</h2>
+					</header>
+					<aside>
+						<h3>Size</h3>
+						<p>
+							<strong>Radius:</strong> {size} miles
+						</p>
+						<p>
+							<strong>Diameter:</strong> {diameter} miles
+						</p>
+						<p>
+							<strong>Circumference:</strong> {circumference} miles
+						</p>
+					</aside>
+					<article>
+						<span>{nameHistory}</span>
+					</article>
+				</div>
 			</div>
 		</div>
 	);

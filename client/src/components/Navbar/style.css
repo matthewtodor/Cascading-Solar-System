@@ -21,22 +21,22 @@ nav a {
 	font-family: inherit;
 	font-size: 2rem;
 	margin-left: 3rem;
-	border-left: 2px solid var(--primary);
-	position: relative;
-	z-index: 50;
+	z-index: 2;
 }
 .dropdown-head {
+	border-left: 2px solid var(--primary);
 	transition: background-color 0.5s;
 	padding: 0.5rem;
-	z-index: 20;
+	z-index: 1;
+}
+.dropdown-links {
+	display: flex;
+	flex-direction: column;
 }
 .nav-link {
 	color: var(--highlight);
-	left: 0;
-	top: 0;
+	width: 100%;
 	display: none;
-	position: absolute;
-	transition: opacity 0.4s, top 0.4s, background-color 0.2s;
 	padding-left: 0.5rem;
 }
 .nav-link:hover {
@@ -48,4 +48,39 @@ nav a {
 .dropdown:hover .nav-link {
 	display: block;
 	opacity: 1;
+}
+#disabled-link {
+	opacity: 0.5;
+	color: var(--primary);
+	text-decoration: none;
+	cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+	.dropdown {
+		margin-left: 0.1rem;
+		width: 60%;
+	}
+	.dropdown-head {
+		font-size: medium;
+	}
+	.dropdown-links {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.nav-link {
+		font-size: medium;
+		width: 50%;
+	}
+	.nav-link:nth-child(2n) {
+		text-align: right;
+	}
+	nav {
+		justify-content: right;
+	}
+	.dropdown-head {
+		text-align: end;
+		border-left: none;
+		border-right: 2px solid var(--primary);
+	}
 }

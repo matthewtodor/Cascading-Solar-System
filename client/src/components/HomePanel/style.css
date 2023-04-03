@@ -53,3 +53,99 @@ footer {
 #solar-system-facts-container {
 	padding: 8px;
 }
+@media only screen and (max-width: 1000px) {
+	.home-panel {
+		display: flex;
+		width: 60%;
+		height: 94vh;
+		text-align: center;
+		top: 3vh;
+		right: 3vh;
+	}
+	.home-panel-name {
+		top: 25%;
+	}
+	.home-panel-inner {
+		height: 85vh;
+	}
+}
+@media only screen and (min-height: 1000px) {
+	.home-panel {
+		display: revert;
+		width: 40%;
+		height: revert;
+		text-align: center;
+		right: 3vh;
+		top: auto;
+		bottom: 3vh;
+		left: auto;
+	}
+	.home-panel-inner {
+		height: revert;
+	}
+	.scroll-container {
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.home-panel {
+		display: revert;
+		width: 95%;
+		height: revert;
+		text-align: center;
+		right: 2vh;
+		top: auto;
+		bottom: 1vh;
+		left: auto;
+	}
+	.home-panel-name {
+		font-size: 2.5em;
+	}
+	.home-panel-inner {
+		height: revert;
+	}
+	.scroll-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.home-panel-inner {
+		margin: 1.5%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.home-panel {
+		display: revert;
+		width: 100%;
+		height: revert;
+		text-align: center;
+		right: auto;
+		top: auto;
+		bottom: 0;
+		left: 0;
+	}
+	.home-panel-inner {
+		height: revert;
+	}
+	.scroll-container {
+		display: flex;
+		flex-direction: column;
+		height: 30vh;
+	}
+}
+@media only screen and (max-height: 400px) {
+	.home-panel {
+		display: flex;
+		width: 60%;
+		height: 94vh;
+		text-align: center;
+		top: 3vh;
+		right: 3vh;
+	}
+	.home-panel-name {
+		top: 25%;
+	}
+	.home-panel-inner {
+		height: 85vh;
+	}
+}
