@@ -10,9 +10,6 @@ const Home = () => {
 
 				<HomePanel />
 			</main>
-			<footer>
-				<p> For more information about the creators of this application, visit our githubs:</p>
-			</footer>
 		</>
 	);
 };
