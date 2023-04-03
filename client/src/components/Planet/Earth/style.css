@@ -62,6 +62,10 @@
 }
 
 /* moon */
+.earth-moon-border-inset {
+	box-shadow: inset 1px 1px 6px hsla(210, 100%, 75%, 0.95);
+}
+
 #earth-moon {
 	position: absolute;
 	background: radial-gradient(circle at 15% 20%, hsl(0, 0%, 95%), hsl(0, 0%, 10%));
@@ -72,6 +76,10 @@
 	animation: earth-moon-resize-in-orbit 540s 135s ease-in-out infinite both;
 }
 
+#earth-moon-orbit {
+	animation: moon-orbit-xx-small 540s ease-in-out infinite both;
+}
+
 /* moon surface */
 #earth-moon-surface-color-1 {
 	animation: spin-surface 5s linear infinite both;
@@ -80,14 +88,6 @@
 #earth-moon-surface-color-2 {
 	animation: spin-surface 5s 1s linear infinite both;
 	transform: translateY(5%);
-}
-
-#earth-moon-orbit {
-	animation: moon-orbit-xx-small 540s ease-in-out infinite both;
-}
-
-.earth-moon-border-inset {
-	box-shadow: inset 1px 1px 6px hsla(210, 100%, 75%, 0.95);
 }
 
 /* animations */

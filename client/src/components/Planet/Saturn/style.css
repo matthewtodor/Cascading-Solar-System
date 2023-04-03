@@ -85,13 +85,22 @@
 }
 
 /* moons */
+.saturn-moon-border-inset {
+	box-shadow: inset 1px 1px 6px hsla(25, 100%, 90%, 0.95);
+}
+
+/* moon 1 */
 #saturn-moon-1 {
 	position: absolute;
 	background: radial-gradient(circle at 15% 20%, hsl(0, 0%, 100%), hsl(0, 0%, 10%));
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
-	animation: saturn-moon-1-resize 100s 25s ease-in-out infinite both;
+	animation: saturn-moon-1-resize 90s 22.5s ease-in-out infinite both;
+}
+
+#saturn-moon-1-orbit {
+	animation: moon-orbit-xx-large 90s ease-in-out infinite both;
 }
 
 /* moon surface */
@@ -104,10 +113,6 @@
 	transform: translateY(5%);
 }
 
-#saturn-moon-1-orbit {
-	animation: moon-orbit-xx-large 100s ease-in-out infinite both;
-}
-
 /* moon 2 */
 #saturn-moon-2 {
 	position: absolute;
@@ -115,7 +120,11 @@
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
-	animation: saturn-moon-2-resize 88s 22s ease-in-out infinite both;
+	animation: saturn-moon-2-resize 320s 80s ease-in-out infinite both;
+}
+
+#saturn-moon-2-orbit {
+	animation: moon-orbit-x-large 88s ease-in-out infinite both;
 }
 
 /* moon surface */
@@ -128,10 +137,6 @@
 	transform: translateY(5%);
 }
 
-#saturn-moon-2-orbit {
-	animation: moon-orbit-x-large 88s ease-in-out infinite both;
-}
-
 /* moon 3 */
 #saturn-moon-3 {
 	position: absolute;
@@ -139,7 +144,11 @@
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
-	animation: saturn-moon-3-resize 76s 19s ease-in-out infinite both;
+	animation: saturn-moon-3-resize 1586s 396.5s ease-in-out infinite both;
+}
+
+#saturn-moon-3-orbit {
+	animation: moon-orbit-large 1586s ease-in-out infinite both;
 }
 
 /* moon surface */
@@ -152,10 +161,6 @@
 	transform: translateY(5%);
 }
 
-#saturn-moon-3-orbit {
-	animation: moon-orbit-large 76s ease-in-out infinite both;
-}
-
 /* moon 4 */
 #saturn-moon-4 {
 	position: absolute;
@@ -163,7 +168,11 @@
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
-	animation: saturn-moon-4-resize 64s 16s ease-in-out infinite both;
+	animation: saturn-moon-4-resize 38s 9.5s ease-in-out infinite both;
+}
+
+#saturn-moon-4-orbit {
+	animation: moon-orbit-medium 38s ease-in-out infinite both;
 }
 
 /* moon surface */
@@ -176,10 +185,6 @@
 	transform: translateY(5%);
 }
 
-#saturn-moon-4-orbit {
-	animation: moon-orbit-medium 64s ease-in-out infinite both;
-}
-
 /* moon 5 */
 #saturn-moon-5 {
 	position: absolute;
@@ -187,7 +192,11 @@
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
-	animation: saturn-moon-5-resize 52s 13s ease-in-out infinite both;
+	animation: saturn-moon-5-resize 54.8s 13.7s ease-in-out infinite both;
+}
+
+#saturn-moon-5-orbit {
+	animation: moon-orbit-small 54.8s ease-in-out infinite both;
 }
 
 /* moon surface */
@@ -198,14 +207,6 @@
 #saturn-moon-5-surface-color-2 {
 	animation: spin-surface 6s linear infinite both;
 	transform: translateY(5%);
-}
-
-#saturn-moon-5-orbit {
-	animation: moon-orbit-small 52s ease-in-out infinite both;
-}
-
-.saturn-moon-border-inset {
-	box-shadow: inset 1px 1px 6px hsla(25, 100%, 90%, 0.95);
 }
 
 /* animations */

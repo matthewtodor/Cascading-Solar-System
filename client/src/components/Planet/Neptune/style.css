@@ -13,26 +13,38 @@
 
 /* surface */
 #neptune-surface-color-1 {
-	animation: spin-surface 20s linear infinite both;
+	animation: spin-surface 13.3s linear infinite both;
+	opacity: 0.4;
 }
 
 #neptune-surface-color-2 {
-	animation: spin-surface 22s linear infinite both;
+	animation: spin-surface 15s linear infinite both;
+	opacity: 0.75;
 }
 
 #neptune-surface-color-3 {
-	animation: spin-surface 18s linear infinite both;
+	animation: spin-surface 11s linear infinite both;
 	transform: translateX(10%);
+	opacity: 0.5;
 }
 
 /* moons */
+.neptune-moon-border-inset {
+	box-shadow: inset 1px 1px 6px hsla(210, 100%, 65%, 0.95);
+}
+
+/* moon 1 */
 #neptune-moon-1 {
 	position: absolute;
 	background: radial-gradient(circle at 15% 20%, hsl(0, 0%, 100%), hsl(0, 0%, 10%));
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
-	animation: neptune-moon-1-resize 100s 25s ease-in-out infinite both;
+	animation: neptune-moon-1-resize 118s 29.5s ease-in-out infinite both;
+}
+
+#neptune-moon-1-orbit {
+	animation: neptune-moon-1-orbit 118s ease-in-out infinite both;
 }
 
 /* moon surface */
@@ -45,10 +57,6 @@
 	transform: translateY(5%);
 }
 
-#neptune-moon-1-orbit {
-	animation: moon-orbit-medium 100s ease-in-out infinite both;
-}
-
 /* moon 2 */
 #neptune-moon-2 {
 	position: absolute;
@@ -56,7 +64,11 @@
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
-	animation: neptune-moon-2-resize 88s 22s ease-in-out infinite both;
+	animation: neptune-moon-2-resize 22s 5.5s ease-in-out infinite both;
+}
+
+#neptune-moon-2-orbit {
+	animation: moon-orbit-small 22s ease-in-out infinite both;
 }
 
 /* moon surface */
@@ -69,10 +81,6 @@
 	transform: translateY(5%);
 }
 
-#neptune-moon-2-orbit {
-	animation: moon-orbit-small 88s ease-in-out infinite both;
-}
-
 /* moon 3 */
 #neptune-moon-3 {
 	position: absolute;
@@ -80,7 +88,11 @@
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
-	animation: neptune-moon-3-resize 76s 19s ease-in-out infinite both;
+	animation: neptune-moon-3-resize 7200s 1800s ease-in-out infinite both;
+}
+
+#neptune-moon-3-orbit {
+	animation: moon-orbit-x-small 7200s ease-in-out infinite both;
 }
 
 /* moon surface */
@@ -93,12 +105,27 @@
 	transform: translateY(5%);
 }
 
-#neptune-moon-3-orbit {
-	animation: moon-orbit-x-small 76s ease-in-out infinite both;
-}
+/* triton reverse animation */
+@keyframes neptune-moon-1-orbit {
+	from {
+		transform: matrix(1, 0, 0, 1, -850, 200);
+		z-index: -13;
+	}
 
-.neptune-moon-border-inset {
-	box-shadow: inset 1px 1px 6px hsla(210, 100%, 65%, 0.95);
+	50% {
+		transform: matrix(1, 0, 0, 1, 850, -200);
+		z-index: -13;
+	}
+
+	51% {
+		transform: matrix(1, 0, 0, 1, 850, -200);
+		z-index: 13;
+	}
+
+	to {
+		transform: matrix(1, 0, 0, 1, -850, 200);
+		z-index: 13;
+	}
 }
 
 /* resize in orbit for perspective */

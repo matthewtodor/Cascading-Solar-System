@@ -6,8 +6,9 @@ function Jupiter({ scale }) {
 			<div id='jupiter' className='planet'>
 				{scale >= 10 && (
 					<div className='surface' style={{ opacity: scale / 200 }}>
-						<div id='jupiter-surface-color-1' className='surface-color-pink' />
-						<div id='jupiter-surface-color-2' className='surface-color-gray' />
+						<div id='jupiter-surface-spot' />
+						<div id='jupiter-surface-color-1' className='surface-color-red' />
+						<div id='jupiter-surface-color-2' className='surface-color-sand' />
 						<div id='jupiter-surface-color-3' className='surface-color-white' />
 					</div>
 				)}

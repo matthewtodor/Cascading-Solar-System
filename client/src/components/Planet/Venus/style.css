@@ -14,9 +14,27 @@
 
 /* surface */
 #venus-surface-color-1 {
-	animation: spin-surface 20s linear infinite both;
+	/* real time is too slow to see movement */
+	/* animation: spin-surface 4860s linear infinite both; */
+
+	/* venus rotates backwards */
+	transform: rotate(180deg);
 }
 
 #venus-surface-color-2 {
-	animation: spin-surface 22s linear infinite both;
+	/* arbitrary cloud movement */
+	animation: spin-surface 30s linear infinite both;
+	opacity: 0.25;
+
+	/* venus rotates backwards */
+	transform: rotate(180deg);
+}
+
+#venus-surface-color-3 {
+	/* arbitrary cloud movement */
+	animation: spin-surface 20s linear infinite both;
+	opacity: 0.75;
+
+	/* venus rotates backwards */
+	transform: rotate(180deg);
 }
