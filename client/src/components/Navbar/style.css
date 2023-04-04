@@ -30,6 +30,9 @@ nav a {
 	padding: 0.5rem;
 	z-index: 1;
 }
+.dropdown-head p {
+	pointer-events: none;
+}
 .dropdown-links {
 	display: flex;
 	flex-direction: column;

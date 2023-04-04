@@ -76,7 +76,7 @@
 		width: 40%;
 	}
 }
-@media only screen and (min-height: 1000px), only screen and (max-width: 1000px) {
+@media only screen and (min-height: 1000px) and (max-width: 1000px) {
 	.details {
 		height: 35vh;
 	}
