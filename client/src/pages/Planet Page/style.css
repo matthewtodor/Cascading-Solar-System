@@ -2,13 +2,13 @@
 	width: 100vw;
 	display: flex;
 	align-items: center;
-	margin-right: 10%;
+	/* margin-right: 10%; */
 }
 .planet-page-planet-container {
-	width: 65%;
+	/* width: 65%; */
 }
 .planet-page-details-container {
-	width: 35%;
+	/* width: 35%; */
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -32,7 +32,7 @@
 	box-shadow: inset 0 0 30px var(--primary);
 }
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
 	.planet-page {
 		position: absolute;
 		height: 100vh;
@@ -54,16 +54,26 @@
 	.planet-page-details-content {
 		height: auto;
 	}
+} */
+
+/* @media only screen and (min-height: 1000px) and (max-width: 1000px) {
+	
+}
+@media only screen and (max-width: 767px) {
+} */
+/* large screens */
+@media screen and (max-width: 1200px) {
 }
 
-@media only screen and (min-height: 1000px) and (max-width: 1000px) {
+/* small screens */
+@media screen and (max-width: 1024px) {
 	.planet-page {
 		height: 100vh;
 		margin-right: 0;
 		justify-content: space-between;
 	}
 	.planet-page-planet-container {
-		width: 20%;
+		height: 100%;
 	}
 	.planet-page-name {
 		font-size: 3em;
@@ -78,9 +88,17 @@
 		height: auto;
 	}
 }
-@media only screen and (max-width: 767px) {
+
+/* tablets */
+@media screen and (max-width: 768px) {
 	.planet-page {
-		align-items: end;
+		flex-direction: column;
+	}
+}
+
+/* phones */
+@media screen and (max-width: 480px) {
+	.planet-page {
 		justify-content: center;
 		height: 100vh;
 		margin-right: 0;
@@ -89,15 +107,15 @@
 		align-self: center;
 		justify-self: left;
 		width: 0;
+		position: relative;
+		top: 50%;
 	}
 	.planet-page-name {
 		font-size: 3em;
 	}
 	.planet-page-details-container {
-		align-self: end;
-		width: 95%;
+		width: 99%;
 		height: auto;
-		bottom: 0.5%;
 		margin-right: 0;
 	}
 }

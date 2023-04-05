@@ -28,7 +28,7 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-.scroll-container {
+.scroll-container-details {
 	height: inherit;
 	overflow: auto;
 }
@@ -67,7 +67,7 @@
 	overflow: auto;
 }
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
 	.details {
 		height: 60vh;
 	}
@@ -75,8 +75,17 @@
 	.moons-container section button {
 		width: 40%;
 	}
+} */
+/* @media only screen and (min-height: 1000px) and (max-width: 1000px) {
 }
-@media only screen and (min-height: 1000px) and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
+} */
+/* large screens */
+@media screen and (max-width: 1200px) {
+}
+
+/* small screens */
+@media screen and (max-width: 1024px) {
 	.details {
 		height: 35vh;
 	}
@@ -84,10 +93,13 @@
 		width: 40%;
 	}
 }
-@media only screen and (max-width: 768px) {
-	.scroll-container {
-		height: 65vh;
-	}
+
+/* tablets */
+@media screen and (max-width: 768px) {
+}
+
+/* phones */
+@media screen and (max-width: 480px) {
 	.moons-container section button {
 		width: 40%;
 	}

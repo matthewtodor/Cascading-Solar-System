@@ -10,7 +10,7 @@ export default function Details() {
 
 	return (
 		<section className="details">
-			<div className="scroll-container">
+			<div className="scroll-container-details">
 				<header>
 					<div className="size">
 						<p>

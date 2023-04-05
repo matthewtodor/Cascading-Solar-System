@@ -18,7 +18,7 @@ const PlanetPage = () => {
 	return (
 		<main className="planet-page">
 			<figure className="planet-page-planet-container">
-				<Planet name={name} scale={handleChange(mediaQuerySmall) ? "170" : "100"} />
+				<Planet name={name} scale={handleChange(mediaQuerySmall) ? "100" : "100"} />
 			</figure>
 			<article className="planet-page-details-container">
 				<div className="planet-page-name">

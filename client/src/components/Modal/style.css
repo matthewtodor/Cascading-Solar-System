@@ -62,3 +62,19 @@
 		overflow: auto;
 	}
 }
+
+/* large screens */
+@media screen and (max-width: 1200px) {
+}
+
+/* small screens */
+@media screen and (max-width: 1024px) {
+}
+
+/* tablets */
+@media screen and (max-width: 768px) {
+}
+
+/* phones */
+@media screen and (max-width: 480px) {
+}
