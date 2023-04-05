@@ -18,8 +18,8 @@ function Earth({ scale }) {
 							</>
 						)}
 
-						<div id='earth-surface-color-3' className='surface-color-white' />
-						<div id='earth-surface-color-4' className='surface-color-white' />
+						{/* <div id='earth-surface-color-3' className='surface-color-white' /> */}
+						{/* <div id='earth-surface-color-4' className='surface-color-white' /> */}
 					</div>
 				)}
 
