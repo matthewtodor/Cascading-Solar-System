@@ -4,10 +4,10 @@
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
+	top: 0vh;
+	left: 0vh;
+	width: 100%;
+	height: 100%;
 	color: white;
 	background-color: var(--background-shadow-60);
 }
@@ -63,18 +63,18 @@
 	}
 }
 
+/* extra-large screens */
+@media screen and (min-width: 1200px) {
+}
+
 /* large screens */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1024px) {
 }
 
 /* small screens */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
 }
 
 /* tablets */
-@media screen and (max-width: 768px) {
-}
-
-/* phones */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
 }

@@ -5,11 +5,12 @@
 	font-weight: bold;
 	text-shadow: 1px 1px 1px var(--shadow);
 	background-color: var(--background-primary-30);
-	padding: 6px 6px 6px 6px;
+	padding: 10px 6px;
 	border-radius: 8px;
 	border-style: solid;
 	border-color: var(--primary);
 	margin: 4px;
+	width: 45%;
 }
 .button-text {
 	margin: auto;
@@ -18,4 +19,19 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+/* extra-large screens */
+@media screen and (min-width: 1200px) {
+}
+
+/* large screens */
+@media screen and (min-width: 1024px) {
+}
+
+/* small screens */
+@media screen and (min-width: 768px) {
+}
+
+/* tablets */
+@media screen and (min-width: 480px) {
 }

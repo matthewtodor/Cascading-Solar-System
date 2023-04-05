@@ -21,7 +21,15 @@ export default function MoonModal({ open, name, size, nameHistory, onClose }) {
 	if (!open) {
 		return null;
 	}
-
+	if (open) {
+		document.body.style.position = "fixed";
+		document.body.style.top = `-${window.scrollY}px`;
+	} else {
+		const scrollY = document.body.style.top;
+		document.body.style.position = "";
+		document.body.style.top = "";
+		window.scrollTo(0, parseInt(scrollY || "0") * -1);
+	}
 	return (
 		<div className="modal" onClick={onClose}>
 			<div className="modal-content" onClick={(e) => e.stopPropagation()}>

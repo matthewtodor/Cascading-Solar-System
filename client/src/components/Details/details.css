@@ -87,44 +87,18 @@
 	overflow: auto;
 }
 
-/* @media only screen and (max-width: 1000px) {
-	.details {
-		height: 60vh;
-	}
-
-	.moons-container section button {
-		width: 40%;
-	}
-} */
-/* @media only screen and (min-height: 1000px) and (max-width: 1000px) {
+/* extra-large screens */
+@media screen and (min-width: 1200px) {
 }
-@media only screen and (max-width: 768px) {
-} */
+
 /* large screens */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1024px) {
 }
 
 /* small screens */
-@media screen and (max-width: 1024px) {
-	.moons-container section button {
-		width: 40%;
-	}
+@media screen and (min-width: 768px) {
 }
 
 /* tablets */
-@media screen and (max-width: 768px) {
-}
-
-/* phones */
-@media screen and (max-width: 480px) {
-	.details {
-		width: 99%;
-		height: auto;
-	}
-	.moons-container section button {
-		width: 40%;
-	}
-	.facts-container article {
-		align-self: flex-end;
-	}
+@media screen and (min-width: 480px) {
 }
