@@ -1,66 +1,11 @@
 .planet-page {
 	width: 100vw;
 	display: flex;
-	align-items: center;
-	/* margin-right: 10%; */
-}
-.planet-page-planet-container {
-	/* width: 65%; */
-}
-.planet-page-details-container {
-	/* width: 35%; */
-	z-index: 1;
-	display: flex;
 	flex-direction: column;
+	align-items: center;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
-.planet-page-name {
-	text-shadow: 5px 5px 5px var(--background-primary-30);
-	position: relative;
-	top: 23px;
-	z-index: 1;
-	color: var(--primary);
-	font-size: 4em;
-	text-align: center;
-	pointer-events: none;
-}
-.planet-page-details-content {
-	border: 2px solid var(--primary);
-	border-radius: 3px;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	background-color: var(--background-tertiary-60);
-	box-shadow: inset 0 0 30px var(--primary);
-}
-
-/* @media only screen and (max-width: 1000px) {
-	.planet-page {
-		position: absolute;
-		height: 100vh;
-		margin-right: 0;
-		justify-content: space-between;
-	}
-	.planet-page-planet-container {
-		width: 20%;
-	}
-	.planet-page-name {
-		font-size: 3em;
-	}
-	.planet-page-details-container {
-		align-self: start;
-		width: 50%;
-		height: 90%;
-		margin-right: 5%;
-	}
-	.planet-page-details-content {
-		height: auto;
-	}
-} */
-
-/* @media only screen and (min-height: 1000px) and (max-width: 1000px) {
-	
-}
-@media only screen and (max-width: 767px) {
-} */
 /* large screens */
 @media screen and (max-width: 1200px) {
 }
@@ -71,21 +16,6 @@
 		height: 100vh;
 		margin-right: 0;
 		justify-content: space-between;
-	}
-	.planet-page-planet-container {
-		height: 100%;
-	}
-	.planet-page-name {
-		font-size: 3em;
-	}
-	.planet-page-details-container {
-		align-self: center;
-		width: 50%;
-		height: 50%;
-		margin-right: 5%;
-	}
-	.planet-page-details-content {
-		height: auto;
 	}
 }
 
@@ -99,23 +29,17 @@
 /* phones */
 @media screen and (max-width: 480px) {
 	.planet-page {
-		justify-content: center;
 		height: 100vh;
 		margin-right: 0;
 	}
-	.planet-page-planet-container {
-		align-self: center;
-		justify-self: left;
-		width: 0;
+	.planet-page-planet {
 		position: relative;
-		top: 50%;
+		top: 25vh;
 	}
-	.planet-page-name {
-		font-size: 3em;
-	}
-	.planet-page-details-container {
-		width: 99%;
-		height: auto;
-		margin-right: 0;
+
+	.planet-page-details {
+		z-index: 1;
+		position: relative;
+		top: 50vh;
 	}
 }

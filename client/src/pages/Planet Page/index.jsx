@@ -17,16 +17,11 @@ const PlanetPage = () => {
 
 	return (
 		<main className="planet-page">
-			<figure className="planet-page-planet-container">
-				<Planet name={name} scale={handleChange(mediaQuerySmall) ? "100" : "100"} />
+			<figure className="planet-page-planet">
+				<Planet name={name} scale={handleChange(mediaQuerySmall) ? "50" : "100"} />
 			</figure>
-			<article className="planet-page-details-container">
-				<div className="planet-page-name">
-					<h1>{name}</h1>
-				</div>
-				<div className="planet-page-details-content">
-					<Details name={data.name} size={data.size} facts={data.facts} moons={data.moons} />
-				</div>
+			<article className="planet-page-details">
+				<Details name={data.name} size={data.size} facts={data.facts} moons={data.moons} />
 			</article>
 		</main>
 	);

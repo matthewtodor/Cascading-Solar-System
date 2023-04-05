@@ -1,32 +1,52 @@
 .details {
+	z-index: 1;
+	color: var(--highlight);
+	text-shadow: 5px 5px 5px var(--background-shadow-30);
+	display: flex;
+	flex-direction: column;
+}
+.details-name {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-shadow: 5px 5px 5px var(--background-primary-30);
+	position: relative;
+	top: 33px;
+	color: var(--primary);
+	font-size: 4em;
+	text-align: center;
+	pointer-events: none;
+}
+.details-outer {
+	background-color: var(--background-tertiary-60);
+	border: 2px solid var(--primary);
+	border-radius: 3px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	box-shadow: inset 0 0 30px var(--primary);
+}
+.details-inner {
+	margin: 10px;
 	border: 2px solid var(--background-primary-30);
 	border-radius: 5px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	height: 50vh;
-	color: var(--highlight);
-	text-shadow: 5px 5px 5px var(--background-shadow-30);
-	overflow: hidden;
-	margin: 3%;
-	display: flex;
-	flex-direction: column;
 }
-.details header {
+.size {
 	box-shadow: inset 0 0 5px var(--background-primary-30);
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: center;
+	flex-direction: column;
 	text-align: left;
 	padding: 3px;
 	padding-left: 10px;
 }
-.details header div {
+.details-inner .size div {
 	flex: 1;
 }
-.details header .size {
+.details.inner .size {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
 }
 .scroll-container-details {
 	height: inherit;
@@ -86,9 +106,6 @@
 
 /* small screens */
 @media screen and (max-width: 1024px) {
-	.details {
-		height: 35vh;
-	}
 	.moons-container section button {
 		width: 40%;
 	}
@@ -100,6 +117,10 @@
 
 /* phones */
 @media screen and (max-width: 480px) {
+	.details {
+		width: 99%;
+		height: auto;
+	}
 	.moons-container section button {
 		width: 40%;
 	}
