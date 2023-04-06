@@ -8,15 +8,16 @@
 	left: 0vh;
 	width: 100%;
 	height: 100%;
-	color: white;
+
 	background-color: var(--background-shadow-60);
 }
-.modal-content {
+.modal-content-outer {
 	display: flex;
 	flex-direction: column;
-	width: 40vw;
+	width: 95%;
+	max-height: 75vh;
 	margin: 4px;
-	padding: 1rem;
+	padding: 0.75rem;
 	color: var(--highlight);
 	text-shadow: 3px 3px 3px var(--shadow);
 	border-radius: 5px;
@@ -26,48 +27,49 @@
 	border-color: var(--primary);
 	background-color: var(--background-tertiary-60);
 	box-shadow: inset 0 0 30px var(--primary);
+	overflow: auto;
 }
-.modal-content header {
+.modal-content-outer header {
 	box-shadow: none;
-	padding-left: 0;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	width: 100%;
+	padding-bottom: 0.75rem;
 }
-.modal-content aside {
+.modal-content-outer aside {
 	display: flex;
 	flex-wrap: wrap;
 }
-.modal-content aside h3 {
+.modal-content-outer aside h3 {
 	width: 100%;
 	margin-bottom: 8px;
 }
-.modal-content aside p {
+.modal-content-outer aside p {
 	flex: 1 1 50%;
 	margin-bottom: 6px;
 }
-.modal-content article {
+.modal-content-outer article {
 	padding: 1rem;
 }
-.modal-click {
-	position: absolute;
-	height: 100vh;
-	width: 100vw;
+.modal-content-inner {
+	border: 2px solid var(--background-primary-30);
+	border-radius: 5px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+
+	color: var(--highlight);
+	text-shadow: 5px 5px 5px var(--background-shadow-30);
+	overflow: hidden;
+	margin: 1px;
+	display: flex;
+	flex-direction: column;
 }
-
-@media only screen and (max-width: 1000px) {
-	.modal {
-		top: 0;
-	}
-
-	.modal-content {
-		max-height: 65%;
-		width: 80%;
-		overflow: auto;
-	}
+.scroll-container {
+	max-height: 65vh;
+	overflow: auto;
+	padding: 1%;
 }
-
 /* extra-large screens */
 @media screen and (min-width: 1200px) {
 }

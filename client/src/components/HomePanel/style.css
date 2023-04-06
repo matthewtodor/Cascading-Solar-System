@@ -125,7 +125,6 @@
 	.scroll-container {
 		display: flex;
 		flex-direction: column;
-		height: 30vh;
 	}
 }
 @media only screen and (max-height: 400px) {
