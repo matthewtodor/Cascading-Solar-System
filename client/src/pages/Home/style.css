@@ -1,16 +1,31 @@
 .home {
+	width: 100vw;
+	height: 100vh;
 	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .solar-system {
+	position: relative;
+	top: -12vh;
 	flex: 1;
 }
 
-/* mobile styles */
-@media only screen and (max-width: 1000px) {
-	.home {
-		flex-direction: column;
-		justify-content: flex-end;
-		align-items: center;
-	}
+@media screen and (min-width: 1200px) {
+}
+
+/* large screens */
+@media screen and (min-width: 1024px) {
+}
+
+/* small screens */
+@media screen and (min-width: 768px) {
+}
+
+/* tablets */
+@media screen and (min-width: 480px) {
 }

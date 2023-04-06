@@ -78,8 +78,8 @@
 	text-shadow: 3px 3px 1px var(--background-shadow-30);
 }
 .moons-container section {
-	box-shadow: inset 0 0 5px var(--background-primary-30);
 	padding-top: 6px;
+	padding-bottom: 6px;
 	flex: 1 1 50%;
 	flex-wrap: wrap;
 	justify-content: flex-start;

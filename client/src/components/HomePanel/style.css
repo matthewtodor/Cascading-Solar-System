@@ -1,25 +1,23 @@
 .home-panel {
-	position: absolute;
-	top: 15%;
-	right: 2vw;
-	width: 25%;
+	z-index: 1;
+	position: relative;
+	top: 25vh;
 }
-
 .home-panel-name {
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-shadow: 5px 5px 5px var(--background-primary-30);
+	text-shadow: 7px 7px 7px var(--background-shadow-30);
 	position: relative;
-	top: 15px;
+	top: 25px;
 	color: var(--primary);
 	font-size: 4em;
 	text-align: center;
 	pointer-events: none;
 }
 .home-panel-name h1 {
-	font-size: smaller;
+	font-size: 0.6em;
 }
 .home-panel-outer {
 	border: 2px solid var(--primary);
@@ -35,111 +33,31 @@
 	border-radius: 5px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	height: 50vh;
+	max-height: 50vh;
 	color: var(--highlight);
-	text-shadow: 5px 5px 5px var(--background-shadow-30);
+	text-shadow: 5px 5px 5px var(--background-shadow-60);
 	overflow: hidden;
 	margin: 3%;
 	display: flex;
 	flex-direction: column;
 }
-
 #solar-system-facts-container {
 	padding: 8px;
+	text-align: center;
 }
-@media only screen and (max-width: 1000px) {
-	.home-panel {
-		display: flex;
-		width: 60%;
-		height: 94vh;
-		text-align: center;
-		top: 3vh;
-		right: 3vh;
-	}
-	.home-panel-name {
-		top: 25%;
-	}
-	.home-panel-inner {
-		height: 85vh;
-	}
+
+/* extra-large screens */
+@media screen and (min-width: 1200px) {
 }
-@media only screen and (min-height: 1000px), only screen and (max-width: 1000px) {
-	.home-panel {
-		display: revert;
-		width: 40%;
-		height: revert;
-		text-align: center;
-		right: 3vh;
-		top: auto;
-		bottom: 3vh;
-		left: auto;
-	}
-	.home-panel-name {
-		font-size: 2.5em;
-	}
-	.home-panel-inner {
-		height: revert;
-		margin: 1.5%;
-	}
-	.scroll-container {
-		display: flex;
-		flex-direction: column;
-	}
+
+/* large screens */
+@media screen and (min-width: 1024px) {
 }
-/* only screen and (max-width: 1000px) {
-	.home-panel {
-		display: revert;
-		width: 95%;
-		height: revert;
-		text-align: center;
-		right: 2vh;
-		top: auto;
-		bottom: 1vh;
-		left: auto;
-	}
-	.home-panel-inner {
-		height: revert;
-	}
-	.scroll-container {
-		display: flex;
-		flex-direction: column;
-	}
-	.home-panel-inner {
-		margin: 1.5%;
-	}
-} */
-@media only screen and (max-width: 767px) {
-	.home-panel {
-		display: revert;
-		width: 100%;
-		height: revert;
-		text-align: center;
-		right: auto;
-		top: auto;
-		bottom: 0;
-		left: 0;
-	}
-	.home-panel-inner {
-		height: revert;
-	}
-	.scroll-container {
-		display: flex;
-		flex-direction: column;
-	}
+
+/* small screens */
+@media screen and (min-width: 768px) {
 }
-@media only screen and (max-height: 400px) {
-	.home-panel {
-		display: flex;
-		width: 60%;
-		height: 94vh;
-		text-align: center;
-		top: 3vh;
-		right: 3vh;
-	}
-	.home-panel-name {
-		top: 25%;
-	}
-	.home-panel-inner {
-		height: 85vh;
-	}
+
+/* tablets */
+@media screen and (min-width: 480px) {
 }
