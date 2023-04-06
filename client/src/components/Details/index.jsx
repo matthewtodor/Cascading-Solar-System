@@ -17,29 +17,29 @@ export default function Details() {
 				<section className="details-inner">
 					<div className="scroll-container-details">
 						<div className="size">
-							<h2>Size:</h2>
-							<p>
-								<strong>Radius: </strong>
+							<h2>Size</h2>
+							<p className="numbers">
+								<strong>Radius</strong>
 								{data.size} miles
 							</p>
-							<p>
-								<strong>Diameter: </strong>
+							<p className="numbers">
+								<strong>Diameter</strong>
 								{diameter} miles
 							</p>
-							<p>
-								<strong>Circumference: </strong>
+							<p className="numbers">
+								<strong>Circumference</strong>
 								{circumference} miles
 							</p>
 						</div>
 						<div>
-							<p>
-								<strong>Planet type: </strong>
+							<p className="numbers">
+								<strong>Planet type</strong>
 								{data.core}
 							</p>
 						</div>
 						<div>
-							<p>
-								<strong>Average distance from the Sun: </strong>
+							<p className="numbers">
+								<strong>Average distance from the Sun</strong>
 								{data.sun_distance} miles
 							</p>
 						</div>
