@@ -8,7 +8,6 @@ const App = () => {
 		show: false,
 		moon: ["", "", ""],
 	});
-	console.log(modalState);
 	const handleModal = () => {
 		setModalState(!modalState);
 	};
