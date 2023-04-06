@@ -12,12 +12,12 @@
 	position: relative;
 	top: 25px;
 	color: var(--primary);
-	font-size: 4em;
+	font-size: 4rem;
 	text-align: center;
 	pointer-events: none;
 }
 .home-panel-name h1 {
-	font-size: 0.6em;
+	font-size: 0.6rem;
 }
 .home-panel-outer {
 	border: 2px solid var(--primary);

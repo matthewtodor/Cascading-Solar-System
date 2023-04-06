@@ -29,14 +29,18 @@ Hex     	RGB
 	--background-highlight-60: #e4eff099;
 
 	/* VALUES */
-	--1: 4px;
-	--2: 8px;
-	--3: 12px;
-	--4: 16px;
-	--5: 20px;
-	--6: 24px;
-	--7: 28px;
-	--8: 32px;
+	--1: 0.25rem;
+	--2: 0.5rem;
+	--3: 0.75rem;
+	--4: 1rem;
+	--5: 1.25rem;
+	--6: 1.5rem;
+	--7: 1.75rem;
+	--8: 2rem;
+	--9: 2.25rem;
+	--10: 2.5rem;
+	--11: 2.75rem;
+	--12: 3rem;
 }
 
 body {
@@ -46,7 +50,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 ::-webkit-scrollbar {
-	width: 8px;
+	width: var(--2);
 }
 ::-webkit-scrollbar-track {
 	background: var(--background-secondary-30);

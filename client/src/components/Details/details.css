@@ -13,7 +13,7 @@
 	position: relative;
 	top: var(--8);
 	color: var(--primary);
-	font-size: 4em;
+	font-size: 4rem;
 	text-align: center;
 	pointer-events: none;
 }
@@ -99,11 +99,11 @@
 	text-shadow: 3px 3px 1px var(--background-shadow-30);
 }
 .moons-container section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	padding-top: var(--2);
 	padding-bottom: var(--2);
-	flex: 1 1 50%;
-	flex-wrap: wrap;
-	justify-content: flex-start;
 	max-height: 95%;
 	overflow: auto;
 }
