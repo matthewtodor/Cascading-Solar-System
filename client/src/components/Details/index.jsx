@@ -59,6 +59,7 @@ export default function Details() {
 									</header>
 									<section>
 										{data.moons.map((moon) => {
+											console.log(moon);
 											return <MoonButton key={moon.id} name={moon.name} size={moon.size} nameHistory={moon.name_history} />;
 										})}
 									</section>
