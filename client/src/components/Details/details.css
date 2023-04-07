@@ -23,10 +23,10 @@
 	border-radius: 3px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	box-shadow: inset 0 0 30px var(--primary);
+	box-shadow: inset 0 0 var(--8) var(--primary);
 }
 .details-inner {
-	margin: 10px;
+	margin: var(--2);
 	border: 2px solid var(--background-primary-30);
 	border-radius: 5px;
 	border-top-left-radius: 25px;
@@ -39,8 +39,8 @@
 	align-items: center;
 	flex-direction: column;
 	text-align: left;
-	padding: 3px;
-	padding-left: 10px;
+	padding: var(--1);
+	padding-left: var(--2);
 }
 .size h2 {
 	text-decoration: underline;
@@ -86,13 +86,14 @@
 .moons-container {
 	border-top: 1px solid var(--background-primary-30);
 	margin-top: auto;
-	margin: 9px;
+	margin: var(--2);
 }
 .moons-container header {
 	flex: 1 1 100%;
 	text-align: left;
 	margin: var(--1) 0;
 	padding-left: var(--4);
+	padding-top: var(--4);
 }
 .moons-container header h3 {
 	width: 100%;
@@ -107,19 +108,101 @@
 	max-height: 95%;
 	overflow: auto;
 }
-
-/* extra-large screens */
-@media screen and (min-width: 1200px) {
-}
-
-/* large screens */
-@media screen and (min-width: 1024px) {
+/* tablets */
+@media screen and (min-width: 480px) {
 }
 
 /* small screens */
 @media screen and (min-width: 768px) {
+	.details-name {
+		font-size: 5rem;
+	}
+	.details-inner {
+		margin: var(--5);
+	}
+	.size h2 {
+		font-size: var(--8);
+	}
+	.numbers {
+		font-size: var(--5);
+		margin-bottom: var(--2);
+	}
+	.facts-container {
+		font-size: var(--5);
+		padding-top: var(--4);
+		padding-bottom: var(--4);
+	}
+	.facts-container li {
+		margin-bottom: var(--2);
+	}
+	.facts-container ul :last-child {
+		margin-bottom: 0;
+	}
+	.moons-container header {
+		padding-left: var(--8);
+	}
+	.moons-container header h3 {
+		font-size: var(--6);
+	}
 }
-
-/* tablets */
-@media screen and (min-width: 480px) {
+/* large screens */
+@media screen and (min-width: 1024px) {
+	.size {
+		flex-direction: row;
+	}
+	.size h2 {
+		width: 100%;
+		text-align: center;
+	}
+	.size p {
+		padding: var(--2) var(--4);
+	}
+	.moons-container header {
+		padding-left: var(--12);
+	}
+}
+/* extra-large screens */
+@media screen and (min-width: 1440px) {
+	.details {
+		width: 35%;
+	}
+	.details-outer {
+		height: 65vh;
+	}
+	.details-inner {
+		height: 60vh;
+		overflow: hidden;
+	}
+	.details-name {
+		font-size: 5rem;
+	}
+	.size {
+		justify-content: left;
+	}
+	.size h2 {
+		font-size: var(--6);
+	}
+	.size p {
+		padding: var(--1) var(--2);
+	}
+	.numbers {
+		font-size: var(--4);
+		margin-bottom: 0;
+		text-align: left;
+	}
+	.facts-container {
+		font-size: var(--4);
+		padding-top: var(--3);
+		padding-bottom: var(--3);
+	}
+	.moons-container header {
+		padding-left: var(--4);
+	}
+	#planet-type {
+		padding-bottom: var(--2);
+	}
+	#planet-type,
+	#sun-distance {
+		margin-left: var(--4);
+	}
 }

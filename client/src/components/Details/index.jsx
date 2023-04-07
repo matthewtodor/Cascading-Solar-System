@@ -32,13 +32,13 @@ export default function Details() {
 							</p>
 						</div>
 						<div>
-							<p className="numbers">
+							<p className="numbers" id="planet-type">
 								<strong>Planet type</strong>
 								{data.core}
 							</p>
 						</div>
 						<div>
-							<p className="numbers">
+							<p className="numbers" id="sun-distance">
 								<strong>Average distance from the Sun</strong>
 								{data.sun_distance} miles
 							</p>

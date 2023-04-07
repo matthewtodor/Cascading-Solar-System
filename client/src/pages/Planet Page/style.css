@@ -17,10 +17,17 @@
 	position: relative;
 	top: 33vh;
 }
-/* extra-large screens */
-@media screen and (min-width: 1200px) {
+
+/* tablets */
+@media screen and (min-width: 480px) {
 }
 
+/* small screens */
+@media screen and (min-width: 768px) {
+	.planet-page {
+		flex-direction: column;
+	}
+}
 /* large screens */
 @media screen and (min-width: 1024px) {
 	.planet-page {
@@ -30,13 +37,18 @@
 	}
 }
 
-/* small screens */
-@media screen and (min-width: 768px) {
+/* extra-large screens */
+@media screen and (min-width: 1440px) {
 	.planet-page {
-		flex-direction: column;
+		flex-direction: row;
+		justify-content: center;
 	}
-}
-
-/* tablets */
-@media screen and (min-width: 480px) {
+	.planet-page-details {
+		top: -5vh;
+		left: 60vw;
+	}
+	.planet-page-planet {
+		top: 0;
+		left: 25vw;
+	}
 }
