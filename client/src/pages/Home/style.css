@@ -11,21 +11,20 @@
 
 .solar-system {
 	position: relative;
-	top: -12vh;
+	top: -15vh;
 	flex: 1;
 }
 
-@media screen and (min-width: 1200px) {
-}
-
-/* large screens */
-@media screen and (min-width: 1024px) {
+/* tablets */
+@media screen and (min-width: 480px) {
 }
 
 /* small screens */
 @media screen and (min-width: 768px) {
 }
+/* large screens */
+@media screen and (min-width: 1024px) {
+}
 
-/* tablets */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1440px) {
 }

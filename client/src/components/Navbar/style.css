@@ -5,7 +5,7 @@ nav {
 	justify-content: left;
 	color: var(--highlight);
 	width: 100vw;
-	padding: var(--12);
+	padding: var(--6);
 }
 nav a {
 	text-decoration: none;
