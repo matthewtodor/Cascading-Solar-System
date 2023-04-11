@@ -21,10 +21,23 @@
 
 /* small screens */
 @media screen and (min-width: 768px) {
+	.solar-system {
+		top: -25vh;
+	}
 }
 /* large screens */
 @media screen and (min-width: 1024px) {
+	.home {
+		flex-direction: row;
+	}
+	.solar-system {
+		top: 0;
+		overflow: hidden;
+	}
 }
 
 @media screen and (min-width: 1440px) {
+	.home {
+		overflow-x: auto;
+	}
 }

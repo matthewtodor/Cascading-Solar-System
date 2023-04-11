@@ -66,12 +66,31 @@
 
 /* small screens */
 @media screen and (min-width: 768px) {
+	.home-panel-name {
+		font-size: var(--8);
+	}
+	.home-panel {
+		top: 5vh;
+	}
 }
 
 /* large screens */
 @media screen and (min-width: 1024px) {
+	.home-panel {
+		top: -5vh;
+		width: 32vw;
+	}
+	.home-panel-inner {
+		max-height: 70vh;
+	}
+	.scroll-container {
+		max-height: 80vh;
+	}
 }
 
 /* extra-large screens */
 @media screen and (min-width: 1440px) {
+	.home-panel {
+		right: 2vw;
+	}
 }
