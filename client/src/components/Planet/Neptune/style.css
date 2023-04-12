@@ -40,11 +40,11 @@
 	border-radius: 100%;
 	width: 100px;
 	height: 100px;
-	animation: neptune-moon-1-resize 118s 29.5s ease-in-out infinite both;
+	animation: neptune-moon-1-resize 11.8s 2.95s ease-in-out infinite both;
 }
 
 #neptune-moon-1-orbit {
-	animation: neptune-moon-1-orbit 118s ease-in-out infinite both;
+	animation: neptune-moon-1-orbit 11.8s ease-in-out infinite both;
 }
 
 /* moon surface */
@@ -131,15 +131,15 @@
 /* resize in orbit for perspective */
 @keyframes neptune-moon-1-resize {
 	0% {
-		transform: matrix(0.5, 0, 0, 0.5, 0, 0);
-	}
-
-	50% {
 		transform: matrix(0.03, 0, 0, 0.03, 0, 0);
 	}
 
-	100% {
+	50% {
 		transform: matrix(0.5, 0, 0, 0.5, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.03, 0, 0, 0.03, 0, 0);
 	}
 }
 

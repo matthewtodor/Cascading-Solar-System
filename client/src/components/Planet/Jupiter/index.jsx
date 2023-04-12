@@ -4,7 +4,7 @@ function Jupiter({ scale }) {
 	return (
 		<div className='planet-scale' style={{ transform: `scale(${scale / 100})` }}>
 			<div id='jupiter' className='planet'>
-				{scale > 15 && (
+				{scale > 0 && (
 					<div className='surface' style={{ opacity: scale / 200 }}>
 						<div id='jupiter-surface-spot' />
 						<div id='jupiter-surface-color-1' className='surface-color-red' />

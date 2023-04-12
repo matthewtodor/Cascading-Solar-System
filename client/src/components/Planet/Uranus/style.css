@@ -14,14 +14,19 @@
 /* surface */
 #uranus-surface-color-1 {
 	animation: spin-surface 20s linear infinite both;
+	opacity: 0.75;
 }
 
 #uranus-surface-color-2 {
 	animation: spin-surface 22s linear infinite both;
+	transform: translateY(5%);
+	opacity: 0.75;
 }
 
 #uranus-surface-color-3 {
 	animation: spin-surface 25s linear infinite both;
+	transform: translateY(10%);
+	opacity: 0.75;
 }
 
 /* moons */
@@ -152,70 +157,70 @@
 /* resize in orbit for perspective */
 @keyframes uranus-moon-1-resize {
 	0% {
-		transform: matrix(0.5, 0, 0, 0.5, 0, 0);
-	}
-
-	50% {
 		transform: matrix(0.15, 0, 0, 0.15, 0, 0);
 	}
 
-	100% {
+	50% {
 		transform: matrix(0.5, 0, 0, 0.5, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.15, 0, 0, 0.15, 0, 0);
 	}
 }
 
 @keyframes uranus-moon-2-resize {
 	0% {
-		transform: matrix(0.15, 0, 0, 0.15, 0, 0);
-	}
-
-	50% {
 		transform: matrix(0.4, 0, 0, 0.4, 0, 0);
 	}
 
-	100% {
+	50% {
 		transform: matrix(0.15, 0, 0, 0.15, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.4, 0, 0, 0.4, 0, 0);
 	}
 }
 
 @keyframes uranus-moon-3-resize {
 	0% {
-		transform: matrix(0.3, 0, 0, 0.3, 0, 0);
-	}
-
-	50% {
 		transform: matrix(0.12, 0, 0, 0.12, 0, 0);
 	}
 
-	100% {
+	50% {
 		transform: matrix(0.3, 0, 0, 0.3, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.12, 0, 0, 0.12, 0, 0);
 	}
 }
 
 @keyframes uranus-moon-4-resize {
 	0% {
-		transform: matrix(0.12, 0, 0, 0.12, 0, 0);
-	}
-
-	50% {
 		transform: matrix(0.2, 0, 0, 0.2, 0, 0);
 	}
 
-	100% {
+	50% {
 		transform: matrix(0.12, 0, 0, 0.12, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.2, 0, 0, 0.2, 0, 0);
 	}
 }
 
 @keyframes uranus-moon-5-resize {
 	0% {
-		transform: matrix(0.1, 0, 0, 0.1, 0, 0);
-	}
-
-	50% {
 		transform: matrix(0.05, 0, 0, 0.05, 0, 0);
 	}
 
-	100% {
+	50% {
 		transform: matrix(0.1, 0, 0, 0.1, 0, 0);
+	}
+
+	100% {
+		transform: matrix(0.05, 0, 0, 0.05, 0, 0);
 	}
 }
