@@ -14,7 +14,7 @@
 /* continents */
 :root {
 	--continent-color: linear-gradient(white 15%, hsl(120, 100%, 15%) 30%, hsl(45, 100%, 30%) 60%, hsl(120, 100%, 15%) 75%);
-	--continent-opacity: 0.75;
+	--continent-opacity: 1;
 }
 
 #west {

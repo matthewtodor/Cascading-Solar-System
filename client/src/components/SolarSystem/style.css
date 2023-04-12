@@ -139,6 +139,7 @@
 
 .solar-system #earth-moon {
 	box-shadow: none;
+	animation: solar-system-earth-moon-orbit 1.48s linear infinite both reverse;
 }
 
 /* mobile styles */
@@ -255,6 +256,10 @@
 	.solar-system #earth-moon-orbit {
 		animation: solar-system-earth-moon-orbit 14.8s linear infinite both;
 	}
+
+	.solar-system #earth-moon {
+		animation: solar-system-earth-moon-orbit 14.8s linear infinite both reverse;
+	}
 }
 
 @media only screen and (max-width: 767px) {
@@ -366,10 +371,6 @@
 	#neptune-orbit .planet {
 		transform: rotate(45deg);
 	}
-
-	.solar-system #earth-moon-orbit {
-		animation: solar-system-earth-moon-orbit 14.8s linear infinite both;
-	}
 }
 
 /* animations */
@@ -379,7 +380,7 @@
 	}
 
 	to {
-		transform: rotate(360deg);
+		transform: rotate(-360deg);
 	}
 }
 
@@ -389,6 +390,6 @@
 	}
 
 	to {
-		transform: rotate(360deg);
+		transform: rotate(-360deg);
 	}
 }
