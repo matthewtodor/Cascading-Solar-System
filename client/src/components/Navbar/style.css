@@ -5,7 +5,7 @@ nav {
 	justify-content: left;
 	color: var(--highlight);
 	width: 100vw;
-	padding: 3rem;
+	padding: var(--6);
 }
 nav a {
 	text-decoration: none;
@@ -21,14 +21,17 @@ nav a {
 	text-align: start;
 	font-family: inherit;
 	font-size: 2rem;
-	margin-left: 3rem;
+	margin-left: var(--12);
 	z-index: 2;
 }
 .dropdown-head {
 	border-left: 2px solid var(--primary);
 	transition: background-color 0.5s;
-	padding: 0.5rem;
+	padding: var(--2);
 	z-index: 1;
+}
+.dropdown-head p {
+	pointer-events: none;
 }
 .dropdown-links {
 	display: flex;
@@ -38,7 +41,7 @@ nav a {
 	color: var(--highlight);
 	width: 100%;
 	display: none;
-	padding-left: 0.5rem;
+	padding-left: var(--2);
 }
 .nav-link:hover {
 	color: var(--primary);

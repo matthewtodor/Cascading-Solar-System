@@ -1,32 +1,22 @@
-footer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	color: var(--background-highlight-30);
-}
 .home-panel {
-	position: absolute;
-	top: 15%;
-	right: 2vw;
-	width: 25%;
+	z-index: 1;
+	position: relative;
+	top: 30vh;
 }
-
 .home-panel-name {
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-shadow: 5px 5px 5px var(--background-primary-30);
+	text-shadow: 7px 7px 7px var(--background-shadow-60);
 	position: relative;
-	top: 15px;
+	top: var(--5);
 	color: var(--primary);
-	font-size: 4em;
+	font-size: var(--6);
 	text-align: center;
 	pointer-events: none;
 }
-.home-panel-name h1 {
-	font-size: smaller;
-}
+
 .home-panel-outer {
 	border: 2px solid var(--primary);
 	border-radius: 3px;
@@ -41,111 +31,66 @@ footer {
 	border-radius: 5px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	height: 50vh;
+	max-height: 100vh;
 	color: var(--highlight);
-	text-shadow: 5px 5px 5px var(--background-shadow-30);
+	text-shadow: 5px 5px 5px var(--background-shadow-60);
 	overflow: hidden;
 	margin: 3%;
 	display: flex;
 	flex-direction: column;
 }
-
+.home-panel-inner h2 {
+	margin: var(--1);
+}
+.home-panel-inner a,
+.home-panel-inner a:visited {
+	color: var(--primary);
+	text-decoration: none;
+}
 #solar-system-facts-container {
-	padding: 8px;
+	padding: var(--2);
+	text-align: left;
 }
-@media only screen and (max-width: 1000px) {
-	.home-panel {
-		display: flex;
-		width: 60%;
-		height: 94vh;
-		text-align: center;
-		top: 3vh;
-		right: 3vh;
-	}
+#solar-system-facts-container ul {
+	margin-top: var(--2);
+	margin-bottom: var(--2);
+}
+#solar-system-github {
+	margin: var(--2);
+	padding-top: var(--2);
+	border-top: 2px solid var(--background-primary-30);
+}
+/* tablets */
+@media screen and (min-width: 480px) {
+}
+
+/* small screens */
+@media screen and (min-width: 768px) {
 	.home-panel-name {
-		top: 25%;
+		font-size: var(--8);
 	}
-	.home-panel-inner {
-		height: 85vh;
+	.home-panel {
+		top: 5vh;
 	}
 }
-@media only screen and (min-height: 1000px) {
+
+/* large screens */
+@media screen and (min-width: 1024px) {
 	.home-panel {
-		display: revert;
-		width: 40%;
-		height: revert;
-		text-align: center;
-		right: 3vh;
-		top: auto;
-		bottom: 3vh;
-		left: auto;
+		top: -5vh;
+		width: 32vw;
 	}
 	.home-panel-inner {
-		height: revert;
+		max-height: 70vh;
 	}
 	.scroll-container {
-		display: flex;
-		flex-direction: column;
+		max-height: 80vh;
 	}
 }
-@media only screen and (max-width: 1000px) {
+
+/* extra-large screens */
+@media screen and (min-width: 1440px) {
 	.home-panel {
-		display: revert;
-		width: 95%;
-		height: revert;
-		text-align: center;
-		right: 2vh;
-		top: auto;
-		bottom: 1vh;
-		left: auto;
-	}
-	.home-panel-name {
-		font-size: 2.5em;
-	}
-	.home-panel-inner {
-		height: revert;
-	}
-	.scroll-container {
-		display: flex;
-		flex-direction: column;
-	}
-	.home-panel-inner {
-		margin: 1.5%;
-	}
-}
-@media only screen and (max-width: 767px) {
-	.home-panel {
-		display: revert;
-		width: 100%;
-		height: revert;
-		text-align: center;
-		right: auto;
-		top: auto;
-		bottom: 0;
-		left: 0;
-	}
-	.home-panel-inner {
-		height: revert;
-	}
-	.scroll-container {
-		display: flex;
-		flex-direction: column;
-		height: 30vh;
-	}
-}
-@media only screen and (max-height: 400px) {
-	.home-panel {
-		display: flex;
-		width: 60%;
-		height: 94vh;
-		text-align: center;
-		top: 3vh;
-		right: 3vh;
-	}
-	.home-panel-name {
-		top: 25%;
-	}
-	.home-panel-inner {
-		height: 85vh;
+		right: 2vw;
 	}
 }

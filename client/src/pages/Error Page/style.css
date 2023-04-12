@@ -3,7 +3,7 @@
 	color: var(--highlight);
 }
 .error-page h3 {
-	font-size: xx-large;
+	font-size: var(--12);
 }
 .error-page a {
 	color: var(--highlight);

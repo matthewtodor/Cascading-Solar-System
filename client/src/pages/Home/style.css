@@ -1,16 +1,43 @@
 .home {
+	width: 100vw;
+	height: 100vh;
 	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .solar-system {
+	position: relative;
+	top: -15vh;
 	flex: 1;
 }
 
-/* mobile styles */
-@media only screen and (max-width: 1000px) {
+/* tablets */
+@media screen and (min-width: 480px) {
+}
+
+/* small screens */
+@media screen and (min-width: 768px) {
+	.solar-system {
+		top: -25vh;
+	}
+}
+/* large screens */
+@media screen and (min-width: 1024px) {
 	.home {
-		flex-direction: column;
-		justify-content: flex-end;
-		align-items: center;
+		flex-direction: row;
+	}
+	.solar-system {
+		top: 0;
+		overflow: hidden;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.home {
+		overflow-x: auto;
 	}
 }

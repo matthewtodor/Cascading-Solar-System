@@ -41,15 +41,6 @@ function Navbar() {
 					</Link>
 				</div>
 			</div>
-            {handleChange(mediaQueryNav) ? (
-            <a href="https://github.com/Ccatalyst/Cascading-Solar-System" className="github">
-                <img src="/icons8-github-45.svg" alt="Cascading-Solar-System github svg"></img>
-            </a>
-            ) : (
-            <a href="https://github.com/Ccatalyst/Cascading-Solar-System" className="github">
-                <img src="/icons8-github-64.svg" alt="Cascading-Solar-System github svg"></img>
-            </a>
-            )}
 		</nav>
 	);
 }
