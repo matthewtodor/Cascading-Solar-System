@@ -1,51 +1,36 @@
 import "./style.css";
-import { useEffect } from "react";
-export default function MoonModal({ open, name, size, nameHistory, onClose }) {
-	let diameter = size * 2;
-	diameter = diameter.toFixed(2);
-	let circumference = 2 * Math.PI * size;
-	circumference = circumference.toFixed(2);
-
-	const closeOnEscape = (e) => {
-		if ((e.charCode || e.keyCode) === 27) {
-			onClose();
-		}
-	};
-	useEffect(() => {
-		document.body.addEventListener("keydown", closeOnEscape);
-
-		return function cleanUp() {
-			document.body.removeEventListener("keydown", closeOnEscape);
-		};
-	});
-	if (!open) {
-		return null;
-	}
-
+export default function MoonModal({ show, set, moon }) {
 	return (
-		<div className="modal" onClick={onClose}>
-			<div className="modal-content" onClick={(e) => e.stopPropagation()}>
-				<div className="scroll-container">
-					<header>
-						<h2>{name}</h2>
-					</header>
-					<aside>
-						<h3>Size</h3>
-						<p>
-							<strong>Radius:</strong> {size} miles
-						</p>
-						<p>
-							<strong>Diameter:</strong> {diameter} miles
-						</p>
-						<p>
-							<strong>Circumference:</strong> {circumference} miles
-						</p>
-					</aside>
-					<article>
-						<span>{nameHistory}</span>
-					</article>
+		<>
+			{show ? (
+				<div className="modal" onClick={() => set()}>
+					<div className="modal-content-outer" onClick={(e) => e.stopPropagation()}>
+						<div className="modal-content-inner">
+							<div className="scroll-container">
+								<header>
+									<h2>{moon[0]}</h2>
+								</header>
+								<aside>
+									<p>
+										<strong>Radius:</strong> {moon[2]} miles
+									</p>
+									<p>
+										<strong>Diameter:</strong> {moon[3]} miles
+									</p>
+									<p>
+										<strong>Circumference:</strong> {moon[4]} miles
+									</p>
+								</aside>
+								<article>
+									<span>{moon[1]}</span>
+								</article>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
+			) : (
+				<></>
+			)}
+		</>
 	);
 }

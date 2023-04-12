@@ -1,34 +1,69 @@
 .details {
+	z-index: 1;
+	color: var(--highlight);
+	text-shadow: 5px 5px 5px var(--background-shadow-30);
+	display: flex;
+	flex-direction: column;
+}
+.details-name {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-shadow: 5px 5px 5px var(--background-primary-30);
+	position: relative;
+	top: var(--8);
+	color: var(--primary);
+	font-size: 4rem;
+	text-align: center;
+	pointer-events: none;
+}
+.details-outer {
+	background-color: var(--background-tertiary-60);
+	border: 2px solid var(--primary);
+	border-radius: 3px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	box-shadow: inset 0 0 var(--8) var(--primary);
+}
+.details-inner {
+	margin: var(--2);
 	border: 2px solid var(--background-primary-30);
 	border-radius: 5px;
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
-	height: 50vh;
-	color: var(--highlight);
-	text-shadow: 5px 5px 5px var(--background-shadow-30);
-	overflow: hidden;
-	margin: 3%;
-	display: flex;
-	flex-direction: column;
 }
-.details header {
-	box-shadow: inset 0 0 5px var(--background-primary-30);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: left;
-	padding: 3px;
-	padding-left: 10px;
-}
-.details header div {
-	flex: 1;
-}
-.details header .size {
+.size {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: left;
+	padding: var(--1);
+	padding-left: var(--2);
 }
-.scroll-container {
+.size h2 {
+	text-decoration: underline;
+	text-decoration-color: var(--background-primary-60);
+	text-decoration-thickness: 3px;
+	margin-bottom: var(--2);
+	margin-top: var(--1);
+}
+.numbers {
+	margin-bottom: var(--1);
+}
+.numbers strong {
+	padding-right: var(--3);
+	margin-right: var(--3);
+	border-right: 2px solid var(--background-primary-60);
+}
+.details-inner .size div {
+	flex: 1;
+}
+.details-inner .size {
+	display: flex;
+}
+.scroll-container-details {
 	height: inherit;
 	overflow: auto;
 }
@@ -36,62 +71,138 @@
 	display: flex;
 	flex-wrap: wrap;
 	text-align: left;
+	border-top: 2px solid var(--background-primary-30);
+	padding-top: var(--2);
+	padding-bottom: var(--2);
+	margin: var(--2);
 }
 .facts-container ul {
-	margin-left: 5%;
+	margin-left: 6%;
 }
 .facts-container li {
 	list-style-type: circle;
+	margin-bottom: var(--1);
 }
 .moons-container {
+	border-top: 1px solid var(--background-primary-30);
 	margin-top: auto;
+	margin: var(--2);
 }
 .moons-container header {
-	box-shadow: inset 0 0 5px var(--background-primary-30);
 	flex: 1 1 100%;
 	text-align: left;
-	padding-left: 3%;
+	margin: var(--1) 0;
+	padding-left: var(--4);
+	padding-top: var(--4);
 }
 .moons-container header h3 {
 	width: 100%;
-	margin: 8px 0;
 	text-shadow: 3px 3px 1px var(--background-shadow-30);
 }
 .moons-container section {
-	box-shadow: inset 0 0 5px var(--background-primary-30);
-	padding-top: 6px;
-	flex: 1 1 50%;
+	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: center;
+	padding-top: var(--2);
+	padding-bottom: var(--2);
 	max-height: 95%;
 	overflow: auto;
 }
+/* tablets */
+@media screen and (min-width: 480px) {
+}
 
-@media only screen and (max-width: 1000px) {
-	.details {
-		height: 60vh;
+/* small screens */
+@media screen and (min-width: 768px) {
+	.details-name {
+		font-size: 5rem;
 	}
-
-	.moons-container section button {
-		width: 40%;
+	.details-inner {
+		margin: var(--5);
+	}
+	.size h2 {
+		font-size: var(--8);
+	}
+	.numbers {
+		font-size: var(--5);
+		margin-bottom: var(--2);
+	}
+	.facts-container {
+		font-size: var(--5);
+		padding-top: var(--4);
+		padding-bottom: var(--4);
+	}
+	.facts-container li {
+		margin-bottom: var(--2);
+	}
+	.facts-container ul :last-child {
+		margin-bottom: 0;
+	}
+	.moons-container header {
+		padding-left: var(--8);
+	}
+	.moons-container header h3 {
+		font-size: var(--6);
 	}
 }
-@media only screen and (min-height: 1000px), only screen and (max-width: 1000px) {
-	.details {
-		height: 35vh;
+/* large screens */
+@media screen and (min-width: 1024px) {
+	.size {
+		flex-direction: row;
 	}
-	.moons-container section button {
-		width: 40%;
+	.size h2 {
+		width: 100%;
+		text-align: center;
+	}
+	.size p {
+		padding: var(--2) var(--4);
+	}
+	.moons-container header {
+		padding-left: var(--12);
 	}
 }
-@media only screen and (max-width: 768px) {
-	.scroll-container {
+/* extra-large screens */
+@media screen and (min-width: 1440px) {
+	.details {
+		width: 45%;
+	}
+	.details-outer {
 		height: 65vh;
 	}
-	.moons-container section button {
-		width: 40%;
+	.details-inner {
+		height: 60vh;
+		overflow: hidden;
 	}
-	.facts-container article {
-		align-self: flex-end;
+	.details-name {
+		font-size: 5rem;
+	}
+	.size {
+		justify-content: left;
+	}
+	.size h2 {
+		font-size: var(--6);
+	}
+	.size p {
+		padding: var(--1) var(--2);
+	}
+	.numbers {
+		font-size: var(--4);
+		margin-bottom: 0;
+		text-align: left;
+	}
+	.facts-container {
+		font-size: var(--4);
+		padding-top: var(--3);
+		padding-bottom: var(--3);
+	}
+	.moons-container header {
+		padding-left: var(--4);
+	}
+	#planet-type {
+		padding-bottom: var(--2);
+	}
+	#planet-type,
+	#sun-distance {
+		margin-left: var(--4);
 	}
 }

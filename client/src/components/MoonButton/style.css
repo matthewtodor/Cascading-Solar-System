@@ -1,15 +1,15 @@
 .moon-button {
 	cursor: pointer;
-	width: 30%;
 	color: var(--highlight);
 	font-weight: bold;
 	text-shadow: 1px 1px 1px var(--shadow);
 	background-color: var(--background-primary-30);
-	padding: 6px 6px 6px 6px;
+	padding: var(--3) var(--2);
 	border-radius: 8px;
 	border-style: solid;
 	border-color: var(--primary);
 	margin: 4px;
+	width: 45%;
 }
 .button-text {
 	margin: auto;
@@ -18,4 +18,31 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+/* tablets */
+@media screen and (min-width: 480px) {
+}
+
+/* small screens */
+@media screen and (min-width: 768px) {
+	.moon-button {
+		width: 30%;
+	}
+	.button-text {
+		font-size: var(--5);
+	}
+}
+/* large screens */
+@media screen and (min-width: 1024px) {
+}
+
+/* extra-large screens */
+@media screen and (min-width: 1440px) {
+	.moon-button {
+		padding: var(--2) var(--1);
+	}
+	.button-text {
+		font-size: var(--4);
+	}
 }

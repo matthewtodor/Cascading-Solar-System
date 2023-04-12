@@ -9,6 +9,7 @@ Hex     	RGB
 */
 
 :root {
+	/* COLORS */
 	--primary: #78cce2; /* RGB:(120,204,226) */
 	--secondary: #4e7988; /* RGB:(78,121,136) */
 	--tertiary: #005066; /* RGB:(0,80,102) */
@@ -26,6 +27,20 @@ Hex     	RGB
 	--background-tertiary-60: #00506699;
 	--background-shadow-60: #00243999;
 	--background-highlight-60: #e4eff099;
+
+	/* VALUES */
+	--1: 0.25rem; /* 4 px */
+	--2: 0.5rem; /* 8 px */
+	--3: 0.75rem; /* 12 px */
+	--4: 1rem; /* 16 px */
+	--5: 1.25rem; /* 20 px */
+	--6: 1.5rem; /* 24 px */
+	--7: 1.75rem; /* 28 px */
+	--8: 2rem; /* 32 px */
+	--9: 2.25rem; /* 36 px */
+	--10: 2.5rem; /* 40 px */
+	--11: 2.75rem; /* 44 px */
+	--12: 3rem; /* 48 px */
 }
 
 body {
@@ -35,7 +50,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 ::-webkit-scrollbar {
-	width: 8px;
+	width: var(--2);
 }
 ::-webkit-scrollbar-track {
 	background: var(--background-secondary-30);

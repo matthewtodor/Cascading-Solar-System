@@ -4,61 +4,92 @@
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	color: white;
+	top: 0vh;
+	left: 0vh;
+	width: 100%;
+	height: 100%;
+	color: var(--highlight);
 	background-color: var(--background-shadow-60);
+	text-shadow: 5px 5px 5px var(--shadow);
 }
-.modal-content {
+.modal aside {
+	display: flex;
+	flex-wrap: wrap;
+}
+.modal aside p {
+	flex: 1 1 50%;
+	margin-bottom: var(--2);
+}
+.modal article {
+	padding: var(--4);
+}
+.modal header {
+	box-shadow: none;
 	display: flex;
 	flex-direction: column;
-	width: 40vw;
-	margin: 4px;
-	padding: 1rem;
+	text-align: center;
+	width: 100%;
+	padding-bottom: var(--3);
+	padding-top: var(--3);
+}
+.modal-content-outer {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	max-height: 75vh;
+	margin: var(--1);
 	color: var(--highlight);
-	text-shadow: 3px 3px 3px var(--shadow);
-	border-radius: 5px;
+
+	border-radius: var(--2);
 	border-top-left-radius: 25px;
 	border-bottom-right-radius: 25px;
 	border-style: solid;
 	border-color: var(--primary);
 	background-color: var(--background-tertiary-60);
 	box-shadow: inset 0 0 30px var(--primary);
+	overflow: auto;
 }
-.modal-content header {
-	box-shadow: none;
-	padding-left: 0;
+.modal-content-inner {
+	border: 2px solid var(--background-primary-30);
+	border-radius: 5px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	margin: var(--2);
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	text-align: center;
-	width: 100%;
 }
-.modal-content aside {
-	display: flex;
-	flex-wrap: wrap;
+.scroll-container {
+	max-height: 65vh;
+	overflow: auto;
+	padding: 1%;
 }
-.modal-content aside h3 {
-	width: 100%;
-	margin-bottom: 8px;
-}
-.modal-content aside p {
-	flex: 1 1 50%;
-	margin-bottom: 6px;
-}
-.modal-content article {
-	padding: 1rem;
+/* tablets */
+@media screen and (min-width: 480px) {
 }
 
-@media only screen and (max-width: 1000px) {
-	.modal {
-		top: 0;
+/* small screens */
+@media screen and (min-width: 768px) {
+	.modal header {
+		font-size: var(--7);
 	}
+	.modal aside p {
+		font-size: var(--5);
+	}
+	.modal article {
+		font-size: var(--5);
+	}
+	.modal-content-inner {
+		margin: var(--4);
+	}
+}
+/* large screens */
+@media screen and (min-width: 1024px) {
+	.modal-content-outer {
+		width: 70%;
+	}
+}
 
-	.modal-content {
-		max-height: 65%;
-		width: 80%;
-		overflow: auto;
-	}
+/* extra-large screens */
+@media screen and (min-width: 1440px) {
 }
